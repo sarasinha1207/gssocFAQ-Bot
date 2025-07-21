@@ -1,0 +1,134 @@
+[
+  {
+    "question": "What is GSSoC?",
+    "answer": "GSSoC stands for GirlScript Summer of Code. It is a 3-month long open-source program organized by the GirlScript Foundation to encourage students to contribute to real-world projects. Participants collaborate with open-source project maintainers, receive mentorship, and improve their coding and collaboration skills. Roles include contributors (students writing code), mentors (experienced developers guiding contributors), and project admins (overseeing the entire project and reviewing progress)."
+  },
+  {
+    "question": "What are the important dates for GSSoC? What are the deadlines?",
+    "answer": "**📅 Important Dates for GSSoC 2025:**\n\n- **Applications Open:** June 21, 2025\n- **Application Deadline:** Around July 27, 2025\n- **Selection Emails & ID Cards:** By Sunday, July 27, 2025 (or within a week of applying)\n- **Contribution Period Start:** After July 27, 2025 — expected within a week\n- **Program Duration:** ~3 months\n\n⏳ *Deadlines and dates may shift slightly. Always refer to official announcements via mail or the [Insight App](https://gssoc.girlscript.tech/#apply).*"
+  },
+  {
+    "question": "Is GSSoC only for girls?",
+    "answer": "Absolutely not! GSSoC welcomes every developer—whether you’re a beginner or experienced, Male or Female, Fresher or Graduate, CodeBro or DevDiva. Everyone is WELCOMED!!!. It's a fantastic opportunity for freshers and anyone eager to dive into open source, learn new skills, and grow as a developer. Everyone is encouraged to join and contribute!"
+  },
+  {
+    "question": "ID card or review not showing after clicking the banner?",
+    "answer": "Be patient. It doesn't update instantly. If it's still showing the form, wait a bit or reinstall the Insight App — the update takes time. If you have waited for so oong try contacting Program manager. All Updates will roll out by 27 JULY 2025. "
+  },{
+    "question": "What will I see after successful submission?",
+  "answer": "You will either receive a confirmation mail, or see a **'Under Review'** badge on the **Insight App**. If your submission is accepted, your **ID card will appear** there as well. [View example](https://drive.google.com/file/d/13I_WMb6Ha77aekPB6h8spmFPHreW74hG/view?usp=sharing)"
+  
+  },
+  {
+    "question": "What to do after receiving the selection ID or email?",
+    "answer": "JUST WAIT!!!. You will receive your ID card and further instructions by Sunday, 27 July 2025. If not, please allow up to a week for processing."
+  },
+  {
+    "question": "ID card not received yet.",
+    "answer": "You will receive the GSSoC25 ID card by Sunday, 27 July 2025. If you have registered recently, it may take up to a week."
+  },
+  {
+    "question": "Selection email not received yet.",
+    "answer": "You will get the selection **email or ID CARD** by Sunday. If you have recently registered, it may take up to a week. If you do not receive a selection **email or ID CARD on INSIGHTS APP** by the end of this month, it means you have not been selected for GSSoC 2025."
+  },
+  {
+    "question": "Selection mail received but no ID card.",
+    "answer": "This means YESSS!! YOU ARE SELCTED. You will receive the ID card or email by Sunday or within a week via mail or in ''Insight APP''. Please be patient."
+  },
+  {
+    "question": "ID card received but no mail.",
+    "answer": "This means YESSS!! YOU ARE SELCTED. You will receive the email by Sunday or within a week via mail or in ''Insight APP''. Please be patient."
+  },
+  {
+    "question": "How to change profile picture on ID card?",
+    "answer": "Just change your **profile picture on the Insight app**.\n> ⚠️ **Note:** The profile picture doesn't update *instantly*.\nIt usually updates **after reinstalling** the Insight app.\n🛠️ *Try reinstalling — it might fix the issue.*"
+  },
+  {
+    "question": "When will the contribution period start?",
+    "answer": "The contribution period is scheduled to start by Sunday, 27 July 2025. If there is any delay, it will begin within the following week."
+  },
+  {
+    "question": "Where is Project List",
+    "answer": "The Projects will be out by Sunday, 27 July 2025. If there is any delay, it will begin within the following week."
+  },
+  {
+    "question": " I got chosen as a mentor but haven't been given the project yet? Or should I wait?",
+    "answer": "JUST WAIT!! The Projects will be out by Sunday, 27 July 2025. If there is any delay, it will begin within the following week."
+  },
+  {
+    "question": "Will I get selected?",
+    "answer": "Even if this is your first time, there is a higher chance to get selected because GSSoC encourages fresh developers to grow. You will get **Mail** or **Id card on Insight app** profile section if you get selected at any role."
+  },
+  {
+    "question": "How can I participate in GSSoC?",
+    "answer": "To participate in GSSoC, you need to apply through the official GirlScript Summer of Code website when applications open. Once selected, you will be onboarded and assigned to a project with a mentor. You can start contributing by solving issues, submitting pull requests, and collaborating with the open-source community. Contributors are guided by mentors, and their performance is evaluated throughout the program. Top performers receive certificates and goodies."
+  },
+  {
+    "question": "Can I still apply to any role after 21st July?",
+    "answer": "Yes, you can still apply for Contributer role, Project admin, Mentor, Campus Ambassador role. While the chances of selection may be lower after the deadline, it's important to take the first step. Apply now — everything else can be managed later. Just take your first baby STEPS. Apply on ''Insights app'' from Playstore or App store NOW."
+  },
+  {
+    "question": "How to get ID card?",
+    "answer": "📇 You can find your **ID card** in the **Explore section** of the **Insight App**.\n\n👉 Make sure you're logged in with the same email you used during registration. \n\n In Explore tab click on **GSSOC apply banner** then select your role and u will see the id card. If not seeign the id card then that means you are under review."
+  },
+  {
+    "question": "What are the next steps after I got selected?",
+    "answer": "**JUST WAITT!!!** 🎉\n\nThe **Project List** will be released by **27 July 2025**. If there's any delay, expect it within the **following week**.\n\nStay active on the **Insight App** and official channels for updates!"
+  },
+  {
+    "question": "Do I need to use the same Gmail on Discord as GSSoC registration?",
+    "answer": "❌ No, you don't need to use the same Gmail on Discord. Your Discord email doesn't have to match your GSSoC registration email.\n\n💬 **Discord is only used for project communication and community discussions**, not for verification or selection."
+  },
+  {
+    "question": "Can we switch the domain?",
+    "answer": "Absolutely! You can switch domains anytime during GSSoC. Explore, experiment, and contribute wherever your passion leads you — growth comes from trying new things!"
+  },
+  {
+    "question": "Is there a stipend?",
+    "answer": "No stipend as GirlScript Foundation is a non-profit organization."
+  },
+  {
+    "question": "What is the selection criteria? How to get accepted?",
+    "answer": "**No specific criteria.** You will receive **either an email or an ID card on the Insight App** by the end of this week or next week."
+  },
+  {
+    "question": "Does everyone get certificate?",
+    "answer": "You need to achieve a minimum number of points to get the certificate, while top scorers get goodies."
+  },
+  {
+    "question": "Is the Postman challenge GSSoC posted on LinkedIn compulsory? Will it improve my chances of acceptance?",
+    "answer": "No, the Postman challenge is a bonus."
+  },
+  {
+    "question": "How does open-source contribution work? Do you need programming experience? Is it for advanced programmers only?",
+    "answer": "No, anyone can join, beginner coder or advanced. Usually, the accepted contributors are assigned to mentors who will help guide them through one or more specific projects. Examples of the tech stacks used are: MERN, AI/ML, Data viz, Django, Spring Boot, C++, Python, etc."
+  },
+  {
+    "question": "When do contributor applications close?",
+    "answer": "They will be open for around a month."
+  },
+  {
+    "question": "When does the contribution period start? How long is the contribution period?",
+    "answer": "Contribution period start After applications are processed which is on 21/07/2025. C ontribution period is Around 3 months."
+  },
+  {
+    "question": "Do you need a team to contribute?",
+    "answer": "No. Participants work solo."
+  },
+  {
+    "question": "Are there any official channels other than Discord?",
+    "answer": "Yes! You can follow GSSoC on GitHub: github.com/girlscript, Twitter: x.com/girlscriptsoc, Instagram: instagram.com/girlscriptsummerofcode, and LinkedIn: linkedin.com/company/girlscriptsoc for official updates."
+  },
+  {
+    "question": "Can't sign up on the Insight App",
+    "answer": "Just **wait a little!** We’re currently overwhelmed by the number of users. The team is aware and working on it — it should be fixed **within this week.** Stay tuned!"
+  },
+  {
+    "question": "How to get roles?",
+    "answer": "To get a role, use the **Insight App** — you can register there as a **Contributor**, **Project Admin**, or **Campus Ambassador**.\n\nFor Discord roles, just rename your discord profile like this: `YourName | Role` (e.g., `piyushpatelcodes | Contributor`)."
+  },
+  {
+    "question": "Who developed this bot?",
+    "answer": "**This bot was custom-built by [Piyush Patel](https://github.com/piyushpatelcodes)** to help GSSoC managers answer frequently repeated questions from contributors.\n\nHe created it to save time and ensure contributors get quick answers every day — even when the same question is asked again and again 😄\n\n🔗 **GitHub:** [piyushpatelcodes](https://github.com/piyushpatelcodes)\n🔗 **LinkedIn:** [piyushpatelcodes](https://linkedin.com/in/piyushpatelcodes)  https://drive.google.com/file/d/13ECrfgo2LZ2sDcK0tAlmhpT4lHk5DxiR/view?usp=sharing"
+  }
+]

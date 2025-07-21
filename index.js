@@ -33,6 +33,9 @@ client.once("ready", () => {
 client.on(Events.InteractionCreate, async (interaction) => {
   if (interaction.isChatInputCommand()) {
     if (interaction.commandName === "faq") {
+      
+      const userQuestion = interaction.options.getString("question");
+      const questions = faqs.map((faq) => faq.question);
       if (userQuestion.toLowerCase().includes("all commands")) {
   const allQuestions = faqs.map((f, i) => `• **${i + 1}.** ${f.question}`).join("\n");
 
@@ -41,9 +44,6 @@ client.on(Events.InteractionCreate, async (interaction) => {
   });
   return;
 }
-
-      const userQuestion = interaction.options.getString("question");
-      const questions = faqs.map((faq) => faq.question);
 
       const { bestMatch, bestMatchIndex } = stringSimilarity.findBestMatch(
         userQuestion,

@@ -1,4 +1,7 @@
 [
+  { "question": "All Commands for  GSSoC FAQ Bot?",
+    "answer": "Yes Here You Go. \n"
+    },
   {
     "question": "What is GSSoC?",
     "answer": "GSSoC stands for GirlScript Summer of Code. It is a 3-month long open-source program organized by the GirlScript Foundation to encourage students to contribute to real-world projects. Participants collaborate with open-source project maintainers, receive mentorship, and improve their coding and collaboration skills. Roles include contributors (students writing code), mentors (experienced developers guiding contributors), and project admins (overseeing the entire project and reviewing progress)."
@@ -17,7 +20,7 @@
   },{
     "question": "What will I see after successful submission?",
   "answer": "You will either receive a confirmation mail, or see a **'Under Review'** badge on the **Insight App**. If your submission is accepted, your **ID card will appear** there as well. [View example](https://drive.google.com/file/d/13I_WMb6Ha77aekPB6h8spmFPHreW74hG/view?usp=sharing)"
-  
+
   },
   {
     "question": "What to do after receiving the selection ID or email?",

@@ -33,6 +33,15 @@ client.once("ready", () => {
 client.on(Events.InteractionCreate, async (interaction) => {
   if (interaction.isChatInputCommand()) {
     if (interaction.commandName === "faq") {
+      if (userQuestion.toLowerCase().includes("all commands")) {
+  const allQuestions = faqs.map((f, i) => `• **${i + 1}.** ${f.question}`).join("\n");
+
+  await interaction.reply({
+    content: `**📋 Here's a list of all available questions you can ask the bot:**\n\n${allQuestions}\n\n*Use \`/faq\` and start typing your question to get an instant answer!*`
+  });
+  return;
+}
+
       const userQuestion = interaction.options.getString("question");
       const questions = faqs.map((faq) => faq.question);
 

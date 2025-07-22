@@ -8,7 +8,7 @@
   },
   {
     "question": "What are the important dates for GSSoC? What are the deadlines?",
-    "answer": "**📅 Important Dates for GSSoC 2025:**\n\n- **Applications Open:** June 21, 2025\n- **Application Deadline:** Around July 27, 2025\n- **Selection Emails & ID Cards:** By Sunday, July 27, 2025 (or within a week of applying)\n- **Contribution Period Start:** After July 27, 2025 — expected within a week\n- **Program Duration:** ~3 months\n\n⏳ *Deadlines and dates may shift slightly. Always refer to official announcements via mail or the [Insight App](https://gssoc.girlscript.tech/#apply).*"
+    "answer": "**📅 Important Dates for GSSoC 2025:**\n\n- **Applications Open:** June 21, 2025\n- **Application Deadline:** Around July 27, 2025\n- **Selection Emails & ID Cards:** By Sunday, July 27, 2025 (or within a week of applying)\n- **Contribution Period Start:** After receiving either Mail/ID, you can start contributing. \n- **Program Duration:** ~3 months\n\n⏳ *Deadlines and dates may shift slightly. Always refer to official announcements via mail or the [Insight App](https://gssoc.girlscript.tech/#apply).*"
   },
   {
     "question": "Is GSSoC only for girls?",
@@ -77,6 +77,10 @@
   {
     "question": "What are the next steps after I got selected?",
     "answer": "**JUST WAITT!!!** 🎉\n\nThe **Project List** will be released by **27 July 2025**. If there's any delay, expect it within the **following week**.\n\nStay active on the **Insight App** and official channels for updates!"
+  },
+  {
+    "question": "How to contribute?",
+    "answer": "**Contributing is easy!**\n\n- Go to the ![master.xlsx file](https://docs.google.com/spreadsheets/d/12TYRJSwCimT8DIBT4UKKUGR7lrpG2lzTNK82Zc1LwO0/edit?gid=0#gid=0)\n\n- Select your preferred project and go to its github\n\n-Check issues raised under the label 'gssoc2025' & 'level 1/2/3' "
   },
   {
     "question": "Do I need to use the same Gmail on Discord as GSSoC registration?",

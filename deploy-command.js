@@ -15,6 +15,25 @@ const commands = [
         autocomplete: true
       }
     ]
+  },
+  {
+    name: 'project',
+    description: 'Get details about a GSSoC project',
+    options: [
+      {
+        name: 'project-name',
+        description: 'Name of the project',
+        type: ApplicationCommandOptionType.String,
+        required: true,
+        autocomplete: true
+      },
+      {
+        name: 'question',
+        description: 'Optional follow-up question (e.g. "guide to contribute")',
+        type: ApplicationCommandOptionType.String,
+        required: false
+      }
+    ]
   }
 ];
 
@@ -32,3 +51,8 @@ const rest = new REST({ version: '10' }).setToken(process.env.BOT_TOKEN);
     console.error(err);
   }
 })();
+
+
+// const data = await rest.get(Routes.applicationCommands(process.env.CLIENT_ID));
+// console.log("Registered commands:", data.map(cmd => cmd.name));
+

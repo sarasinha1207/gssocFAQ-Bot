@@ -85,93 +85,98 @@ Example:
 📣 **Share with GSSoC friends!** Let’s make open source more accessible ✨
 `;
 
-
 client.once('ready', async () => {
   console.log(`🤖 Logged in as ${client.user.tag}`);
- 
-
 });
 
-
 client.on(Events.InteractionCreate, async (interaction) => {
-  if (interaction.isChatInputCommand()) {
-    console.log("userque: ", interaction.options.getString("question"));
-    if (interaction.commandName === "faq") {
-      const userQuestion = interaction.options.getString("question");
-      const questions = faqs.map((faq) => faq.question);
-      if (userQuestion.toLowerCase().includes("all commands")) {
-        const allQuestions = faqs
-          .map((f, i) => `• **${i + 1}.** ${f.question}`)
-          .join("\n");
-
-        await interaction.reply({
-          content: `**📋 Here's a list of all available questions you can ask the bot:**\n\n${allQuestions}\n\n*Use \`/faq\` and start typing your question to get an instant answer!*`,
-        });
-        return;
-      }
-
-      const { bestMatch, bestMatchIndex } = stringSimilarity.findBestMatch(
-        userQuestion,
-        questions
-      );
-
-      let match = faqs.find(
-        (f) => f.question.toLowerCase() === userQuestion.toLowerCase()
-      );
-
-      if (
-        (!match || match === undefined || match === null) &&
-        bestMatch.rating >= 0.3
-      ) {
-        match = faqs[bestMatchIndex];
-      }
-      console.log("bestMatch: ", bestMatch);
-
-      if (match) {
-        await interaction.reply(match.answer);
-        const lowerQ = userQuestion.toLowerCase();
-        if (idKeywords.some((keyword) => lowerQ.includes(keyword))) {
-          const file = new AttachmentBuilder("./public/assets/idcard.png");
-          await interaction.followUp({
-            content:
-              "You will get an ID card like this directly in your **Insight App** Only available for Android an iOS. You can download the app here: https://gssoc.girlscript.tech/#apply \n **Mail or ID CARD on Insights App**, Anything is a confirmation form GSSOC \n **Contribute in this GSSOC FAQ unofficial BOT** https://github.com/piyushpatelcodes/gssocFAQ-Bot",
-            files: [file],
-          });
+  try {
+    if (interaction.isChatInputCommand()) {
+      console.log("userque: ", interaction.options.getString("question"));
+      if (interaction.commandName === "faq") {
+        const userQuestion = interaction.options.getString("question");
+        if (!userQuestion) {
+          throw new Error("No question provided");
         }
-      } else {
-        await interaction.reply("❌ Sorry, I couldn’t find an answer to that.");
-      }
-    } else if (interaction.commandName === "project") {
-      const selectedProjectName = interaction.options.getString("project-name");
-      const question = interaction.options.getString("question") || "";
-      if (selectedProjectName === "All Projects") {
-        const header = `📚 **GSSoC Projects (${projects.length} total):**\n\n`;
-        const body = projects
-          .map(
-            (p, i) => `${i + 1}. [${p["Project name"]}](${p["Project link"]})`
-          )
-          .join("\n");
-        const fullMessage = header + body;
 
-        await sendPaginatedProjects(interaction, projects);
+        const questions = faqs.map((faq) => faq.question);
+        if (userQuestion.toLowerCase().includes("all commands")) {
+          const allQuestions = faqs
+            .map((f, i) => `• **${i + 1}.** ${f.question}`)
+            .join("\n");
 
-        return;
-      }
+          await interaction.reply({
+            content: `**📋 Here's a list of all available questions you can ask the bot:**\n\n${allQuestions}\n\n*Use \`/faq\` and start typing your question to get an instant answer!*`,
+          });
+          return;
+        }
 
-      const project = projects.find(
-        (p) =>
-          p["Project name"].toLowerCase() === selectedProjectName.toLowerCase()
-      );
+        const { bestMatch, bestMatchIndex } = stringSimilarity.findBestMatch(
+          userQuestion,
+          questions
+        );
 
-      if (!project) {
-        return interaction.reply("❌ Project not found.");
-      }
+        let match = faqs.find(
+          (f) => f.question.toLowerCase() === userQuestion.toLowerCase()
+        );
 
-      // Handle contribution question
-      if (question.toLowerCase().includes("contribute")) {
-        const contributionGuide = `📘 **Guide to Contribute to [${
-          project["Project name"]
-        }](${project["Project link"]})**:
+        if (
+          (!match || match === undefined || match === null) &&
+          bestMatch.rating >= 0.3
+        ) {
+          match = faqs[bestMatchIndex];
+        }
+        console.log("bestMatch: ", bestMatch);
+
+        if (match) {
+          await interaction.reply(match.answer);
+          const lowerQ = userQuestion.toLowerCase();
+          if (idKeywords.some((keyword) => lowerQ.includes(keyword))) {
+            const file = new AttachmentBuilder("./public/assets/idcard.png");
+            await interaction.followUp({
+              content:
+                "You will get an ID card like this directly in your **Insight App** Only available for Android an iOS. You can download the app here: https://gssoc.girlscript.tech/#apply \n **Mail or ID CARD on Insights App**, Anything is a confirmation form GSSOC \n **Contribute in this GSSOC FAQ unofficial BOT** https://github.com/piyushpatelcodes/gssocFAQ-Bot",
+              files: [file],
+            });
+          }
+        } else {
+          await interaction.reply("❌ Sorry, I couldn’t find an answer to that. Please try rephrasing your question or check the FAQ list with `/faq question: all commands`.");
+        }
+      } else if (interaction.commandName === "project") {
+        const selectedProjectName = interaction.options.getString("project-name");
+        const question = interaction.options.getString("question") || "";
+        if (!selectedProjectName) {
+          throw new Error("No project name provided");
+        }
+
+        if (selectedProjectName === "All Projects") {
+          const header = `📚 **GSSoC Projects (${projects.length} total):**\n\n`;
+          const body = projects
+            .map(
+              (p, i) => `${i + 1}. [${p["Project name"]}](${p["Project link"]})`
+            )
+            .join("\n");
+          const fullMessage = header + body;
+
+          await sendPaginatedProjects(interaction, projects);
+          return;
+        }
+
+        const project = projects.find(
+          (p) =>
+            p["Project name"].toLowerCase() === selectedProjectName.toLowerCase()
+        );
+
+        if (!project) {
+          await interaction.reply("❌ Project not found. Please check the project name and try again.");
+          return;
+        }
+
+        // Handle contribution question
+        if (question.toLowerCase().includes("contribute")) {
+          const contributionGuide = `📘 **Guide to Contribute to [${
+            project["Project name"]
+          }](${project["Project link"]})**:
 
 1. **Fork** the repository: ${project["Project link"]}
 2. **Clone** your fork locally:
@@ -202,95 +207,100 @@ https://github.com/piyushpatelcodes/gssocFAQ-Bot
 
 Mentors:
 - ${project["mentor 1"] || "N/A"} | [GitHub](${
-          project["mentor 1 github"] || "#"
-        }) | [LinkedIn](${project["mentor 1 linkedin"] || "#"})`;
+            project["mentor 1 github"] || "#"
+          }) | [LinkedIn](${project["mentor 1 linkedin"] || "#"})`;
 
-        return interaction.reply(contributionGuide);
-      }
-
-      // Default: Show project info
-      const embed = new EmbedBuilder()
-        .setTitle(project["Project name"])
-        .setURL(project["Project link"])
-        .setDescription(project["Project description"])
-        .addFields(
-          {
-            name: "🧠 Tech Stack",
-            value: project["Tech stack"] || "Not specified",
-          },
-          {
-            name: "👨‍💼 Admin",
-            value: `${project["Project admin"]} - [GitHub](${project["Admin github"]}) | [LinkedIn](${project["Admin linkedin"]})`,
-          }
-        );
-
-      // Add mentors
-      const mentorFields = [];
-      for (let i = 1; i <= 5; i++) {
-        const mentor = project[`mentor ${i}`];
-        if (mentor) {
-          mentorFields.push({
-            name: `🎓 Mentor ${i}`,
-            value: `${mentor}\n[GitHub](${
-              project[`mentor ${i} github`] || "#"
-            }) | [LinkedIn](${project[`mentor ${i} linkedin`] || "#"})`,
-          });
+          return interaction.reply(contributionGuide);
         }
+
+        // Default: Show project info
+        const embed = new EmbedBuilder()
+          .setTitle(project["Project name"])
+          .setURL(project["Project link"])
+          .setDescription(project["Project description"])
+          .addFields(
+            {
+              name: "🧠 Tech Stack",
+              value: project["Tech stack"] || "Not specified",
+            },
+            {
+              name: "👨‍💼 Admin",
+              value: `${project["Project admin"]} - [GitHub](${project["Admin github"]}) | [LinkedIn](${project["Admin linkedin"]})`,
+            }
+          );
+
+        // Add mentors
+        const mentorFields = [];
+        for (let i = 1; i <= 5; i++) {
+          const mentor = project[`mentor ${i}`];
+          if (mentor) {
+            mentorFields.push({
+              name: `🎓 Mentor ${i}`,
+              value: `${mentor}\n[GitHub](${
+                project[`mentor ${i} github`] || "#"
+              }) | [LinkedIn](${project[`mentor ${i} linkedin`] || "#"})`,
+            });
+          }
+        }
+        embed.addFields(...mentorFields);
+        embed.setColor("Random");
+
+        await interaction.reply({ embeds: [embed] });
       }
-      embed.addFields(...mentorFields);
-      embed.setColor("Random");
-
-      await interaction.reply({ embeds: [embed] });
     }
-  }
 
-  if (interaction.isAutocomplete()) {
-    if (interaction.commandName === "faq") {
+    if (interaction.isAutocomplete()) {
       try {
-        const focused = interaction.options.getFocused().toLowerCase();
+        if (interaction.commandName === "faq") {
+          const focused = interaction.options.getFocused().toLowerCase();
+          const choices = faqs
+            .filter((f) => f.question.toLowerCase().includes(focused))
+            .slice(0, 25)
+            .map((f) => {
+              const trimmedQuestion =
+                f.question.length > 100
+                  ? f.question.slice(0, 97) + "..."
+                  : f.question;
+              return {
+                name: trimmedQuestion,
+                value: trimmedQuestion,
+              };
+            });
+          await interaction.respond(choices);
+        } else if (interaction.commandName === "project") {
+          const focused = interaction.options.getFocused().toLowerCase();
+          const choices = projects
+            .filter((p) => p["Project name"].toLowerCase().includes(focused))
+            .slice(0, 24)
+            .map((p) => ({ name: p["Project name"], value: p["Project name"] }));
 
-        const choices = faqs
-          .filter((f) => f.question.toLowerCase().includes(focused))
-          .slice(0, 25)
-          .map((f) => {
-            const trimmedQuestion =
-              f.question.length > 100
-                ? f.question.slice(0, 97) + "..."
-                : f.question;
-            return {
-              name: trimmedQuestion,
-              value: trimmedQuestion,
-            };
+          choices.unshift({
+            name: `📚 All Projects (Total: ${projects.length} Projects.)`,
+            value: "All Projects",
           });
-        await interaction.respond(choices);
+          await interaction.respond(choices);
+        }
       } catch (error) {
-        console.log("auto completete erroe: ", error);
+        console.error("Autocomplete error:", error);
+        // No user response for autocomplete errors to avoid spamming
       }
     }
-    if (interaction.commandName === "project") {
-      try {
-        const focused = interaction.options.getFocused().toLowerCase();
-        const choices = projects
-          .filter((p) => p["Project name"].toLowerCase().includes(focused))
-          .slice(0, 24)
-          .map((p) => ({ name: p["Project name"], value: p["Project name"] }));
-
-        choices.unshift({
-          name: `📚 All Projects (Total: ${projects.length} Projects.)`,
-          value: "All Projects",
-        });
-        await interaction.respond(choices);
-      } catch (error) {
-        console.log("auto completete erroe: ", error);
-      }
+  } catch (error) {
+    console.error("Interaction handling error:", error);
+    if (interaction.isChatInputCommand() && !interaction.replied) {
+      await interaction.reply({
+        content: "Oops! Something went wrong. Please try again later.",
+        ephemeral: true,
+      }).catch(err => console.error("Failed to send error message:", err));
     }
   }
 });
 
-client.login(process.env.BOT_TOKEN);
+client.login(process.env.BOT_TOKEN).catch(error => {
+  console.error("Failed to login bot:", error);
+});
 
 // for documentation purpose
-
 app.use("/docs", documentationRoute);
 
 app.listen(3000, () => {

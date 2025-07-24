@@ -1,13 +1,13 @@
 
 # 🤖 GSSoC FAQ Bot
 
-An intelligent FAQ bot built using Python and Flask, designed to answer queries related to GirlScript Summer of Code (GSSoC). This bot reads FAQs from a JSON file and returns the most relevant answer using semantic similarity via NLP techniques.
+An intelligent FAQ bot built using Python and Flask, designed to answer queries related to GirlScript Summer of Code (GSSoC). This bot reads FAQs from a JSON file and returns the most relevant answer using semantic similarity via string matching techniques.
 
 ---
 
 ## 🔧 Features
 
-- Query understanding with Natural Language Processing (NLP)
+- Query understanding with string matching Processing
 - Cosine similarity-based matching
 - Preloaded with GSSoC-related FAQs
 - Easy-to-extend question-answer pairs
@@ -27,8 +27,7 @@ An intelligent FAQ bot built using Python and Flask, designed to answer queries 
 
 ### 📋 Prerequisites
 
-- Python 3.7+
-- pip
+- Node.js
 
 ### 🛠 Installation
 
@@ -36,19 +35,12 @@ Clone the repository:
 ```bash
 git clone https://github.com/abdulwasaeee/gssocFAQ-Bot.git
 cd gssocFAQ-Bot
-
-
-Create a virtual environment (optional but recommended):
-
-```bash
-python -m venv venv
-source venv/bin/activate  # On Windows use: venv\Scripts\activate
 ```
 
 Install the dependencies:
 
 ```bash
-pip install -r requirements.txt
+npm install
 ```
 
 ---
@@ -58,13 +50,13 @@ pip install -r requirements.txt
 Start the Flask server:
 
 ```bash
-python app.py
+node ./index.js
 ```
 
-Navigate to:
+For Docs website of bot Navigate to:
 
 ```
-http://127.0.0.1:5000/
+http://localhost:3000/docs
 ```
 
 ---
@@ -94,7 +86,7 @@ Steps:
 
 1. Fork the repo
 2. Create your feature branch (`git checkout -b feature/YourFeature`)
-3. Commit your changes (`git commit -m 'Add something'`)
+3. Commit your changes (`git commit -m 'Add commit msg'`)
 4. Push to the branch (`git push origin feature/YourFeature`)
 5. Open a Pull Request
 
@@ -110,7 +102,4 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 If you found this helpful, consider starring the repository to show your support!
 
-```
 
-Let me know if you want it tailored with badges or deployed links.
-```

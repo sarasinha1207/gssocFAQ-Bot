@@ -77,29 +77,36 @@ jobs:
               const selectedBadges = weightedRandomSet(badgePool, 3);
 
               // Markdown version of HTML content
-              let badgeMarkdown = `
-                ![GSSOC Contributor Badge](${mainBadgeUrl})  
-                🎉 **Thanks @${username} for contributing to the _GSSOC FAQ Discord Bot Repository_!**  
-                It elevated the repo.  
-                You've earned the **Pro Contributor** badge and unlocked your **DEV SLAYER** achievements!
-
-                ### Badges Earned:
-                `;
-
-              selectedBadges.forEach(badge => {
-                const url = `https://drive.google.com/uc?export=view&id=${badge.id}`;
-                badgeMarkdown += `![Dev Slayer Badge](${url})\n`;
-              });
-
-              badgeMarkdown += `
-                🎉 **Your PR just slayed the issue!** You’ve officially joined the ranks of the **Dev Slayers**.  
+              let badgeHtml = `
+              <div style="display: flex; align-items: center; gap: 20px;">
+                <img width="250" height="250" alt="gssoc-faq-repo-contributor-badge" src="${mainBadgeUrl}" />
+                <div style="font-size: 16px;">
+                  🎉 <strong>Thanks @${username} for contributing to the <em>GSSOC FAQ Discord Bot Repository</em>!</strong><br>
+                  It elevated the repo.<br>
+                  You've earned the <strong>Pro Contributor</strong> badge and unlocked your <strong>DEV SLAYER</strong> achievements!
+                </div>
+              </div>
+              
+              <div style="display: flex; align-items: center; gap: 20px; margin-top: 20px;">`;
+              
+                          selectedBadges.forEach(badge => {
+                            const url = `https://drive.google.com/uc?export=view&id=${badge.id}`;
+                            badgeHtml += `<img width="200" height="200" alt="dev-slayer" src="${url}" />`;
+                          });
+              
+                          badgeHtml += `
+              </div>
+              
+              <div style="font-size: 16px; line-height: 1.6; margin-top: 20px;">
+                🎉 <strong>Your PR just slayed the issue!</strong> You’ve officially joined the ranks of the <strong>Dev Slayers</strong>.<br>
                 Keep coding. The codebase sleeps peacefully tonight.
+              </div>
               `;
 
               await github.rest.issues.createComment({
                 issue_number,
                 owner: context.repo.owner,
                 repo: context.repo.repo,
-                body: badgeMarkdown
+                body: badgeHtml
               });
             }

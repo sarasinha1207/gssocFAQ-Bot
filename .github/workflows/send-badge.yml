@@ -75,7 +75,7 @@ jobs:
               badgeHtml;
 
             await github.rest.issues.createComment({
-              issue_number: prNumber,
+              issue_number,
               owner: context.repo.owner,
               repo: context.repo.repo,
               body: message

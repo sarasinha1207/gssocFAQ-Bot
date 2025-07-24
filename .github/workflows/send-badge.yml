@@ -5,6 +5,11 @@ on:
     types: [closed]
   workflow_dispatch:
 
+permissions:
+  pull-requests: write
+  contents: read
+
+
 jobs:
   reward-contributor:
     if: github.event.pull_request.merged == true || github.event_name == 'workflow_dispatch'

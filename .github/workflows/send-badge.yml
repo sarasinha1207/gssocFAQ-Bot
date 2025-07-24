@@ -4,6 +4,14 @@ on:
   pull_request:
     types: [closed]
   workflow_dispatch:
+    inputs:
+      pr_number:
+        description: "Pull Request number to comment on"
+        required: true
+      username:
+        description: "GitHub username (for testing only)"
+        required: false
+        default: "test-user"
 
 permissions:
   pull-requests: write

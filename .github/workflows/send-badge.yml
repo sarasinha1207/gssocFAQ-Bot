@@ -64,7 +64,6 @@ jobs:
 
             const selectedBadges = weightedRandomSet(badgePool, 3);
 
-
             let badgeHtml = `
               <div style="display: flex; align-items: center; gap: 20px;">
                 <img width="250" height="250" alt="gssoc-faq-repo-contributor-badge" src="${mainBadgeUrl}" />

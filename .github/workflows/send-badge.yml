@@ -3,7 +3,7 @@ name: Send Contributor Badge
 on:
   pull_request:
     types: [closed]
-  workflow_dispatch: 
+  workflow_dispatch:
 
 jobs:
   reward-contributor:
@@ -18,7 +18,6 @@ jobs:
             const username = context.payload.pull_request?.user?.login || "test-user";
             const issue_number = context.issue.number || 1;
 
-            // 🎯 Badge list with rarities
             const badgePool = [
               { id: '1nheki_edqi1fguGmKeDe2xVhd41CAcoH', rarity: 'common' },
               { id: '1_kj94AZb6NkCso1ljA3vWF5HoTumwBhx', rarity: 'rare' },
@@ -53,7 +52,6 @@ jobs:
             const selectedIds = selectedBadges.map(b => b.id);
 
             let badgeHtml = `<div style="display: flex; gap: 10px; flex-wrap: wrap;">`;
-
             badgePool.forEach(badge => {
               const url = `https://drive.google.com/uc?export=view&id=${badge.id}`;
               if (selectedIds.includes(badge.id)) {
@@ -62,17 +60,13 @@ jobs:
                 badgeHtml += `<img src="${url}" width="60" height="60" style="opacity: 0.2; filter: grayscale(100%);" alt="Locked Badge" title="Locked — keep contributing to unlock!" />`;
               }
             });
-
             badgeHtml += `</div>`;
 
-            const message = `
-🎉 <strong>Thanks @${username} for contributing to the <em>GSSOC FAQ Discord Bot</em>!</strong><br>
-You've earned the <strong>Pro Contributor</strong> badge and unlocked <strong>3 DEV SLAYER</strong> achievements! ⚔️<br><br>
-
-${badgeHtml}
-
-<p style="font-size: 14px; color: #555;">🔒 Some badges are still locked. Keep contributing PRs to unlock more rare and legendary achievements!</p>
-`;
+            const message =
+              "🎉 <strong>Thanks @" + username + " for contributing to the <em>GSSOC FAQ Discord Bot</em>!</strong><br>" +
+              "You've earned the <strong>Pro Contributor</strong> badge and unlocked <strong>3 DEV SLAYER</strong> achievements! ⚔️<br><br>" +
+              badgeHtml +
+              "<p style=\"font-size: 14px; color: #555;\">🔒 Some badges are still locked. Keep contributing PRs to unlock more rare and legendary achievements!</p>";
 
             github.rest.issues.createComment({
               issue_number,

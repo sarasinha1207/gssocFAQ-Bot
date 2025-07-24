@@ -137,5 +137,9 @@
   {
     "question": "Who developed this bot?",
     "answer": "**This bot was custom-built by [Piyush Patel](https://github.com/piyushpatelcodes)** to help GSSoC managers answer frequently repeated questions from contributors.\n\nHe created it to save time and ensure contributors get quick answers every day — even when the same question is asked again and again 😄\n\n🔗 **GitHub:** [piyushpatelcodes](https://github.com/piyushpatelcodes)\n🔗 **LinkedIn:** [piyushpatelcodes](https://linkedin.com/in/piyushpatelcodes)  https://drive.google.com/file/d/13ECrfgo2LZ2sDcK0tAlmhpT4lHk5DxiR/view?usp=sharing"
+  },
+  {
+    "question": "Can I contribute to more than one project during GSSoC?",
+    "answer": "Yes! You can contribute to multiple projects as long as you manage your time and follow the project's contribution guidelines. Stay active on the Insight App and GitHub to explore opportunities."
   }
 ]

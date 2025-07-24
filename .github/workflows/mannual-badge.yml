@@ -1,0 +1,113 @@
+name: Send Contributor Badge
+
+on:
+  pull_request:
+    types: [closed]
+  workflow_dispatch:
+    inputs:
+      pr_number:
+        description: "Pull Request number to comment on (Leave empty to auto-detect)"
+        required: false
+      username:
+        description: "GitHub username (for testing only)"
+        required: false
+        default: "test-user"
+
+permissions:
+  pull-requests: write
+  contents: read
+
+jobs:
+  reward-contributor:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Assign Random Badge
+        uses: actions/github-script@v6
+        with:
+          script: |
+            const prNumber = github.event.inputs?.pr_number || context.issue.number;
+            const username = github.event.inputs?.username || context.payload.pull_request?.user?.login || "test-user";
+
+            // Check if the PR number is valid
+            if (!prNumber) {
+              console.log("No PR number provided. Skipping.");
+              return;
+            }
+
+            // Check if the PR was merged or manually triggered
+            const prData = await github.rest.pulls.get({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              pull_number: prNumber,
+            });
+
+            if (!prData.data.merged && github.event_name !== "workflow_dispatch") {
+              console.log(`PR #${prNumber} is not merged. Skipping.`);
+              return;
+            }
+
+            const mainBadgeUrl = "https://drive.google.com/uc?export=view&id=1-B3va3balHY7upoN3nhNEnj1xFhzbcsr";
+
+            const badgePool = [
+              { id: '1nheki_edqi1fguGmKeDe2xVhd41CAcoH', rarity: 'common' },
+              { id: '1_kj94AZb6NkCso1ljA3vWF5HoTumwBhx', rarity: 'common' },
+              { id: '1MlUM2RIqd8Q0ek67pMnTNqliqmKND2Rk', rarity: 'common' },
+              { id: '1TI4XSRFUfANR5vnuyYhqFf8eWvHloeX2', rarity: 'common' },
+              { id: '1x2eYK4oqihEXZoQ_eWnAgM0jXchYZpY4', rarity: 'common' },
+              { id: '1otRyHexIqXtKLbCi6Fc8cPRBhzlQYXUd', rarity: 'epic' },
+              { id: '17qZ9ZQ3P_jV29J7-qariHkRXgl74u6SZ', rarity: 'rare' },
+              { id: '1Cmlm3odKq1VwOrFb1OpWjyTJVeVH8rxG', rarity: 'epic' },
+              { id: '1rQrn7RMZOUoJ1Lo6J_Bq0taMI3Q8bziq', rarity: 'epic' },
+              { id: '1BsBdIlUDxxweK1M6Pjmhtyd78aXOiBD5', rarity: 'rare' }
+            ];
+
+            const weights = {
+              common: 5,
+              rare: 2,
+              epic: 1,
+            };
+
+            function weightedRandomSet(pool, count) {
+              const expanded = pool.flatMap(b => Array(Math.round(weights[b.rarity] * 10)).fill(b));
+              const uniqueSet = new Set();
+              while (uniqueSet.size < count) {
+                const pick = expanded[Math.floor(Math.random() * expanded.length)];
+                uniqueSet.add(pick);
+              }
+              return Array.from(uniqueSet);
+            }
+
+            const selectedBadges = weightedRandomSet(badgePool, 3);
+
+            let badgeHtml = `
+              <div style="display: flex; align-items: center; gap: 20px;">
+                <img width="250" height="250" alt="gssoc-faq-repo-contributor-badge" src="${mainBadgeUrl}" />
+                <div style="font-size: 16px;">
+                  🎉 <strong>Thanks @${username} for contributing to the <em>GSSOC FAQ Discord Bot Repository</em>!</strong><br>
+                  It elevated the repo.<br>
+                  You've earned the <strong>Pro Contributor</strong> badge and unlocked your <strong>DEV SLAYER</strong> achievements!
+                </div>
+              </div>
+              
+              <div style="display: flex; align-items: center; gap: 20px; margin-top: 20px;">`;
+              
+            selectedBadges.forEach(badge => {
+              const url = `https://drive.google.com/uc?export=view&id=${badge.id}`;
+              badgeHtml += `<img width="200" height="200" alt="dev-slayer" src="${url}" />`;
+            });
+
+            badgeHtml += `
+              </div>
+              
+              <div style="font-size: 16px; line-height: 1.6; margin-top: 20px;">
+                🎉 <strong>Your PR just slayed the issue!</strong> You’ve officially joined the ranks of the <strong>Dev Slayers</strong>.<br>
+                Keep coding. The codebase sleeps peacefully tonight.
+              </div>
+              `;
+
+            await github.rest.issues.createComment({
+              issue_number: prNumber,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: badgeHtml
+            });

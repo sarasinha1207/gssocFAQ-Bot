@@ -88,6 +88,11 @@ jobs:
                 🎉 <strong>Your PR just slayed the issue!</strong> You’ve officially joined the ranks of the <strong>Dev Slayers</strong>.<br>
                 Keep coding. The codebase sleeps peacefully tonight.
               </div>
+
+              <div style="font-size: 16px; margin-top: 20px;">
+                📢 <strong>Don't forget to share the screenshot of your achievements on LinkedIn! </strong>  
+                <a href="https://www.linkedin.com/shareArticle" target="_blank">Post your achievement on LinkedIn</a>.
+              </div>
               `;
 
 

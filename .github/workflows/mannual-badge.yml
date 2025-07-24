@@ -35,10 +35,17 @@ jobs:
         uses: actions/github-script@v6
         with:
           script: |
-            const prNumbers = ${{ steps.fetch_prs.outputs }};
-            
+            const prList = await github.rest.pulls.list({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: 'closed',
+              per_page: 100,
+            });
+      
+            const mergedPrs = prList.data.filter(pr => pr.merged_at !== null);
+      
             const mainBadgeUrl = "https://drive.google.com/uc?export=view&id=1-B3va3balHY7upoN3nhNEnj1xFhzbcsr";
-            
+      
             const badgePool = [
               { id: '1nheki_edqi1fguGmKeDe2xVhd41CAcoH', rarity: 'common' },
               { id: '1_kj94AZb6NkCso1ljA3vWF5HoTumwBhx', rarity: 'common' },
@@ -51,13 +58,9 @@ jobs:
               { id: '1rQrn7RMZOUoJ1Lo6J_Bq0taMI3Q8bziq', rarity: 'epic' },
               { id: '1BsBdIlUDxxweK1M6Pjmhtyd78aXOiBD5', rarity: 'rare' }
             ];
-
-            const weights = {
-              common: 5,
-              rare: 2,
-              epic: 1,
-            };
-
+      
+            const weights = { common: 5, rare: 2, epic: 1 };
+      
             function weightedRandomSet(pool, count) {
               const expanded = pool.flatMap(b => Array(Math.round(weights[b.rarity] * 10)).fill(b));
               const uniqueSet = new Set();
@@ -67,42 +70,42 @@ jobs:
               }
               return Array.from(uniqueSet);
             }
-
-            const selectedBadges = weightedRandomSet(badgePool, 3);
-            
-            // Create badge HTML
-            let badgeHtml = `
-              <div style="display: flex; align-items: center; gap: 20px;">
-                <img width="250" height="250" alt="gssoc-faq-repo-contributor-badge" src="${mainBadgeUrl}" />
-                <div style="font-size: 16px;">
-                  🎉 <strong>Thanks @${username} for contributing to the <em>GSSOC FAQ Discord Bot Repository</em>!</strong><br>
-                  It elevated the repo.<br>
-                  You've earned the <strong>Pro Contributor</strong> badge and unlocked your <strong>DEV SLAYER</strong> achievements!
+      
+            for (const pr of mergedPrs) {
+              const username = pr.user.login;
+              const issue_number = pr.number;
+              const selectedBadges = weightedRandomSet(badgePool, 3);
+      
+              let badgeHtml = `
+                <div style="display: flex; align-items: center; gap: 20px;">
+                  <img width="250" height="250" alt="gssoc-faq-repo-contributor-badge" src="${mainBadgeUrl}" />
+                  <div style="font-size: 16px;">
+                    🎉 <strong>Thanks @${username} for contributing to the <em>GSSOC FAQ Discord Bot Repository</em>!</strong><br>
+                    It elevated the repo.<br>
+                    You've earned the <strong>Pro Contributor</strong> badge and unlocked your <strong>DEV SLAYER</strong> achievements!
+                  </div>
                 </div>
-              </div>
-              
-              <div style="display: flex; align-items: center; gap: 20px; margin-top: 20px;">`;
-
-            selectedBadges.forEach(badge => {
-              const url = `https://drive.google.com/uc?export=view&id=${badge.id}`;
-              badgeHtml += `<img width="200" height="200" alt="dev-slayer" src="${url}" />`;
-            });
-
-            badgeHtml += `
-              </div>
-              
-              <div style="font-size: 16px; line-height: 1.6; margin-top: 20px;">
-                🎉 <strong>Your PR just slayed the issue!</strong> You’ve officially joined the ranks of the <strong>Dev Slayers</strong>.<br>
-                Keep coding. The codebase sleeps peacefully tonight.
-              </div>
-              `;
-            
-            // Post comment for each merged PR
-            for (const prNumber of prNumbers) {
+      
+                <div style="display: flex; align-items: center; gap: 20px; margin-top: 20px;">`;
+      
+              selectedBadges.forEach(badge => {
+                const url = `https://drive.google.com/uc?export=view&id=${badge.id}`;
+                badgeHtml += `<img width="200" height="200" alt="dev-slayer" src="${url}" />`;
+              });
+      
+              badgeHtml += `
+                </div>
+      
+                <div style="font-size: 16px; line-height: 1.6; margin-top: 20px;">
+                  🎉 <strong>Your PR just slayed the issue!</strong> You’ve officially joined the ranks of the <strong>Dev Slayers</strong>.<br>
+                  Keep coding. The codebase sleeps peacefully tonight.
+                </div>`;
+      
               await github.rest.issues.createComment({
-                issue_number: prNumber,
+                issue_number,
                 owner: context.repo.owner,
                 repo: context.repo.repo,
                 body: badgeHtml
               });
             }
+

@@ -61,27 +61,21 @@ jobs:
             }
 
             const selectedBadges = weightedRandomSet(badgePool, 3);
-            const selectedIds = selectedBadges.map(b => b.id);
 
-            let badgeHtml = `<div style="display: flex; gap: 10px; flex-wrap: wrap;">`;
-            badgePool.forEach(badge => {
+            let badgeHtml = `<div style="display: flex; gap: 20px; flex-wrap: wrap; justify-content: center;">`;
+            selectedBadges.forEach(badge => {
               const url = `https://drive.google.com/uc?export=view&id=${badge.id}`;
-              if (selectedIds.includes(badge.id)) {
-                badgeHtml += `<img src="${url}" width="200" height="200" style="border-radius: 10px;" alt="Unlocked Badge" />`;
-              } else {
-                badgeHtml += `<img src="${url}" width="60" height="60" style="opacity: 0.2; filter: grayscale(100%);" alt="Locked Badge" title="Locked — keep contributing to unlock!" />`;
-              }
+              badgeHtml += `<img src="${url}" width="200" height="200" style="border-radius: 10px;" alt="Unlocked DEV SLAYER Badge" />`;
             });
             badgeHtml += `</div>`;
 
             const message =
               "🎉 <strong>Thanks @" + username + " for contributing to the <em>GSSOC FAQ Discord Bot</em>!</strong><br>" +
               "You've earned the <strong>Pro Contributor</strong> badge and unlocked <strong>3 DEV SLAYER</strong> achievements! ⚔️<br><br>" +
-              badgeHtml +
-              "<p style=\"font-size: 14px; color: #555;\">🔒 Some badges are still locked. Keep contributing PRs to unlock more rare and legendary achievements!</p>";
+              badgeHtml;
 
-            github.rest.issues.createComment({
-              issue_number,
+            await github.rest.issues.createComment({
+              issue_number: prNumber,
               owner: context.repo.owner,
               repo: context.repo.repo,
               body: message

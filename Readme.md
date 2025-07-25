@@ -1,4 +1,4 @@
-🤖 GSSoC FAQ Bot
+# 🤖 GSSoC FAQ Bot
 
 ## 📖 Project Overview
 

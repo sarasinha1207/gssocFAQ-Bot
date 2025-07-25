@@ -29,7 +29,6 @@ jobs:
         uses: actions/github-script@v6
         with:
           script: |
-            const core = require('@actions/core');
 
             const username = context.payload.pull_request?.user?.login || core.getInput("username");
             const issue_number = context.payload.pull_request?.number || parseInt(core.getInput("pr_number"));

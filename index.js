@@ -301,6 +301,7 @@ client.login(process.env.BOT_TOKEN).catch(error => {
 });
 
 // for documentation purpose
+app.use('/docs', express.static(path.join(__dirname, 'views')));
 app.use("/docs", documentationRoute);
 
 app.listen(3000, () => {

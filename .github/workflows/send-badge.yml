@@ -30,7 +30,7 @@ jobs:
         with:
           script: |
 
-            const prNumber = parseInt(core.getInput("pr_number"), 10);
+            const prNumber = 27;
 
             const pr = await github.rest.pulls.get({
               owner: context.repo.owner,

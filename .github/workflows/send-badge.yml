@@ -30,13 +30,19 @@ jobs:
         with:
           script: |
 
-            const username = github.event_name === 'pull_request'
-              ? context.payload.pull_request?.user?.login
-              : core.getInput("username");
-            
-            const issue_number = github.event_name === 'pull_request'
-              ? context.payload.pull_request?.number
-              : parseInt(core.getInput("pr_number"), 10);
+            const prNumber = parseInt(core.getInput("pr_number"), 10);
+
+            const pr = await github.rest.pulls.get({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              pull_number: prNumber
+            });
+
+            if (!pr.data.merged_at || pr.data.state !== "closed") {
+              throw new Error(`PR #${prNumber} is not closed and merged.`);
+            }
+
+            const username = pr.data.user.login;
 
 
             const mainBadgeUrl = "https://drive.google.com/uc?export=view&id=1-B3va3balHY7upoN3nhNEnj1xFhzbcsr";

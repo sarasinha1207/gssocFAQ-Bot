@@ -31,6 +31,7 @@ jobs:
           script: |
 
             const prNumber = 27;
+            const issue_number = 27;
 
             const pr = await github.rest.pulls.get({
               owner: context.repo.owner,

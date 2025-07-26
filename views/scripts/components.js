@@ -140,6 +140,7 @@ class Prompt{
 
 }
 // Load FAQs dynamically from faqs.json and show on homepage
+
 // Load FAQs dynamically from faqs.json and show on homepage
 // Load FAQs dynamically from faqs.json and show on homepage
 // Load FAQs dynamically from faqs.json and render with search & toggle

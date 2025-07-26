@@ -74,7 +74,7 @@
         class="collapsible-header animated-collapse max-lg:tw-shadow-md tw-relative tw-flex tw-h-full max-lg:tw-h-max tw-w-max tw-gap-5 tw-text-base max-lg:tw-mt-[30px] max-lg:tw-flex-col max-lg:tw-gap-5 lg:tw-mx-auto tw-place-items-center"
         id="collapsed-header-items"
       >
-          <a class="header-links" href="https://github.com/piyushpatelcodes/gssocFAQ-Bot">
+          <a class="header-links" href="https://github.com/piyushpatelcodes/gssocFAQ-Bot" target="_blank">
             GitHub
           </a>
           <div class="tw-relative tw-flex tw-flex-col tw-place-items-center">
@@ -110,28 +110,28 @@
           </div>
           <script>
             function toggleAboutDropdown() {
-              const nav = document.getElementById('nav-dropdown-list-about');
-              const isOpen = nav.getAttribute('data-open') === 'true';
-              if (isOpen) {
-                nav.setAttribute('data-open', 'false');
-                nav.classList.remove('tw-scale-100', 'tw-opacity-100');
-                nav.classList.add('tw-scale-0', 'tw-opacity-0');
-              } else {
-                nav.setAttribute('data-open', 'true');
-                nav.classList.remove('tw-scale-0', 'tw-opacity-0');
-                nav.classList.add('tw-scale-100', 'tw-opacity-100');
+                const nav = document.getElementById('nav-dropdown-list-about');
+                const isOpen = nav.getAttribute('data-open') === 'true';
+                if (isOpen) {
+                  nav.setAttribute('data-open', 'false');
+                  nav.classList.remove('tw-scale-100', 'tw-opacity-100');
+                  nav.classList.add('tw-scale-0', 'tw-opacity-0');
+                } else {
+                  nav.setAttribute('data-open', 'true');
+                  nav.classList.remove('tw-scale-0', 'tw-opacity-0');
+                  nav.classList.add('tw-scale-100', 'tw-opacity-100');
+                }
               }
-            }
-            
-            document.addEventListener('click', function(event) {
-              const aboutToggle = document.getElementById('nav-dropdown-toggle-about');
-              const aboutDropdown = document.getElementById('nav-dropdown-list-about');
-              if (!aboutToggle.contains(event.target) && !aboutDropdown.contains(event.target)) {
-                aboutDropdown.setAttribute('data-open', 'false');
-                aboutDropdown.classList.remove('tw-scale-100', 'tw-opacity-100');
-                aboutDropdown.classList.add('tw-scale-0', 'tw-opacity-0');
-              }
-            });
+
+              document.addEventListener('click', function (event) {
+                const aboutToggle = document.getElementById('nav-dropdown-toggle-about');
+                const aboutDropdown = document.getElementById('nav-dropdown-list-about');
+                if (!aboutToggle.contains(event.target) && !aboutDropdown.contains(event.target)) {
+                  aboutDropdown.setAttribute('data-open', 'false');
+                  aboutDropdown.classList.remove('tw-scale-100', 'tw-opacity-100');
+                  aboutDropdown.classList.add('tw-scale-0', 'tw-opacity-0');
+                }
+              });
           </script>
           <a class="header-links" href="#bot-features"> Bot Features </a>
 
@@ -339,6 +339,7 @@
             <span class="tw-font-thin tw-font-serif"> in one place </span>
           </h2>
           <div
+            id="invite-bot"
             class="reveal-up tw-mt-8 tw-max-w-[450px] tw-text-lg max-lg:tw-text-base tw-p-2 tw-text-center tw-text-gray-800 dark:tw-text-white max-lg:tw-max-w-full"
           >
             Your ultimate GSSOC companion Discord bot. Get instant answers to
@@ -367,6 +368,7 @@
             <a
               class="btn tw-group max-lg:!tw-w-[160px] tw-flex tw-gap-2 tw-shadow-lg !tw-w-[200px] !tw-rounded-xl !tw-py-4 max-lg:!tw-py-2 tw-transition-transform tw-duration-[0.3s] hover:tw-scale-x-[1.03]"
               href="https://discord.com/oauth2/authorize?client_id=1396740851056640091&permissions=8&scope=bot"
+              target="_blank"
             >
               <span>Add Bot to Discord</span>
               <i class="bi bi-discord tw-ml-1"></i>
@@ -464,7 +466,7 @@
                   get accurate responses instantly.
                 </p>
                 <div class="tw-flex tw-items-center tw-gap-2 tw-mt-auto">
-                  <span>Learn more</span>
+                  <span >Learn more</span>
                   <i
                     class="bi bi-arrow-right tw-transform tw-transition-transform tw-duration-300 group-hover/card:tw-translate-x-2"
                   ></i>
@@ -577,7 +579,7 @@
                 </p>
                 <div class="tw-flex tw-items-center tw-gap-2 tw-mt-auto">
                   <span>Learn more</span>
-                  <i
+                  <i id="bot-features"
                     class="bi bi-arrow-right tw-transform tw-transition-transform tw-duration-300 group-hover/card:tw-translate-x-2"
                   ></i>
                 </div>

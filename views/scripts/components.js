@@ -140,24 +140,122 @@ class Prompt{
 
 }
 // Load FAQs dynamically from faqs.json and show on homepage
+
+// Load FAQs dynamically from faqs.json and show on homepage
+// Load FAQs dynamically from faqs.json and show on homepage
+// Load FAQs dynamically from faqs.json and render with search & toggle
+// Dynamically load FAQs and implement search + toggle
+// Load FAQs dynamically from faqs.json and render them
+// Insert BEFORE fetch('/faqs.json')...
 fetch('/faqs.json')
   .then(res => res.json())
   .then(faqs => {
-    const faqContainer = document.getElementById('faq-section');
-    if (!faqContainer) return;
+    const container = document.getElementById('faq-section');
+    if (!container) return;
 
-    const topFaqs = faqs.slice(0, 5);
-    faqContainer.innerHTML = `
-      <h2 style="text-align:center;">📋 Frequently Asked Questions</h2>
-      ${topFaqs.map(faq => `
-        <div style="border:1px solid #ccc; padding:15px; margin:10px 0; border-radius:8px;">
-          <h4>${faq.question}</h4>
+    // Determine system theme
+    const isDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+    // Apply dynamic styles using CSS variables
+    const cssVars = `
+      :root {
+        --faq-bg: ${isDark ? '#121212' : '#f9f9f9'};
+        --faq-border: ${isDark ? '#333' : '#ddd'};
+        --faq-heading: ${isDark ? '#ffffff' : '#111'};
+        --faq-text: ${isDark ? '#ccc' : '#333'};
+        --faq-box: ${isDark ? '#1e1e1e' : '#ffffff'};
+        --faq-input-bg: ${isDark ? '#2a2a2a' : '#ffffff'};
+        --faq-input-color: ${isDark ? '#f0f0f0' : '#222'};
+      }
+    `;
+
+    const styleTag = document.createElement('style');
+    styleTag.innerHTML = cssVars;
+    document.head.appendChild(styleTag);
+
+    // FAQ HTML Structure
+    container.innerHTML = `
+      <section style="background: var(--faq-bg); padding: 2rem; border-radius: 12px;">
+        <h2 style="
+          font-size: 2rem;
+          text-align: center;
+          color: var(--faq-heading);
+          margin-bottom: 1.5rem;
+          font-weight: 700;
+        ">
+          📋 Frequently Asked Questions
+        </h2>
+        <input
+          type="text"
+          id="faq-search"
+          placeholder="🔍 Search FAQs..."
+          style="
+            width: 100%;
+            padding: 12px 16px;
+            font-size: 1rem;
+            margin-bottom: 1.5rem;
+            border: 1px solid var(--faq-border);
+            border-radius: 8px;
+            background-color: var(--faq-input-bg);
+            color: var(--faq-input-color);
+            outline: none;
+            transition: 0.2s ease;
+          "
+        />
+        <div id="faq-list" style="color: var(--faq-text);"></div>
+      </section>
+    `;
+
+    const faqList = document.getElementById('faq-list');
+    const searchInput = document.getElementById('faq-search');
+
+    function renderFAQs(data) {
+      if (data.length === 0) {
+        faqList.innerHTML = `<p style="text-align:center; opacity: 0.6;">No FAQs found.</p>`;
+        return;
+      }
+
+      faqList.innerHTML = data.map(faq => `
+        <div style="
+          background: var(--faq-box);
+          border: 1px solid var(--faq-border);
+          border-radius: 10px;
+          padding: 1rem 1.25rem;
+          margin-bottom: 1rem;
+        ">
+          <h4 style="margin-bottom: 0.5rem;">❓ ${faq.question}</h4>
           <details>
-            <summary>Show Answer</summary>
-            <p style="margin-top:10px;">${faq.answer}</p>
+            <summary style="
+              cursor: pointer;
+              font-weight: 500;
+              color: var(--faq-heading);
+              margin-bottom: 0.5rem;
+            ">
+              Show Answer
+            </summary>
+            <div style="padding-top: 0.5rem; color: var(--faq-text);">
+              ${faq.answer}
+            </div>
           </details>
         </div>
-      `).join('')}
-    `;
+      `).join('');
+    }
+
+    renderFAQs(faqs.slice(0, 5)); // Load initial FAQs
+
+    searchInput.addEventListener('input', () => {
+      const q = searchInput.value.toLowerCase();
+      const filtered = faqs.filter(f =>
+        f.question.toLowerCase().includes(q) ||
+        f.answer.toLowerCase().includes(q)
+      );
+      renderFAQs(filtered);
+    });
   })
-  .catch(err => console.error('Failed to load FAQs:', err));
+  .catch(err => {
+    console.error('FAQ loading failed:', err);
+    const container = document.getElementById('faq-section');
+    if (container) {
+      container.innerHTML = `<p style="color:red; text-align:center;">Error loading FAQs. Please try again later.</p>`;
+    }
+  });

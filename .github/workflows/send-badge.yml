@@ -30,11 +30,11 @@ jobs:
         with:
           script: |
 
-            # const prNumber = 27;
-            # const issue_number = 27;
+            const prNumber = 32;
+            const issue_number = 32;
 
-            const prNumber = context.payload.pull_request?.number || parseInt(core.getInput("pr_number"), 10);
-            const issue_number = prNumber;
+            # const prNumber = context.payload.pull_request?.number || parseInt(core.getInput("pr_number"), 10);
+            # const issue_number = prNumber;
             
             if (isNaN(prNumber)) {
               throw new Error("Invalid PR number");

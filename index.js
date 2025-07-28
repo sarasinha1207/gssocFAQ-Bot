@@ -4,6 +4,9 @@ const {
   EmbedBuilder,
   Events,
   AttachmentBuilder,
+  ActionRowBuilder,
+  ButtonBuilder,
+  ButtonStyle,
 } = require("discord.js");
 const stringSimilarity = require("string-similarity");
 const express = require("express");
@@ -43,6 +46,24 @@ const idKeywords = [
   "developer",
   "developed",
 ];
+
+// Pagination constants
+const FAQ_PAGE_SIZE = 15;
+
+// Helper to get FAQ content for a page
+function getFaqPageContent(page, faqs) {
+  const start = page * FAQ_PAGE_SIZE;
+  const end = start + FAQ_PAGE_SIZE;
+  const slice = faqs.slice(start, end);
+
+  let content = slice
+    .map((f, i) => `**${start + i + 1}.** ${f.question}`)
+    .join("\n");
+
+  if (!content) content = "*No questions on this page.*";
+
+  return content;
+}
 
 const serverId = '1378813132788727970'; 
 const TARGET_GUILD_ID = '1378813132788727970'; 
@@ -93,24 +114,41 @@ client.once('ready', async () => {
 client.on(Events.InteractionCreate, async (interaction) => {
   try {
     if (interaction.isChatInputCommand()) {
-      console.log("userque: ", interaction.options.getString("question"));
+      const userQuestion = interaction.options.getString("question");
+      console.log("userque: ", userQuestion);
+
       if (interaction.commandName === "faq") {
-        const userQuestion = interaction.options.getString("question");
         if (!userQuestion) {
           throw new Error("No question provided");
         }
 
-        const questions = faqs.map((faq) => faq.question);
+        // Handle paginated all commands
         if (userQuestion.toLowerCase().includes("all commands")) {
-          const allQuestions = faqs
-            .map((f, i) => `• **${i + 1}.** ${f.question}`)
-            .join("\n");
+          const totalPages = Math.ceil(faqs.length / FAQ_PAGE_SIZE);
+          const page = 0;
+
+          const row = new ActionRowBuilder().addComponents(
+            new ButtonBuilder()
+              .setCustomId(`faq_prev_${page}`)
+              .setLabel("Previous")
+              .setStyle(ButtonStyle.Secondary)
+              .setDisabled(true),
+
+            new ButtonBuilder()
+              .setCustomId(`faq_next_${page}`)
+              .setLabel("Next")
+              .setStyle(ButtonStyle.Primary)
+              .setDisabled(totalPages <= 1)
+          );
 
           await interaction.reply({
-            content: `**📋 Here's a list of all available questions you can ask the bot:**\n\n${allQuestions}\n\n*Use \`/faq\` and start typing your question to get an instant answer!*`,
+            content: `**📋 FAQ List (Page ${page + 1}/${totalPages}):**\n\n${getFaqPageContent(page, faqs)}\n\n*Use \`/faq\` and start typing your question to get an instant answer!*`,
+            components: [row],
           });
           return;
         }
+
+        const questions = faqs.map((faq) => faq.question);
 
         const { bestMatch, bestMatchIndex } = stringSimilarity.findBestMatch(
           userQuestion,
@@ -264,7 +302,7 @@ Mentors:
                   : f.question;
               return {
                 name: trimmedQuestion,
-                value: trimmedQuestion,
+                value: f.question,
               };
             });
           await interaction.respond(choices);
@@ -297,6 +335,55 @@ Mentors:
   }
 });
 
+// Button pagination for FAQ list
+client.on(Events.InteractionCreate, async (interaction) => {
+  if (!interaction.isButton()) return;
+  if (!interaction.customId.startsWith("faq_")) return;
+
+  const [_, direction, pageStr] = interaction.customId.split("_");
+  let page = parseInt(pageStr);
+
+  if (isNaN(page)) {
+    await interaction.reply({ content: "Invalid page number.", ephemeral: true });
+    return;
+  }
+
+  if (direction === "next") {
+    page++;
+  } else if (direction === "prev") {
+    page--;
+  } else {
+    await interaction.reply({ content: "Unknown button action.", ephemeral: true });
+    return;
+  }
+
+  const totalPages = Math.ceil(faqs.length / FAQ_PAGE_SIZE);
+  if (page < 0) page = 0;
+  if (page >= totalPages) page = totalPages - 1;
+
+  const row = new ActionRowBuilder().addComponents(
+    new ButtonBuilder()
+      .setCustomId(`faq_prev_${page}`)
+      .setLabel("Previous")
+      .setStyle(ButtonStyle.Secondary)
+      .setDisabled(page === 0),
+
+    new ButtonBuilder()
+      .setCustomId(`faq_next_${page}`)
+      .setLabel("Next")
+      .setStyle(ButtonStyle.Primary)
+      .setDisabled(page === totalPages - 1)
+  );
+
+  await interaction.update({
+    content: `**📋 FAQ List (Page ${page + 1}/${totalPages}):**\n\n${getFaqPageContent(
+      page,
+      faqs
+    )}\n\n*Use \`/faq\` and start typing your question to get an instant answer!*`,
+    components: [row],
+  });
+});
+
 client.login(process.env.BOT_TOKEN).catch(error => {
   console.error("Failed to login bot:", error);
 });
@@ -306,5 +393,5 @@ app.use('/docs', express.static(path.join(__dirname, 'views')));
 app.use("/docs", documentationRoute);
 
 app.listen(3000, () => {
-  console.log("🚀 Running at http://localhost:3000/docs");
+  console.log("🚀 Running at http://localhost:${PORT}/docs");
 });

@@ -43,6 +43,7 @@ const rest = new REST({ version: '10' }).setToken(process.env.BOT_TOKEN);
   try {
     console.log('Registering slash command...');
     await rest.put(
+      // Routes.applicationGuildCommands(process.env.CLIENT_ID, process.env.GUILD_ID),       // for Guild commands
       Routes.applicationCommands(process.env.CLIENT_ID),
       { body: commands }
     );

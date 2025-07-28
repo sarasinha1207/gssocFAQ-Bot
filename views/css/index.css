@@ -29,7 +29,7 @@
     --header-bg: #edececa5;
     /* color: #312f2f; */
     --hero-gradient: #fcfcfc;
-    --hero-bg-img: url("/assets/images/background/dots-dark.svg");
+   /* --hero-bg-img: url("/assets/images/background/dots-dark.svg"); */
 
 }
 
@@ -59,7 +59,10 @@
     --header-bg: #232323a5;
 
     --hero-gradient: #000;
-    --hero-bg-img: url("../assets/images/background/dots.svg");
+    --hero-bg-img: url("/assets/images/background/dots.svg");
+    --hero-bg-img:url("/assets/images/home/unified.jpg");
+    --hero-bg-img:url("/assets/images/home/api.png");
+    --hero-bg-img:url("/assets/images/home/integration1.png");
 
   }
 
@@ -146,6 +149,7 @@ hr{
     background: rgb(215,215,215);
     background: linear-gradient(90deg, rgba(215,215,215,1) 18%, rgba(136,136,136,1) 71%);
     -webkit-background-clip: text;
+    background-clip:text;
     -webkit-text-fill-color: transparent;
 }
 
@@ -182,10 +186,6 @@ hr{
     align-items: center;
     display: flex;
     cursor: pointer;
-}
-
-.btn:hover{
-
 }
 
 .btn:disabled{
@@ -379,9 +379,9 @@ hr{
 .card {
     background: var(--bg-color);
     color: var(--primary-text-color);
-    border-radius: 18px;
-    box-shadow: 0 4px 24px 0 rgba(60,60,60,0.08), 0 1.5px 6px 0 rgba(60,60,60,0.04);
-    padding: 2rem 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 24px  rgba(60,60,60,60.08), 0 1.5px 6px  rgba(60,60,60,0.04);
+    padding: 2rem 1.5rem; 
     margin: 1.5rem 0;
     transition: background 0.3s, color 0.3s, box-shadow 0.3s;
     display: flex;
@@ -396,7 +396,7 @@ hr{
 
 .card p {
     color: var(--faq-content-text);
-    margin-bottom: 0;
+    margin-bottom: 1rem;
 }
 
 .card .card-actions {
@@ -406,10 +406,13 @@ hr{
 }
 
 .card .card-actions .btn {
-    font-size: 1rem;
-    padding: 0.6rem 1.2rem;
+    font-size:1rem;
+    padding:0.6rem 1.2rem;
 }
-
+.card:hover{
+    transform:translate(-5px);
+    box-shadow: 0px 12px 30px rgba(0,0,0,0.12), 0px 4px 8px rgba(0,0,0,0.06);
+}
 .card img {
     max-width: 100%;
     border-radius: 12px;

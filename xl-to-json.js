@@ -2,8 +2,8 @@ const xlsx = require("xlsx");
 const fs = require("fs");
 
 // Load the Excel file
-const workbook = xlsx.readFile("master.xlsx"); // <- Replace with your file path
-const sheetName = workbook.SheetNames[0];
+const workbook = xlsx.readFile("master4.xlsx"); // <- Replace with your file path
+const sheetName = workbook.SheetNames[1];
 const sheet = workbook.Sheets[sheetName];
 
 // Convert to array of objects
@@ -22,9 +22,11 @@ const cleanedData = rawData.map((row) => {
     }
   });
 
+  cleanedRow["keyword"] = "phase2";
+
   return cleanedRow;
 });
 
 // Write to JSON file
-fs.writeFileSync("projects.json", JSON.stringify(cleanedData, null, 2));
+fs.writeFileSync("projects-phase2.json", JSON.stringify(cleanedData, null, 2));
 console.log("✅ JSON file created: projects.json");

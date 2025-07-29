@@ -9,18 +9,21 @@ const {
   ButtonStyle,
 } = require("discord.js");
 const stringSimilarity = require("string-similarity");
+const fs = require("fs");
 const express = require("express");
 const path = require("path");
 const app = express();
-app.use(express.static("public")); //static folder serve
+app.use(express.static("public"));
 const PORT = process.env.PORT || 3000;
 const documentationRoute = require("./routes/documentation");
 
 require("dotenv").config();
 
 const faqs = require("./faqs.json");
-const projects = require("./projects.json");
 const { sendPaginatedProjects } = require("./chunkMessgae");
+
+const phase1Projects = JSON.parse(fs.readFileSync("./projects-phase1.json"));
+const phase2Projects = JSON.parse(fs.readFileSync("./projects-phase2.json"));
 
 const client = new Client({
   intents: [
@@ -65,8 +68,8 @@ function getFaqPageContent(page, faqs) {
   return content;
 }
 
-const serverId = '1378813132788727970'; 
-const TARGET_GUILD_ID = '1378813132788727970'; 
+const serverId = "1378813132788727970";
+const TARGET_GUILD_ID = "1378813132788727970";
 
 const promoMessage = `
 📢 **Unofficial GSSOC FAQ Bot is Live!**  
@@ -107,7 +110,7 @@ Example:
 📣 **Share with GSSoC friends!** Let’s make open source more accessible ✨
 `;
 
-client.once('ready', async () => {
+client.once("ready", async () => {
   console.log(`🤖 Logged in as ${client.user.tag}`);
 });
 
@@ -142,7 +145,12 @@ client.on(Events.InteractionCreate, async (interaction) => {
           );
 
           await interaction.reply({
-            content: `**📋 FAQ List (Page ${page + 1}/${totalPages}):**\n\n${getFaqPageContent(page, faqs)}\n\n*Use \`/faq\` and start typing your question to get an instant answer!*`,
+            content: `**📋 FAQ List (Page ${
+              page + 1
+            }/${totalPages}):**\n\n${getFaqPageContent(
+              page,
+              faqs
+            )}\n\n*Use \`/faq\` and start typing your question to get an instant answer!*`,
             components: [row],
           });
           return;
@@ -179,39 +187,49 @@ client.on(Events.InteractionCreate, async (interaction) => {
             });
           }
         } else {
-          await interaction.reply("❌ Sorry, I couldn’t find an answer to that. Please try rephrasing your question or check the FAQ list with `/faq question: all commands`.");
+          await interaction.reply(
+            "❌ Sorry, I couldn’t find an answer to that. Please try rephrasing your question or check the FAQ list with `/faq question: all commands`."
+          );
         }
       } else if (interaction.commandName === "project") {
-        const selectedProjectName = interaction.options.getString("project-name");
+        const selectedProjectName =
+          interaction.options.getString("project-name");
+        const selectedPhase = interaction.options.getString("phase");
         const question = interaction.options.getString("question") || "";
+
         if (!selectedProjectName) {
           throw new Error("No project name provided");
         }
 
         if (selectedProjectName === "All Projects") {
-          const header = `📚 **GSSoC Projects (${projects.length} total):**\n\n`;
-          const body = projects
-            .map(
-              (p, i) => `${i + 1}. [${p["Project name"]}](${p["Project link"]})`
-            )
-            .join("\n");
-          const fullMessage = header + body;
+          let projects = [];
+
+          if (selectedPhase === "phase1") {
+            projects = phase1Projects;
+          } else if (selectedPhase === "phase2") {
+            projects = phase2Projects;
+          } else {
+            projects = [...phase1Projects, ...phase2Projects];
+          }
 
           await sendPaginatedProjects(interaction, projects);
           return;
         }
+        const allProjects = [...phase1Projects, ...phase2Projects];
 
-        const project = projects.find(
+        const project = allProjects.find(
           (p) =>
-            p["Project name"].toLowerCase() === selectedProjectName.toLowerCase()
+            p["Project name"].toLowerCase() ===
+            selectedProjectName.toLowerCase()
         );
 
         if (!project) {
-          await interaction.reply("❌ Project not found. Please check the project name and try again.");
+          await interaction.reply(
+            "❌ Project not found. Please check the project name and try again."
+          );
           return;
         }
 
-        // Handle contribution question
         if (question.toLowerCase().includes("contribute")) {
           const contributionGuide = `📘 **Guide to Contribute to [${
             project["Project name"]
@@ -254,7 +272,7 @@ Mentors:
 
         // Default: Show project info
         const embed = new EmbedBuilder()
-          .setTitle(project["Project name"])
+          .setTitle(`${project["Project name"]} - Link | ${project.keyword === 'phase1' ? '` PHASE 1 Project `' : '` PHASE 2 Project `'}`)
           .setURL(project["Project link"])
           .setDescription(project["Project description"])
           .addFields(
@@ -308,29 +326,43 @@ Mentors:
           await interaction.respond(choices);
         } else if (interaction.commandName === "project") {
           const focused = interaction.options.getFocused().toLowerCase();
-          const choices = projects
+          const allProjects = [...phase2Projects, ...phase1Projects];
+
+          const choices = allProjects
             .filter((p) => p["Project name"].toLowerCase().includes(focused))
-            .slice(0, 24)
-            .map((p) => ({ name: p["Project name"], value: p["Project name"] }));
+            .slice(0, 23)
+            .map((p) => ({
+              name: p["Project name"],
+              value: p["Project name"],
+            }));
 
           choices.unshift({
-            name: `📚 All Projects (Total: ${projects.length} Projects.)`,
+            name: "GSSOC FAQ Bot Project (Get a Pro Contributor GSSOC Badge)",
+            value: "Gssoc FAQ Bot",
+          });
+
+          choices.unshift({
+            name: `📚 All Projects (Total: ${
+              phase1Projects.length + phase2Projects.length
+            } Projects. - This included Phase1 and Phase2 Projects.)`,
             value: "All Projects",
           });
+
           await interaction.respond(choices);
         }
       } catch (error) {
         console.error("Autocomplete error:", error);
-        // No user response for autocomplete errors to avoid spamming
       }
     }
   } catch (error) {
     console.error("Interaction handling error:", error);
     if (interaction.isChatInputCommand() && !interaction.replied) {
-      await interaction.reply({
-        content: "Oops! Something went wrong. Please try again later.",
-        ephemeral: true,
-      }).catch(err => console.error("Failed to send error message:", err));
+      await interaction
+        .reply({
+          content: "Oops! Something went wrong. Please try again later.",
+          ephemeral: true,
+        })
+        .catch((err) => console.error("Failed to send error message:", err));
     }
   }
 });
@@ -344,7 +376,10 @@ client.on(Events.InteractionCreate, async (interaction) => {
   let page = parseInt(pageStr);
 
   if (isNaN(page)) {
-    await interaction.reply({ content: "Invalid page number.", ephemeral: true });
+    await interaction.reply({
+      content: "Invalid page number.",
+      ephemeral: true,
+    });
     return;
   }
 
@@ -353,7 +388,10 @@ client.on(Events.InteractionCreate, async (interaction) => {
   } else if (direction === "prev") {
     page--;
   } else {
-    await interaction.reply({ content: "Unknown button action.", ephemeral: true });
+    await interaction.reply({
+      content: "Unknown button action.",
+      ephemeral: true,
+    });
     return;
   }
 
@@ -376,7 +414,9 @@ client.on(Events.InteractionCreate, async (interaction) => {
   );
 
   await interaction.update({
-    content: `**📋 FAQ List (Page ${page + 1}/${totalPages}):**\n\n${getFaqPageContent(
+    content: `**📋 FAQ List (Page ${
+      page + 1
+    }/${totalPages}):**\n\n${getFaqPageContent(
       page,
       faqs
     )}\n\n*Use \`/faq\` and start typing your question to get an instant answer!*`,
@@ -384,12 +424,12 @@ client.on(Events.InteractionCreate, async (interaction) => {
   });
 });
 
-client.login(process.env.BOT_TOKEN).catch(error => {
+client.login(process.env.BOT_TOKEN).catch((error) => {
   console.error("Failed to login bot:", error);
 });
 
 // for documentation purpose
-app.use('/docs', express.static(path.join(__dirname, 'views')));
+app.use("/docs", express.static(path.join(__dirname, "views")));
 app.use("/docs", documentationRoute);
 
 app.listen(3000, () => {

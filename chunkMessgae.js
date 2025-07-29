@@ -1,6 +1,9 @@
 const { EmbedBuilder, ActionRowBuilder, ButtonBuilder, ButtonStyle } = require('discord.js');
 
 const PAGE_SIZE = 27; // projects per page
+const PHASE1_LABEL = '`PHASE 1 Project`'; // inline code formatting
+const PHASE2_LABEL = '`PHASE 2 Project`'; // inline code formatting
+
 
 function createProjectEmbed(pageProjects, pageIndex, totalPages) {
   const embed = new EmbedBuilder()
@@ -8,11 +11,17 @@ function createProjectEmbed(pageProjects, pageIndex, totalPages) {
     .setColor('#00AAFF')
     .setDescription(
     //   pageProjects.map((p, i) => `${i + 1}. [${p["Project name"]}](${p["Project link"]})`).join('\n')
-      pageProjects.map((p, i) => `${i + 1 + pageIndex * PAGE_SIZE}. [${p["Project name"]}](${p["Project link"]})`).join('\n')
-
+     pageProjects
+        .map((p, i) => {
+          const label = p.keyword === 'phase1' ? ` ${PHASE1_LABEL}` : ` ${PHASE2_LABEL}`;
+          return `${i + 1 + pageIndex * PAGE_SIZE}. [${p["Project name"]}](${p["Project link"]})${label}`;
+        })
+        .join('\n')
     );
   return embed;
 }
+
+
 
 async function sendPaginatedProjects(interaction, projects) {
   const pages = [];

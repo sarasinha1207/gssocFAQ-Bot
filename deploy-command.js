@@ -28,6 +28,16 @@ const commands = [
         autocomplete: true
       },
       {
+      name: 'phase',
+      description: 'Filter projects by GSSoC phase',
+      type: ApplicationCommandOptionType.String,
+      required: false,
+      choices: [
+        { name: 'Phase 1', value: 'phase1' },
+        { name: 'Phase 2', value: 'phase2' }
+      ]
+    },
+      {
         name: 'question',
         description: 'Optional follow-up question (e.g. "guide to contribute")',
         type: ApplicationCommandOptionType.String,

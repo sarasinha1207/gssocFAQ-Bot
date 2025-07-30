@@ -158,7 +158,7 @@ hr{
     background: rgb(126,34,206);
     background: linear-gradient(90deg, #7e22ce91 8%, #625aafae 31%, #7badbbbc 76%, #54d2d0ca 89%);
     filter: blur(50px);
-    opacity: 0.5;
+    opacity: 0.8;
 }
 
 #dashboard {
@@ -468,3 +468,104 @@ hr{
     } */
     
 }
+
+
+#command-preview-img {
+  transition: opacity 0.3s ease-in-out;
+}
+
+
+ .social-icon {
+    color: #ffffff; /* Default color */
+    transition: color 0.3s ease; /* Smooth color transition */
+  }
+
+  .social-icon.discord:hover {
+    color: #00b551; /* Change to your desired color when hovered for GitHub */
+  }
+  .social-icon.github:hover {
+    color: #333; /* Change to your desired color when hovered for GitHub */
+  }
+
+  .social-icon.linkedin:hover {
+    color: #0077b5; /* LinkedIn's brand color on hover */
+  }
+ .image-container {
+    position: relative;
+    display: inline-block;
+    overflow: hidden; /* Prevent shine from spilling outside the container */
+  }
+
+  .image-container img {
+    border: 1px solid rgba(255, 255, 255, 0.184);
+    border-radius: 10px; /* Rounded corners for the image */
+    display: block; /* Remove space below the image */
+  }
+
+  /* Container for the icon and text */
+  .image-container .invite-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 20px;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.5s ease-in-out;
+  }
+
+  .image-container .invite-text i {
+    margin-right: 8px;
+  }
+
+    .invite-text i {
+    margin-right: 8px; /* Space between icon and text */
+  }
+
+  /* Shine effect */
+  .image-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%; /* Start off-screen */
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, rgba(156, 128, 255, 0.4) 0%, rgba(255, 157, 157, 0) 80%);
+    border-radius: 10px; /* Rounded corners to match the image */
+    animation: shine 5s ease-in-out infinite; /* Smooth, slow, continuous shine animation */
+    pointer-events: none; /* Ensures no blocking of clicks or interactions */
+  }
+
+  /* Keyframe for the smooth, slow shine effect */
+  @keyframes shine {
+    0% {
+      transform: translateX(0%); /* Start from off-screen on the left */
+    }
+    50% {
+      transform: translateX(45%); /* Move to the far right */
+    }
+    100% {
+      transform: translateX(0%); /* Move back to the left */
+    }
+  }
+
+  .invite-text {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex; /* Flex to align icon and text horizontally */
+    align-items: center; /* Vertically center the icon and text */
+    color: white;
+    font-size: 18px;
+    white-space: nowrap; /* Prevent text from wrapping */
+    border: 1px solid white;
+    padding: 1%;
+    border-radius: 5px;
+  background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(158, 158, 158)); /* Vertical gradient from black to white */
+  }
+
+  /* Show the invite text and icon at the middle of the animation */
+  .image-container.shine-active .invite-text {
+    opacity: 1; /* Show the text when shine effect reaches the middle */
+  }

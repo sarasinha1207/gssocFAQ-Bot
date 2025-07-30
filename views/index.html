@@ -1,19 +1,5 @@
 <!DOCTYPE html>
 <html lang="en" class="tw-dark">
-
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>
-    All your answers about GSSOC in one place - Try GSSOC FAQ Discord Bot
-  </title>
-  <meta name="description" content="Get all your answers about GSSOC in one place" />
-
-  <link rel="icon" href="/assets/logo/logo.jpg" type="image/x-icon" />
-  <link rel="icon" href="/public/assets/logo/favicon.ico" type="image/x-icon">
-
-
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -24,12 +10,7 @@
       name="description"
       content="Get all youranswers about GSSOC in one place"
     />
-
-    <link
-      rel="shortcut icon"
-      href="/assets/logo/logo.jpg"
-      type="image/x-icon"
-    />
+    <link rel="shortcut icon" href="/assets/logo/2.png" type="image/x-icon" />
 
     <!-- Open Graph / Facebook -->
     <meta
@@ -71,85 +52,34 @@
   <body
     class="tw-flex tw-min-h-[100vh] tw-flex-col tw-bg-[#fcfcfc] tw-text-black dark:tw-bg-black dark:tw-text-white"
   >
-   
+    <!-- <div class="tw-absolute tw-top-0 tw-left-1/2 tw--translate-x-1/2 tw-flex 
+                    tw-h-[100px] tw-w-full tw-max-w-[80%]">
+            <div class="header-gradient tw-h-full tw-w-full "></div>
+        </div> -->
+
     <header
-      class="lg:tw-px-4 tw-max-w-[100vw] tw-max-w-lg:tw-mr-auto max-lg:tw-top-0 tw-fixed tw-top-4 lg:tw-left-1/2 lg:tw--translate-x-1/2 tw-z-20 tw-flex tw-h-[60px] tw-w-full tw-text-gray-700 tw-bg-white dark:tw-text-gray-200 dark:tw-bg-[#17181b] tw-px-[3%] tw-rounded-md lg:tw-max-w-3xl tw-shadow-md dark:tw-shadow-gray-700 lg:tw-justify-around lg:!tw-backdrop-blur-lg lg:tw-opacity-[0.99]"
+      class="lg:tw-px-4 tw-max-w-[100vw] tw-max-w-lg:tw-mr-auto max-lg:tw-top-0 tw-fixed tw-top-4 lg:tw-left-1/2 lg:tw--translate-x-1/2 tw-z-20 tw-flex tw-h-[60px] tw-w-full tw-text-gray-700 tw-bg-white dark:tw-text-gray-200 dark:tw-bg-[#17181b] tw-px-[3%] tw-rounded-md lg:tw-max-w-5xl tw-shadow-md dark:tw-shadow-gray-700 lg:tw-justify-around lg:!tw-backdrop-blur-lg lg:tw-opacity-[0.99]"
     >
       <a class="tw-flex tw-p-[4px] tw-gap-2 tw-place-items-center" href="#">
-
-        <div class="tw-h-[30px] tw-max-w-[100px]">
+        <div class="tw-h-[100px] tw-max-w-[100px]">
           <img
-            src="/assets/logo/logo.jpg"
+            src="/assets/logo/2.png"
             alt="logo"
-            class="tw-object-contain tw-h-full tw-w-full dark:tw-invert"
+            class="tw-object-contain tw-h-full tw-w-full"
           />
         </div>
-        <span class="tw-text-base tw-font-medium">gssocFaqBot</span>
+        <!-- <span class=" tw-text-base tw-font-medium">gssocFaqBot</span> -->
       </a>
-      <nav
-        class="collapsible-header animated-collapse max-lg:tw-shadow-md tw-relative tw-flex tw-h-full max-lg:tw-h-max tw-w-max tw-gap-5 tw-text-base max-lg:tw-mt-[30px] max-lg:tw-flex-col max-lg:tw-gap-5 lg:tw-mx-auto tw-place-items-center"
+      <div
+        class="collapsible-header animated-collapse max-lg:tw-shadow-md"
         id="collapsed-header-items"
       >
-          <a class="header-links" href="https://github.com/piyushpatelcodes/gssocFAQ-Bot" target="_blank">
-            GitHub
-          </a>
-          <div class="tw-relative tw-flex tw-flex-col tw-place-items-center">
-            <div
-              id="nav-dropdown-toggle-about"
-              class="header-links tw-flex tw-gap-1 tw-place-items-center"
-              style="cursor:pointer;"
-              onclick="toggleAboutDropdown()"
-            >
-              <span>About GSSOC</span>
-              <i class="tw-text-sm bi bi-chevron-down"></i>
-            </div>
-            <div
-              id="nav-dropdown-list-about"
-              data-open="false"
-              class="tw-scale-0 tw-opacity-0 lg:tw-fixed tw-flex lg:tw-top-[80px] lg:tw-left-1/2 lg:tw--translate-x-1/2 tw-w-[90%] tw-rounded-lg max-lg:tw-h-0 max-lg:tw-w-0 lg:tw-h-auto tw-overflow-hidden tw-bg-white dark:tw-bg-[#17181B] tw-duration-300 tw-transition-opacity tw-transition-height tw-shadow-lg tw-p-4"
-              style="z-index:999;"
-            >
-              <div class="tw-flex tw-gap-4 !tw-p-4">
-                <div class="tw-font-semibold tw-text-3xl">
-                  <i class="bi bi-info-circle"></i>
-                </div>
-                <div class="tw-flex tw-flex-col tw-gap-2">
-                  <div class="tw-text-lg tw-text-black dark:tw-text-white tw-font-medium">
-                    About GSSOC
-                  </div>
-                  <p>
-                    GirlScript Summer of Code (GSSOC) is an open-source program that aims to help beginners get started with open source contributions, while also providing opportunities to work on real-world projects, learn from mentors, and become part of a vibrant tech community.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <script>
-            function toggleAboutDropdown() {
-                const nav = document.getElementById('nav-dropdown-list-about');
-                const isOpen = nav.getAttribute('data-open') === 'true';
-                if (isOpen) {
-                  nav.setAttribute('data-open', 'false');
-                  nav.classList.remove('tw-scale-100', 'tw-opacity-100');
-                  nav.classList.add('tw-scale-0', 'tw-opacity-0');
-                } else {
-                  nav.setAttribute('data-open', 'true');
-                  nav.classList.remove('tw-scale-0', 'tw-opacity-0');
-                  nav.classList.add('tw-scale-100', 'tw-opacity-100');
-                }
-              }
-
-              document.addEventListener('click', function (event) {
-                const aboutToggle = document.getElementById('nav-dropdown-toggle-about');
-                const aboutDropdown = document.getElementById('nav-dropdown-list-about');
-                if (!aboutToggle.contains(event.target) && !aboutDropdown.contains(event.target)) {
-                  aboutDropdown.setAttribute('data-open', 'false');
-                  aboutDropdown.classList.remove('tw-scale-100', 'tw-opacity-100');
-                  aboutDropdown.classList.add('tw-scale-0', 'tw-opacity-0');
-                }
-              });
-          </script>
-          <a class="header-links" href="#bot-features"> Bot Features </a>
+        <nav
+          class="tw-relative tw-flex tw-h-full max-lg:tw-h-max tw-w-max tw-gap-5 tw-text-base max-lg:tw-mt-[30px] max-lg:tw-flex-col max-lg:tw-gap-5 lg:tw-mx-auto tw-place-items-center"
+        >
+          <a class="header-links" href="https://github.com/piyushpatelcodes/gssocFAQ-Bot/"> <i style="margin-right:5px;" class="bi bi-github"></i>Github </a>
+          <a class="header-links" href="#about"> About </a>
+          <a class="header-links" href="#command"> Features </a>
 
           <div class="tw-relative tw-flex tw-flex-col tw-place-items-center">
             <div
@@ -159,122 +89,69 @@
               <span class=""> Commands </span>
               <i class="tw-text-sm bi bi-chevron-down"></i>
             </div>
-            <div
+            <nav
               id="nav-dropdown-list-0"
               data-open="false"
-              class="tw-scale-0 tw-opacity-0 lg:tw-fixed tw-flex lg:tw-top-[80px] lg:tw-left-1/2 lg:tw--translate-x-1/2 tw-w-[90%] tw-rounded-lg max-lg:tw-h-0 max-lg:tw-w-0 lg:tw-h-[450px] tw-overflow-hidden tw-bg-white dark:tw-bg-[#17181B] tw-duration-300 tw-transition-opacity tw-transition-height tw-shadow-lg tw-p-4"
+              class="tw-scale-0 tw-opacity-0 lg:tw-fixed tw-flex lg:tw-top-[80px] lg:tw-left-1/2 lg:tw--translate-x-1/2 tw-w-[90%] tw-rounded-lg max-lg:tw-h-0 max-lg:tw-w-0 tw-overflow-hidden tw-bg-white dark:tw-bg-[#17181B] tw-duration-300 tw-transition-opacity tw-transition-height tw-shadow-lg tw-p-4"
             >
-              <div
-                class="tw-grid max-xl:tw-flex max-xl:tw-flex-col tw-justify-around tw-grid-cols-2 tw-w-full"
-              >
+              <div class="tw-grid tw-grid-cols-2 tw-gap-6 tw-w-full">
+                <!-- /project block -->
                 <a
-                  class="header-links tw-flex tw-text-left tw-gap-4 !tw-p-4"
+                  class="tw-flex tw-items-start tw-gap-4 tw-p-4 hover:tw-bg-gray-100 dark:hover:tw-bg-gray-900 tw-rounded-lg transition-all"
                   href="#"
                 >
-                  <div class="tw-font-semibold tw-text-3xl">
-                    <i class="bi bi-question-circle"></i>
+                  <div
+                    class="tw-text-xl tw-text-gray-700 dark:tw-text-gray-300 tw-pt-1"
+                  >
+                    <i class="bi bi-grid-1x2-fill"></i>
                   </div>
-                  <div class="tw-flex tw-flex-col tw-gap-2">
+                  <div class="tw-flex tw-flex-col tw-gap-1">
                     <div
-                      class="tw-text-lg tw-text-black dark:tw-text-white tw-font-medium"
+                      class="tw-text-sm tw-font-semibold tw-uppercase tw-text-gray-500 dark:tw-text-gray-400 tracking-wide"
                     >
-                      /faq command
+                      /project
                     </div>
-                    <p>Ask any question about GSSOC and get instant answers</p>
+                    <p
+                      class="tw-text-sm tw-text-gray-600 dark:tw-text-gray-400 leading-snug"
+                    >
+                      Access all your projects in one place. View a complete
+                      list along with detailed information for each project.
+                    </p>
                   </div>
                 </a>
 
+                <!-- Unified Interface block -->
                 <a
-                  class="header-links tw-flex tw-text-left tw-gap-4 !tw-p-4"
+                  class="tw-flex tw-items-start tw-gap-4 tw-p-4 hover:tw-bg-gray-100 dark:hover:tw-bg-gray-900 tw-rounded-lg transition-all"
                   href="#"
                 >
-                  <div class="tw-font-semibold tw-text-3xl">
-                    <i class="bi bi-people-fill"></i>
+                  <div
+                    class="tw-text-xl tw-text-gray-700 dark:tw-text-gray-300 tw-pt-1"
+                  >
+                    <i class="bi bi-grid-1x2-fill"></i>
                   </div>
-                  <div class="tw-flex tw-flex-col tw-gap-2">
+                  <div class="tw-flex tw-flex-col tw-gap-1">
                     <div
-                      class="tw-text-lg tw-text-black dark:tw-text-white tw-font-medium"
+                      class="tw-text-sm tw-font-semibold tw-uppercase tw-text-gray-500 dark:tw-text-gray-400 tracking-wide"
                     >
-                      /socials command
+                      /faq
                     </div>
-                    <p class="">Get all official GSSOC social media links</p>
-                  </div>
-                </a>
-
-                <a
-                  class="header-links tw-flex tw-text-left tw-gap-4 !tw-p-4"
-                  href="#"
-                >
-                  <div class="tw-font-semibold tw-text-3xl">
-                    <i class="bi bi-code-slash"></i>
-                  </div>
-                  <div class="tw-flex tw-flex-col tw-gap-2">
-                    <div
-                      class="tw-text-lg tw-text-black dark:tw-text-white tw-font-medium"
+                    <p
+                      class="tw-text-sm tw-text-gray-600 dark:tw-text-gray-400 leading-snug"
                     >
-                      /projects command
-                    </div>
-                    <p class="">Browse and search through GSSOC projects</p>
-                  </div>
-                </a>
-
-                <a
-                  class="header-links tw-flex tw-text-left tw-gap-4 !tw-p-4"
-                  href="#"
-                >
-                  <div class="tw-font-semibold tw-text-3xl">
-                    <i class="bi bi-info-circle"></i>
-                  </div>
-                  <div class="tw-flex tw-flex-col tw-gap-2">
-                    <div
-                      class="tw-text-lg tw-text-black dark:tw-text-white tw-font-medium"
-                    >
-                      /help command
-                    </div>
-                    <p class="">Get a list of all available bot commands</p>
-                  </div>
-                </a>
-
-                <a
-                  class="header-links tw-flex tw-text-left tw-gap-4 !tw-p-4"
-                  href="#"
-                >
-                  <div class="tw-font-semibold tw-text-3xl">
-                    <i class="bi bi-calendar-event"></i>
-                  </div>
-                  <div class="tw-flex tw-flex-col tw-gap-2">
-                    <div
-                      class="tw-text-lg tw-text-black dark:tw-text-white tw-font-medium"
-                    >
-                      /events command
-                    </div>
-                    <p class="">Stay updated with GSSOC events and deadlines</p>
-                  </div>
-                </a>
-
-                <a
-                  class="header-links tw-flex tw-text-left tw-gap-4 !tw-p-4"
-                  href="#"
-                >
-                  <div class="tw-font-semibold tw-text-3xl">
-                    <i class="bi bi-discord"></i>
-                  </div>
-                  <div class="tw-flex tw-flex-col tw-gap-2">
-                    <div
-                      class="tw-text-lg tw-text-black dark:tw-text-white tw-font-medium"
-                    >
-                      Interactive Chat
-                    </div>
-                    <p class="">
-                      Natural conversation with the bot for any queries
+                      Quickly browse and navigate through common questions
+                      regarding GSSOC process with clean pagination.
                     </p>
                   </div>
                 </a>
               </div>
-            </div>
+            </nav>
           </div>
-          <a class="header-links" href="#invite-bot"> Invite Bot </a>
-
+          <a class="header-links" href="#faq-footer"> Pricing </a>
+        </nav>
+        <div
+          class="lg:tw-mx-4 tw-flex tw-place-items-center tw-gap-[20px] tw-text-base max-md:tw-w-full max-md:tw-flex-col max-md:tw-place-content-center"
+        >
           <button
             type="button"
             onclick="toggleMode()"
@@ -284,7 +161,17 @@
           >
             <i class="bi bi-sun" id="toggle-mode-icon"></i>
           </button>
-        </nav>
+          <a
+            href="https://discord.com/oauth2/authorize?client_id=1396740851056640091&permissions=8&integration_type=0&scope=bot+applications.commands"
+            aria-label="Try gssoc discord bot"
+            class="btn tw-flex tw-gap-3 tw-px-3 tw-py-2 tw-transition-transform tw-duration-[0.3s] hover:tw-translate-x-2"
+          >
+            <i class="bi bi-discord"></i>
+            <span>Try Bot</span>
+            <i class="bi bi-arrow-right"></i>
+          </a>
+        </div>
+      </div>
       <button
         class="bi bi-list tw-absolute tw-right-3 tw-top-3 tw-z-50 tw-text-3xl tw-text-gray-500 lg:tw-hidden"
         onclick="toggleHeader()"
@@ -355,9 +242,9 @@
             <span class="tw-font-thin tw-font-serif"> in one place </span>
           </h2>
           <div
-            id="invite-bot"
-            class="reveal-up tw-mt-8 tw-max-w-[450px] tw-text-lg max-lg:tw-text-base tw-p-2 tw-text-center tw-text-gray-800 dark:tw-text-white max-lg:tw-max-w-full"
+            class="reveal-up tw-mt-8 tw-max-w-[600px] tw-text-sm max-lg:tw-text-base tw-p-2 tw-text-center tw-text-gray-800 dark:tw-text-white max-lg:tw-max-w-full"
           >
+            <!-- Test, Develop and Deploy all your AI models in one place, with Pixa seamless playground interface -->
             Your ultimate GSSOC companion Discord bot. Get instant answers to
             FAQs, discover projects, find social links, and stay updated with
             events - all through simple commands.
@@ -368,7 +255,7 @@
           >
             <button
               onclick="openVideo()"
-              class="btn !tw-w-[170px] max-lg:!tw-w-[160px] !tw-rounded-xl !tw-py-4 max-lg:!tw-py-2 tw-flex tw-gap-2 tw-group !tw-bg-transparent !tw-text-black dark:!tw-text-white tw-transition-colors tw-duration-[0.3s] tw-border-[1px] tw-border-black dark:tw-border-white"
+              class="btn !tw-w-[170px] max-lg:!tw-w-[160px] !tw-rounded-xl !tw-py-4 max-lg:!tw-py-2 tw-flex tw-gap-2 tw-group !tw-bg-transparent !tw-text-black dark:!tw-text-white tw-border-black dark:tw-border-white tw-shadow-lg hover:tw-shadow-xl dark:tw-shadow-gray-800 tw-transition-all tw-duration-300 tw-border-[1px] tw-p-3 tw-px-4"
             >
               <div
                 class="tw-relative tw-flex tw-place-items-center tw-place-content-center tw-w-6 tw-h-6"
@@ -378,11 +265,11 @@
                 ></div>
                 <span class="bi bi-play-circle-fill"></span>
               </div>
-              <span>Watch Demo</span>
+              <span>Watch video</span>
             </button>
 
             <a
-              class="btn tw-group max-lg:!tw-w-[160px] tw-flex tw-gap-2 tw-shadow-lg !tw-w-[200px] !tw-rounded-xl !tw-py-4 max-lg:!tw-py-2 tw-transition-transform tw-duration-[0.3s] hover:tw-scale-x-[1.03]"
+              class="hover:tw-shadow-xl dark:tw-shadow-gray-800 tw-transition-all tw-duration-300 tw-border-[1px] tw-p-3 tw-px-4 tw-border-black dark:tw-border-white btn tw-group max-lg:!tw-w-[160px] tw-flex tw-gap-2 tw-shadow-lg !tw-w-[200px] !tw-rounded-xl !tw-py-4 max-lg:!tw-py-2 hover:tw-scale-x-[1.03]"
               href="https://discord.com/oauth2/authorize?client_id=1396740851056640091&permissions=8&scope=bot"
               target="_blank"
             >
@@ -392,11 +279,340 @@
           </div>
         </div>
 
-     
+        <!-- prompt container -->
+        <div
+          class="reveal-up tw-relative tw-mt-8 tw-flex tw-w-full tw-place-content-center tw-place-items-center"
+          id="dashboard-container"
+        >
+          <div
+            class="purple-bg-grad reveal-up tw-absolute tw-left-1/2 tw--translate-x-1/2 tw-top-[5%] tw-h-[200px] tw-w-[200px]"
+          ></div>
 
-                        
-      
-          
+          <div
+            class="tw-relative tw-max-w-[80%] tw-bg-white dark:tw-bg-black tw-border-[1px] dark:tw-border-[#36393c] lg:tw-w-[1024px] lg:tw-h-[650px] tw-flex tw-shadow-xl max-lg:tw-h-[450px] max-lg:tw-w-full tw-overflow-hidden tw-min-w-[320px] md:tw-w-full tw-min-h-[450px] tw-rounded-xl tw-bg-transparent max-md:tw-max-w-full"
+            id="dashboard"
+          >
+            <div
+              class="purple-bg-grad tw-max-w-[80%] reveal-up tw-absolute tw-left-1/2 tw--translate-x-1/2 tw-top-[0%] lg:tw-max-w-[1000px] tw-h-full tw-w-full"
+            ></div>
+            <div class="animated-border tw-w-full tw-h-full tw-p-[2px]">
+              <div
+                class="tw-w-full tw-h-full tw-rounded-xl tw-overflow-hidden tw-flex"
+              >
+                <!-- sign-up pop-up -->
+                <div
+                  class="tw-absolute tw-rounded-xl tw-text-center tw-transition-transform tw-duration-300 tw-scale-0 tw-backdrop-blur-lg tw-flex tw-flex-col tw-p-10 tw-place-items-center tw-gap-4 tw-w-full tw-h-full dark:tw-bg-[#000000b4] tw-bg-[#ffffff6a] firefox:tw-bg-white tw-top-0 tw-left-0 tw-z-20"
+                  id="signup-prompt"
+                >
+                  <h4 class="tw-mt-6 tw-text-3xl max-md:tw-text-xl">
+                    Signup to continue your conversation
+                  </h4>
+
+                  <div class="tw-flex tw-gap-1 tw-place-items-center">
+                    <div class="tw-flex tw--space-x-4">
+                      <img
+                        class="tw-z-10 tw-w-10 tw-h-10 tw-object-cover tw-rounded-full tw-border-2 tw-border-white"
+                        src="/assets/images/people/man.jpg"
+                        alt="Avatar 1"
+                      />
+                      <img
+                        class="tw-z-[4] tw-w-10 tw-h-10 tw-object-cover tw-rounded-full tw-border-2 tw-border-white"
+                        src="/assets/images/people/women.jpg"
+                        alt="Avatar 2"
+                      />
+                      <img
+                        class="tw-z-[3] tw-w-10 tw-h-10 tw-object-cover tw-rounded-full tw-border-2 tw-border-white"
+                        src="/assets/images/people/man2.jpg"
+                        alt="Avatar 3"
+                      />
+                      <img
+                        class="tw-z-[2] tw-w-10 tw-h-10 tw-object-cover tw-rounded-full tw-border-2 tw-border-white"
+                        src="assets/images/people/man.jpg"
+                        alt="Avatar 4"
+                      />
+                      <img
+                        class="tw-z-[1] tw-w-10 tw-h-10 tw-object-cover tw-rounded-full tw-border-2 tw-border-white"
+                        src="assets/images/people/women.jpg"
+                        alt="Avatar 5"
+                      />
+                    </div>
+                    <p>+20,000</p>
+                  </div>
+
+                  <div class="tw-mt-3 tw-text-lg">
+                    Join Ben and 20,000+ users using Pixa
+                  </div>
+
+                  <a href="#" class="btn"> Sign up </a>
+                </div>
+
+                <div
+                  class="tw-min-w-[250px] max-lg:tw-hidden tw-p-2 tw-gap-2 tw-flex tw-flex-col tw-bg-gray-100 dark:tw-bg-[#171717] tw-h-full"
+                >
+                  <!-- <h3 class="tw-text-xl tw-uppercase">
+                                        Pixa
+                                    </h3> -->
+                  <div class="tw-h-[30px] tw-w-fit tw-max-w-[100px]">
+                    <img
+                      src="/assets/logo/2.png"
+                      alt="logo"
+                      class="tw-object-contain tw-opacity-80 tw-h-full tw-w-full "
+                    />
+                  </div>
+
+                  <div class="tw-flex tw-mt-2 tw-gap-2 tw-flex-col">
+                    <a
+                      href="#link-to-img-gen"
+                      class="tw-flex tw-rounded-lg tw-gap-2 tw-p-2 dark:hover:tw-bg-[#2d2d2ddb] hover:tw-bg-gray-200"
+                    >
+                      <i class="bi bi-patch-question"></i>
+                      <span>FAQs command</span>
+                    </a>
+                    <a
+                      href="#link-to-pdf-gen"
+                      class="tw-flex tw-rounded-lg tw-gap-2 tw-p-2 dark:hover:tw-bg-[#2d2d2ddb] hover:tw-bg-gray-200"
+                    >
+                      <i class="bi bi-file-pdf"></i>
+                      <span>Project Deatils</span>
+                    </a>
+                    <a
+                      href="#link-to-code-gen"
+                      class="tw-flex tw-rounded-lg tw-gap-2 tw-p-2 dark:hover:tw-bg-[#2d2d2ddb] hover:tw-bg-gray-200 "
+                    >
+                      <i class="bi bi-code-square"></i>
+                      <span>Leaderboard</span>
+                    </a>
+                    <a
+                      href="#command"
+                      class="tw-flex tw-rounded-lg tw-group tw-gap-2 tw-p-2 dark:hover:tw-bg-[#2d2d2ddb] hover:tw-bg-gray-200"
+                    >
+                      <span>Show all</span>
+                      <i
+                        class="bi bi-arrow-right tw-transform tw-transition-transform tw-duration-300 group-hover:tw-translate-x-1"
+                      ></i>
+                    </a>
+                  </div>
+
+                  <div
+                    class="tw-mt-auto tw-w-full tw-flex tw-px-6 tw-place-content-center"
+                  >
+                    <a
+                      href="https://github.com/piyushpatelcodes/gssocFAQ-Bot/"
+                      class="btn !tw-w-full !tw-bg-transparent tw-duration-[0.3s] hover:!tw-bg-black hover:!tw-text-white dark:hover:!tw-bg-white dark:hover:!tw-text-black !tw-border-[1px] !tw-border-black !tw-text-black dark:!tw-border-white dark:!tw-text-white"
+                    >
+                      <i style="margin-right: 5%; color: #ffd700;" class="bi bi-star-fill"></i>Star on Github
+                    </a>
+                  </div>
+                </div>
+
+                <div
+                  class="tw-flex tw-w-full tw-p-4 tw-bg-white dark:tw-bg-black tw-h-full tw-flex-col"
+                  id="pixa-playground"
+                >
+                  <div
+                    class="tw-relative tw-w-full tw-flex tw-place-content-center tw-h-full"
+                  >
+                    <div
+                      class="tw-absolute tw-top-[20%] max-lg:tw-top-[30%] tw-left-1/2 tw--translate-x-1/2 tw-w-[150px] tw-h-[150px]"
+                    >
+                      <img
+                        src="/public/assets/logo/logo.png"
+                        class="tw-w-full tw-h-full dark:tw-invert tw-object-contain tw-opacity-20"
+                        alt="gssoc faq logo"
+                      />
+                    </div>
+                    <div
+                      class="prompt-container tw-overflow-y-auto tw-px-[5%] max-lg:tw-px-2 scrollbar max-lg:tw-max-h-[80%] tw-max-h-[550px] max-lg:tw-mt-12 tw-w-full tw-h-full tw-z-10 tw-flex tw-flex-col"
+                      id="prompt-container"
+                    >
+                      <div
+                        class="tw-w-full tw-flex tw-text-center tw-flex-col tw-place-content-center"
+                        >
+                        <h2
+                        style="font-weight: 800; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"
+                          class="tw-text-4xl max-md:tw-text-2xl max-md:tw-mt-3 tw-opacity-80 tw-uppercase"
+                        >
+                          Try GSSOC FAQ Bot Commands
+                        </h2>
+                        <div class="tw-inline tw-mt-6 max-md:tw-mt-3">
+                          <span id="prompts-sample"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <form
+                    action=""
+                    id="prompt-form"
+                    onsubmit="return false;"
+                    class="tw-place-content-center tw-mt-auto tw-h-[50px] tw-p-1 tw-place-items-center tw-justify-around tw-flex tw-gap-1 tw-bottom-2 tw-w-full tw-rounded-md tw-bg-[#f3f4f6] dark:tw-bg-[#171717]"
+                  >
+                    <div
+                      class="tw-min-w-[140px] tw-min-h-[80px] max-lg:tw-absolute tw-z-10 tw-top-1 tw-left-1/2 max-lg:tw--translate-x-1/2 tw-flex tw-flex-col tw-text-sm tw-gap-1 tw-place-content-center"
+                    >
+                      <div
+                        class="dropdown tw-p-2 tw-rounded-md tw-bg-[#f3f4f6] dark:tw-bg-[#171717]"
+                        id="dropdown1"
+                      >
+                        <!-- store the value of the dropdown-->
+                        <input type="hidden" class="dropdown-input" />
+                        <button
+                          type="button"
+                          class="dropdown-toggle tw-flex tw-gap-5"
+                        >
+                          <span
+                            class="tw-flex tw-w-fit tw-gap-2 tw-place-items-center"
+                          >
+                            <div class="tw-w-[20px] tw-h-[20px]">
+                              <img
+                                src="/assets/images/brand-logos/openai.svg"
+                                alt="Gpt3.5"
+                                class="dropdown-select-icon dark:tw-invert"
+                              />
+                            </div>
+                            <span class="dropdown-select-text">/faq</span>
+                          </span>
+                          <i
+                            class="bi bi-chevron-down tw-ml-auto lg:tw-hidden"
+                          ></i>
+                          <i
+                            class="bi bi-chevron-up tw-ml-auto lg:tw-block tw-hidden"
+                          ></i>
+                        </button>
+                        <ul
+                          class="dropdown-menu tw-shadow-md tw-bottom-[50px] max-lg:tw-top-[105%] max-lg:tw-bottom-[unset]"
+                        >
+                          <li class="tw-flex tw-gap-2 tw-place-items-center">
+                            <div class="tw-w-[20px] tw-h-[20px]">
+                              <img
+                                src="/assets/images/brand-logos/openai.svg"
+                                alt="Gpt-4o"
+                                class="dropdown-menu-icon dark:tw-invert"
+                              />
+                              <!-- <i style="font-size: large;" class="bi bi-patch-question"></i> -->
+                            </div>
+                            <span class="dropdown-text">/faq</span>
+                          </li>
+
+                          <li class="tw-flex tw-gap-2 tw-place-items-center">
+                            <div class="tw-w-[20px] tw-h-[20px]">
+                              <img
+                                src="/assets/images/brand-logos/googlegemini.svg"
+                                alt="Gemini"
+                                class="dropdown-menu-icon dark:tw-invert"
+                              />
+                            </div>
+                            <span class="dropdown-text">/project</span>
+                          </li>
+                          <!-- <li class="tw-flex tw-gap-2 tw-place-items-center">
+                            <div class="tw-w-[20px] tw-h-[20px]">
+                              <img
+                                src="/public/assets/images/brand-logos/meta.svg"
+                                alt="Llama"
+                                class="dropdown-menu-icon dark:tw-invert"
+                              />
+                            </div>
+                            <span class="dropdown-text">Llama 3</span>
+                          </li>
+                          <li class="tw-flex tw-gap-2 tw-place-items-center">
+                            <div class="tw-w-[20px] tw-h-[20px]">
+                              <img
+                                src="/assets/images/brand-logos/claude.svg"
+                                alt="Perplexity"
+                                class="dropdown-menu-icon dark:tw-invert"
+                              />
+                            </div>
+                            <span class="dropdown-text">Claude</span>
+                          </li> -->
+                        </ul>
+                      </div>
+                    </div>
+                    <input
+                      placeholder="How to contribute in GSSOC?"
+                      type="text"
+                      class="tw-p-2 !tw-outline-none tw-bg-transparent tw-border-none tw-w-full tw-placehoder-gray-500 dark:tw-placeholder-opacity-60 dark:tw-placeholder-gray-300 tw-max-w-[80%] tw-h-full"
+                      name="prompt"
+                    />
+                    <button
+                      type="submit"
+                      class="btn !tw-bg-[#6366f1] !tw-p-2 !tw-px-3 !tw-text-white"
+                      title="submit"
+                    >
+                      <i class="bi bi-arrow-up"></i>
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="tw-relative tw-flex tw-w-full tw-max-w-[100vw] tw-flex-col tw-place-content-center tw-place-items-center tw-overflow-hidden tw-p-8"
+    >
+      <h2 class="reveal-up tw-text-3xl max-md:tw-text-xl">
+        Trusted by brands you love
+      </h2>
+
+      <div class="reveal-up carousel-container">
+        <div
+          class="carousel lg:w-place-content-center tw-mt-10 tw-flex tw-w-full tw-gap-5 max-md:tw-gap-2"
+        >
+          <!-- add the brands using your app  -->
+          <div class="carousel-img tw-h-[30px] tw-w-[150px]">
+            <img
+              src="/assets/images/brand-logos/google.svg"
+              alt="Google"
+              class="tw-h-full tw-w-full tw-object-contain tw-grayscale tw-transition-colors hover:tw-grayscale-0"
+              srcset=""
+            />
+          </div>
+          <div class="carousel-img tw-h-[30px] tw-w-[150px]">
+            <img
+              src="/assets/images/brand-logos/microsoft.svg"
+              alt="Microsoft"
+              class="tw-h-full tw-w-full tw-object-contain tw-grayscale tw-transition-colors hover:tw-grayscale-0"
+              srcset=""
+            />
+          </div>
+          <div class="carousel-img tw-h-[30px] tw-w-[150px]">
+            <img
+              src="/assets/images/brand-logos/adobe.svg"
+              alt="Adobe"
+              class="tw-h-full tw-w-full tw-object-contain tw-grayscale tw-transition-colors hover:tw-grayscale-0"
+              srcset=""
+            />
+          </div>
+          <div class="carousel-img tw-h-[30px] tw-w-[150px]">
+            <img
+              src="/assets/images/brand-logos/airbnb.svg"
+              alt="Airbnb"
+              class="tw-h-full tw-w-full tw-object-contain tw-grayscale tw-transition-colors hover:tw-grayscale-0"
+              srcset=""
+            />
+          </div>
+          <div class="carousel-img tw-h-[30px] tw-w-[150px]">
+            <img
+              src="/assets/images/brand-logos/stripe.svg"
+              alt="Stripe"
+              class="tw-h-full tw-w-full tw-object-contain tw-grayscale tw-transition-colors hover:tw-grayscale-0"
+              srcset=""
+            />
+          </div>
+          <div class="carousel-img tw-h-[30px] tw-w-[150px]">
+            <img
+              src="/assets/images/brand-logos/reddit.svg"
+              alt="Reddit"
+              class="tw-h-full tw-w-full tw-object-contain tw-grayscale tw-transition-colors hover:tw-grayscale-0"
+              srcset=""
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section
       class="tw-relative tw-flex tw-w-full tw-min-h-[100vh] max-lg:tw-min-h-[80vh] tw-flex-col tw-place-content-center tw-place-items-center tw-overflow-hidden"
     >
@@ -426,7 +642,7 @@
             href="https://gssoc.girlscript.tech/"
             target="_blank"
             rel="noopener"
-            class="tw-shadow-md hover:tw-shadow-xl dark:tw-shadow-gray-800 tw-transition-all tw-duration-300 tw-border-[1px] tw-p-3 tw-px-4 tw-border-black dark:tw-border-white tw-rounded-md"
+            class="tw-shadow-2xl hover:tw-shadow-xl dark:tw-shadow-gray-800 tw-transition-all tw-duration-300 tw-border-[1px] tw-p-3 tw-px-4 tw-border-black dark:tw-border-white tw-rounded-md"
           >
             Learn About GSSOC
           </a>
@@ -444,7 +660,7 @@
           class="reveal-up tw-mt-5 tw-flex tw-flex-col tw-gap-3 tw-text-center"
         >
           <h2 class="tw-text-6xl tw-font-medium max-md:tw-text-3xl tw-p-2">
-            Experience the power of GSSOC Bot
+            Experience The Power of GSSOC Bot
           </h2>
         </div>
         <div
@@ -464,8 +680,8 @@
                   class="tw-overflow-hidden tw-w-full tw-min-h-[180px] tw-h-[180px]"
                 >
                   <img
-                    src="/assets/images/home/unified.jpg"
-                    class="tw-w-full tw-object-contain tw-h-auto"
+                    src="/assets/images/home/que.png"
+                    class="tw-w-full tw-object-contain tw-h-auto tw-rounded-md"
                     alt="unified interface"
                   />
                   <!-- <i class="bi bi-grid-1x2-fill"></i> -->
@@ -476,47 +692,10 @@
                 <p
                   class="tw-text-base tw-leading-normal tw-text-gray-800 dark:tw-text-gray-200"
                 >
-                  Get immediate answers to all your GSSOC questions. Our bot has
-                  comprehensive knowledge about the program, application
-                  processes, guidelines, and more. Simply ask your question and
-                  get accurate responses instantly.
-                </p>
-                <div class="tw-flex tw-items-center tw-gap-2 tw-mt-auto">
-                  <span >Learn more</span>
-                  <i
-                    class="bi bi-arrow-right tw-transform tw-transition-transform tw-duration-300 group-hover/card:tw-translate-x-2"
-                  ></i>
-                </div>
-              </a>
-            </div>
-
-            <div
-              class="reveal-up tw-w-[350px] tw-h-[540px] tw-flex max-md:tw-w-full"
-            >
-              <a
-                href="#"
-                class="tw-relative tw-p-10 tw-transition-all tw-duration-300 tw-group/card tw-gap-5 tw-flex tw-flex-col tw-w-full tw-h-full tw-bg-[#f6f7fb] dark:tw-bg-[#171717] tw-rounded-3xl hover:tw-scale-[1.02]"
-              >
-                <div
-                  class="tw-w-full tw-min-h-[180px] tw-h-[180px] tw-overflow-hidden"
-                >
-                  <img
-                    src="/assets/images/home/api.png"
-                    alt="API"
-                    class="tw-w-full tw-h-auto tw-object-contain"
-                  />
-                  <!-- <i class="bi bi-grid-1x2-fill"></i> -->
-                </div>
-                <h2 class="tw-text-3xl max-md:tw-text-2xl tw-font-medium">
-                  Project Discovery
-                </h2>
-                <p
-                  class="tw-leading-normal tw-text-gray-800 dark:tw-text-gray-200"
-                >
-                  Browse through hundreds of GSSOC projects with ease. Search by
-                  technology, difficulty level, or keywords to find the perfect
-                  project for your skills and interests. Get project details,
-                  GitHub links, and maintainer information instantly.
+                  Get instant answers to FAQs with zero wait time. No need to
+                  contact managers or face delays. No frustration. Enjoy free,
+                  24/7 support through our always-available, intelligent Discord
+                  bot.
                 </p>
                 <div class="tw-flex tw-items-center tw-gap-2 tw-mt-auto">
                   <span>Learn more</span>
@@ -535,24 +714,62 @@
                 class="tw-relative tw-p-10 tw-transition-all tw-duration-300 tw-group/card tw-gap-5 tw-flex tw-flex-col tw-w-full tw-h-full tw-bg-[#f6f7fb] dark:tw-bg-[#171717] tw-rounded-3xl hover:tw-scale-[1.02]"
               >
                 <div
-                  class="tw-w-full tw-flex tw-place-content-center tw-min-h-[180px] tw-h-[180px] tw-rounded-xl tw-overflow-hidden"
+                  class="tw-w-full tw-min-h-[180px] tw-h-[180px] tw-overflow-hidden"
                 >
                   <img
-                    src="/assets/images/home/integrations1.png"
-                    class="tw-w-full tw-h-auto tw-object-contain"
-                    alt="Prebuilt integrations"
+                    src="/assets/images/home/table.jpg"
+                    alt="API"
+                    class="tw-w-full tw-h-auto tw-object-contain tw-rounded-md"
                   />
+                  <!-- <i class="bi bi-grid-1x2-fill"></i> -->
                 </div>
                 <h2 class="tw-text-3xl max-md:tw-text-2xl tw-font-medium">
-                  Social & Community Links
+                  Project Discovery
                 </h2>
                 <p
                   class="tw-leading-normal tw-text-gray-800 dark:tw-text-gray-200"
                 >
-                  Stay connected with the GSSOC community. Get instant access to
-                  official social media accounts, Discord servers, LinkedIn
-                  groups, and other community resources. Never miss important
-                  announcements or networking opportunities.
+                  Access complete project information with a single /project
+                  command. Search by phase, filter using labels, and instantly
+                  view detailed project descriptions along with assigned mentors
+                  — all in one streamlined experience.
+                </p>
+                <div class="tw-flex tw-items-center tw-gap-2 tw-mt-auto">
+                  <span>Learn more</span>
+                  <i
+                    class="bi bi-arrow-right tw-transform tw-transition-transform tw-duration-300 group-hover/card:tw-translate-x-2"
+                  ></i>
+                </div>
+              </a>
+            </div>
+
+            <div
+             id="about"
+              class="reveal-up tw-w-[350px] tw-h-[540px] tw-flex max-md:tw-w-full"
+            >
+              <a
+                href="#"
+                class="tw-relative tw-p-10 tw-transition-all tw-duration-300 tw-group/card tw-gap-5 tw-flex tw-flex-col tw-w-full tw-h-full tw-bg-[#f6f7fb] dark:tw-bg-[#171717] tw-rounded-3xl hover:tw-scale-[1.02]"
+              >
+                <div
+                  class="tw-w-full tw-flex tw-place-contet-center tw-min-h-[180px] tw-h-[180px] tw-rounded-xl tw-overflow-hidden"
+                >
+                  <img
+                    src="/assets/images/home/server.png"
+                    class="tw-w-full tw-h-auto tw-object-contain tw-rounded-md"
+                    alt="Prebuilt integrations"
+                  />
+                </div>
+                <h2 class="tw-text-3xl max-md:tw-text-2xl tw-font-medium">
+                  Pro Tools &Features
+                </h2>
+                <p
+                  class="tw-leading-normal tw-text-gray-800 dark:tw-text-gray-200"
+                >
+                  Explore powerful tools including a real-time leaderboard,
+                  multilingual support, project filtering, and instant search.
+                  Stay organized, track progress, and access everything you need
+                  directly through simple, intuitive bot commands.
                 </p>
                 <div class="tw-flex tw-items-center tw-gap-2 tw-mt-auto">
                   <span>Learn more</span>
@@ -582,12 +799,21 @@
                 <!-- <i class="bi bi-grid-1x2-fill"></i> -->
               </div>
               <div class="tw-flex tw-flex-col tw-gap-4">
-                <h2 class="tw-text-3xl max-md:tw-text-2xl tw-font-medium">
-                  Event & Timeline Updates
+                <h2
+                  class="tw-text-3xl max-md:tw-text-2xl tw-font-medium tw-uppercase"
+                >
+                  Not Your DEPENDENT GPT WRAPPER
                 </h2>
                 <p
                   class="tw-leading-normal tw-text-gray-800 dark:tw-text-gray-200"
                 >
+                  The GSSOC FAQ Bot is not a GPT wrapper and does not use any
+                  external AI APIs like OpenAI and not require an API key. It’s
+                  a fully rule-based system, purpose-built for GSSOC. Answers
+                  are generated instantly from structured logic, not AI
+                  models—ensuring consistent, reliable, and context-aware
+                  responses every time.
+                  <br />
                   Never miss important GSSOC deadlines and events. Get real-time
                   updates about application periods, coding phases, submission
                   deadlines, and special events. Stay organized with automated
@@ -595,7 +821,7 @@
                 </p>
                 <div class="tw-flex tw-items-center tw-gap-2 tw-mt-auto">
                   <span>Learn more</span>
-                  <i id="bot-features"
+                  <i
                     class="bi bi-arrow-right tw-transform tw-transition-transform tw-duration-300 group-hover/card:tw-translate-x-2"
                   ></i>
                 </div>
@@ -607,8 +833,12 @@
     </section>
 
     <section
+    id="command"
       class="tw-relative tw-mt-10 tw-flex tw-min-h-[100vh] tw-w-full tw-max-w-[100vw] tw-flex-col tw-place-items-center lg:tw-p-6"
     >
+      <div
+          class="purple-bg-grad reveal-up tw-fixed tw-left-1/2 tw--translate-1/2 tw-top-[10%] tw-h-[120px] tw-w-[120px]"
+        ></div>
       <div
         class="reveal-up tw-mt-[5%] tw-flex tw-h-full tw-w-full tw-place-content-center tw-gap-2 tw-p-4 max-lg:tw-max-w-full max-lg:tw-flex-col"
       >
@@ -618,6 +848,11 @@
           <div
             class="tw-top-40 tw-flex tw-flex-col lg:tw-sticky tw-place-items-center tw-max-h-fit tw-max-w-[850px] max-lg:tw-max-h-fit max-lg:tw-max-w-[320px] tw-overflow-hidden"
           >
+            <div
+            style="top: 98%;"
+          class="purple-bg-grad reveal-up tw-absolute tw-right-1/2 tw--translate-1/2  tw-h-[120px] tw-w-[120px]"
+        ></div>
+
             <h2
               class="tw-text-5xl tw-font-serif tw-text-center tw-font-medium max-md:tw-text-3xl"
             >
@@ -625,11 +860,23 @@
             </h2>
 
             <a
-              href="https://discord.com/oauth2/authorize?client_id=YOUR_BOT_ID&permissions=8&scope=bot"
-              class="btn !tw-mt-8 !tw-bg-transparent !tw-text-black !tw-border-[1px] !tw-border-black dark:!tw-border-white dark:!tw-text-white"
-            >
-              Add to Server
+              href="https://discord.com/oauth2/authorize?client_id=1396740851056640091&permissions=8&integration_type=0&scope=bot+applications.commands"
+              class="btn !tw-mt-8 !tw-bg-transparent !tw-text-black !tw-border-[1px] !tw-border-black dark:!tw-border-white dark:!tw-text-white tw-gap-2"
+              ><i class="bi bi-discord"></i>
+              Add To Server
             </a>
+            <!-- <img id="command-preview-img" alt="command-preview-img" src="/assets/logo/2.png" /> -->
+            <br />
+            <video
+              width="320"
+              height="240"
+              muted
+              loop
+              autoplay
+              class="tw-rounded-lg"
+            >
+              <source src="/assets/videos/faq-video.mp4" type="video/mp4" />
+            </video>
           </div>
         </div>
 
@@ -639,7 +886,8 @@
           <div class="reveal-up tw-h-[240px] tw-w-[450px] max-md:tw-w-full">
             <a
               href="#"
-              class="tw-flex tw-w-full tw-h-full tw-gap-8 tw-rounded-xl hover:tw-shadow-lg dark:tw-shadow-[#171717] tw-duration-300 tw-transition-all tw-p-8 tw-group/card"
+              data-img="/assets/images/home/server.png"
+              class="tw-flex tw-w-full tw-h-full tw-gap-8 tw-rounded-xl hover:tw-shadow-lg dark:tw-shadow-[#171717] tw-duration-300 tw-transition-all tw-p-8 tw-group/card groupcard"
             >
               <div class="tw-text-4xl max-md:tw-text-2xl">
                 <i class="bi bi-code-square"></i>
@@ -658,7 +906,7 @@
                 <div
                   class="tw-mt-auto tw-flex tw-gap-2 tw-underline tw-underline-offset-4"
                 >
-                  <span>Try command</span>
+                  <span>Learn more</span>
                   <i
                     class="bi bi-arrow-up-right group-hover/card:tw--translate-y-1 group-hover/card:tw-translate-x-1 tw-duration-300 tw-transition-transform"
                   ></i>
@@ -670,18 +918,19 @@
           <div class="reveal-up tw-h-[240px] tw-w-[450px] max-md:tw-w-full">
             <a
               href="#"
-              class="tw-flex tw-w-full tw-h-full tw-gap-8 tw-rounded-xl hover:tw-shadow-lg dark:tw-shadow-[#171717] tw-duration-300 tw-transition-all tw-p-8 tw-group/card"
+              data-img="/assets/images/home/que.png"
+              class="tw-flex tw-w-full tw-h-full tw-gap-8 tw-rounded-xl hover:tw-shadow-lg dark:tw-shadow-[#171717] tw-duration-300 tw-transition-all tw-p-8 tw-group/card groupcard"
             >
               <div class="tw-text-4xl max-md:tw-text-2xl">
                 <i class="bi bi-file-pdf-fill"></i>
               </div>
 
               <div class="tw-flex tw-flex-col tw-gap-4">
-                <h3 class="tw-text-2xl max-md:tw-text-xl">/projects command</h3>
+                <h3 class="tw-text-2xl max-md:tw-text-xl">/project command</h3>
                 <p
                   class="tw-text-gray-800 dark:tw-text-gray-100 max-md:tw-text-sm"
                 >
-                  Browse and search through all GSSOC projects. Filter by
+                  Browse and search through all GSSOC projects. Filter by phase,
                   technology stack, difficulty level, or search by keywords to
                   find your perfect match.
                 </p>
@@ -689,7 +938,7 @@
                 <div
                   class="tw-mt-auto tw-flex tw-gap-2 tw-underline tw-underline-offset-4"
                 >
-                  <span>Try command</span>
+                  <span>Learn more</span>
                   <i
                     class="bi bi-arrow-up-right group-hover/card:tw--translate-y-1 group-hover/card:tw-translate-x-1 tw-duration-300 tw-transition-transform"
                   ></i>
@@ -701,26 +950,26 @@
           <div class="reveal-up tw-h-[240px] tw-w-[450px] max-md:tw-w-full">
             <a
               href="#"
-              class="tw-flex tw-w-full tw-h-full tw-gap-8 tw-rounded-xl hover:tw-shadow-lg tw-duration-300 tw-transition-all dark:tw-shadow-[#171717] tw-p-8 tw-group/card"
+              data-img="/assets/logo/1.png"
+              class="tw-flex tw-w-full tw-h-full tw-gap-8 tw-rounded-xl hover:tw-shadow-lg tw-duration-300 tw-transition-all dark:tw-shadow-[#171717] tw-p-8 tw-group/card groupcard"
             >
               <div class="tw-text-4xl max-md:tw-text-2xl">
                 <i class="bi bi-image-fill"></i>
               </div>
 
               <div class="tw-flex tw-flex-col tw-gap-4">
-                <h3 class="tw-text-2xl max-md:tw-text-xl">/socials command</h3>
+                <h3 class="tw-text-2xl max-md:tw-text-xl">Image generation</h3>
                 <p
                   class="tw-text-gray-800 dark:tw-text-gray-100 max-md:tw-text-sm"
                 >
-                  Get instant access to all official GSSOC social media
-                  accounts, Discord servers, LinkedIn groups, and community
-                  links in one place.
+                  Prebuilt AI tools for image generation create visuals from
+                  text or patterns, enhancing design and creative projects.
                 </p>
 
                 <div
                   class="tw-mt-auto tw-flex tw-gap-2 tw-underline tw-underline-offset-4"
                 >
-                  <span>Try command</span>
+                  <span>Learn more</span>
                   <i
                     class="bi bi-arrow-up-right group-hover/card:tw--translate-y-1 group-hover/card:tw-translate-x-1 tw-duration-300 tw-transition-transform"
                   ></i>
@@ -732,25 +981,26 @@
           <div class="reveal-up tw-h-[240px] tw-w-[450px] max-md:tw-w-full">
             <a
               href="#"
-              class="tw-flex tw-w-full dark:tw-shadow-[#171717] tw-h-full tw-gap-8 tw-rounded-xl hover:tw-shadow-lg tw-duration-300 tw-transition-all tw-p-8 tw-group/card"
+              data-img="/assets/idcard.png"
+              class="tw-flex tw-w-full dark:tw-shadow-[#171717] tw-h-full tw-gap-8 tw-rounded-xl hover:tw-shadow-lg tw-duration-300 tw-transition-all tw-p-8 tw-group/card groupcard"
             >
               <div class="tw-text-4xl max-md:tw-text-2xl">
                 <i class="bi bi-bar-chart-line-fill"></i>
               </div>
 
               <div class="tw-flex tw-flex-col tw-gap-4">
-                <h3 class="tw-text-2xl max-md:tw-text-xl">/events command</h3>
+                <h3 class="tw-text-2xl max-md:tw-text-xl">AI Analytics</h3>
                 <p
                   class="tw-text-gray-800 dark:tw-text-gray-100 max-md:tw-text-sm"
                 >
-                  Stay updated with all GSSOC events, workshops, deadlines, and
-                  important announcements. Never miss a critical date again.
+                  Our AI analytics tools analyze data patterns and trends,
+                  providing actionable insights and enhancing decision-making.
                 </p>
 
                 <div
                   class="tw-mt-auto tw-flex tw-gap-2 tw-underline tw-underline-offset-4"
                 >
-                  <span>Try command</span>
+                  <span>Learn more</span>
                   <i
                     class="bi bi-arrow-up-right group-hover/card:tw--translate-y-1 group-hover/card:tw-translate-x-1 tw-duration-300 tw-transition-transform"
                   ></i>
@@ -762,26 +1012,27 @@
           <div class="reveal-up tw-h-[240px] tw-w-[450px] max-md:tw-w-full">
             <a
               href="#"
-              class="tw-flex tw-w-full tw-h-full tw-gap-8 tw-rounded-xl dark:tw-shadow-[#171717] hover:tw-shadow-lg tw-duration-300 tw-transition-all tw-p-8 tw-group/card"
+              data-img="/assets/images/home/ai-models.png"
+              class="tw-flex tw-w-full tw-h-full tw-gap-8 tw-rounded-xl dark:tw-shadow-[#171717] hover:tw-shadow-lg tw-duration-300 tw-transition-all tw-p-8 tw-group/card groupcard"
             >
               <div class="tw-text-4xl max-md:tw-text-2xl">
                 <i class="bi bi-music-note-beamed"></i>
               </div>
 
               <div class="tw-flex tw-flex-col tw-gap-4">
-                <h3 class="tw-text-2xl max-md:tw-text-xl">/help command</h3>
+                <h3 class="tw-text-2xl max-md:tw-text-xl">Music generator</h3>
                 <p
                   class="tw-text-gray-800 dark:tw-text-gray-100 max-md:tw-text-sm"
                 >
-                  Get a comprehensive list of all available bot commands with
-                  usage examples and descriptions. Perfect for new users to get
-                  started quickly.
+                  Access our AI music generation tools create original
+                  compositions from input parameters, enabling effortless music
+                  creation for various needs.
                 </p>
 
                 <div
                   class="tw-mt-auto tw-flex tw-gap-2 tw-underline tw-underline-offset-4"
                 >
-                  <span>Try command</span>
+                  <span>Learn more</span>
                   <i
                     class="bi bi-arrow-up-right group-hover/card:tw--translate-y-1 group-hover/card:tw-translate-x-1 tw-duration-300 tw-transition-transform"
                   ></i>
@@ -800,19 +1051,18 @@
               </div>
 
               <div class="tw-flex tw-flex-col tw-gap-4">
-                <h3 class="tw-text-2xl max-md:tw-text-xl">Interactive Chat</h3>
+                <h3 class="tw-text-2xl max-md:tw-text-xl">Video generator</h3>
                 <p
                   class="tw-text-gray-800 dark:tw-text-gray-100 max-md:tw-text-sm"
                 >
-                  Have natural conversations with the bot for complex queries.
-                  Ask follow-up questions and get personalized assistance for
-                  your GSSOC journey.
+                  Use our AI video generation tools create videos from text or
+                  templates, streamlining content creation and production.
                 </p>
 
                 <div
                   class="tw-mt-auto tw-flex tw-gap-2 tw-underline tw-underline-offset-4"
                 >
-                  <span>Start chatting</span>
+                  <span>Learn more</span>
                   <i
                     class="bi bi-arrow-up-right group-hover/card:tw--translate-y-1 group-hover/card:tw-translate-x-1 tw-duration-300 tw-transition-transform"
                   ></i>
@@ -848,17 +1098,17 @@
               class="tw-w-full tw-h-[250px] tw-p-4 tw-rounded-xl tw-backdrop-blur-2xl tw-overflow-hidden tw-flex tw-place-content-center"
             >
               <img
-                src="/assets/images/home/prompts2.png"
+                src="/assets/logo/1.png"
                 alt="Prompt library"
-                class="tw-w-auto tw-h-full tw-object-contain"
+                class="tw-w-auto tw-h-full tw-object-contain tw-rounded-lg"
               />
             </div>
-            <h3 class="tw-text-2xl">Quick FAQ Access</h3>
+            <h3 class="tw-text-2xl">Prompt Library</h3>
             <p
               class="tw-text-gray-700 dark:tw-text-gray-300 tw-px-4 tw-text-center tw-text-sm"
             >
-              Get instant answers to common GSSOC questions without searching
-              through documentation. Fast, accurate, and always available.
+              Forget about writing your own prompt, use the prompt autocomplete
+              suggestions and supercharge your workflow.
             </p>
           </div>
 
@@ -869,17 +1119,17 @@
               class="tw-w-full tw-h-[250px] tw-p-4 tw-rounded-xl tw-backdrop-blur-2xl tw-overflow-hidden tw-flex tw-place-content-center"
             >
               <img
-                src="/assets/images/home/search.png"
+                src="/assets/images/home/leaderboard.jpg"
                 alt="Web search"
-                class="tw-w-auto tw-h-full tw-object-contain"
+                class="tw-w-auto tw-h-full tw-object-contain tw-rounded-lg"
               />
             </div>
-            <h3 class="tw-text-2xl">Project Discovery</h3>
+            <h3 class="tw-text-2xl">Real-time Leaderboard</h3>
             <p
               class="tw-text-gray-700 dark:tw-text-gray-300 tw-px-4 tw-text-center tw-text-sm"
             >
-              Easily browse and search through hundreds of GSSOC projects. Find
-              the perfect project that matches your skills and interests.
+              Our real-time GSSOC Github Contributor's Leaderboard offers live,
+              instant search results on bot and website.
             </p>
           </div>
 
@@ -890,38 +1140,38 @@
               class="tw-w-full tw-h-[250px] tw-p-4 tw-rounded-xl tw-backdrop-blur-2xl tw-overflow-hidden tw-flex tw-place-content-center"
             >
               <img
-                src="/assets/images/home/image.png"
-                alt="Image generation"
-                class="tw-w-auto tw-h-full tw-object-contain"
+                src="/assets/images/home/fun.png"
+                alt="fin commands"
+                class="tw-w-auto tw-h-full tw-object-contain tw-rounded-lg"
               />
             </div>
-            <h3 class="tw-text-2xl">Community Links</h3>
+            <h3 class="tw-text-2xl">Fun Commands</h3>
             <p
               class="tw-text-gray-700 dark:tw-text-gray-300 tw-px-4 tw-text-center tw-text-sm"
             >
-              Access all official GSSOC social media accounts, Discord servers,
-              and community resources in one convenient command.
+              Get ready for exciting features coming soon, packed with endless
+              entertainment, games, and fun!
             </p>
           </div>
 
-          <div
+          <!-- <div
             class="reveal-up tw-w-[350px] max-md:tw-w-[320px] tw-border-[1px] tw-h-[400px] tw-rounded-lg tw-place-items-center tw-p-4 tw-bg-[#f2f3f4] dark:tw-bg-[#141414] dark:tw-border-[#1f2123] tw-flex tw-flex-col tw-gap-3"
           >
             <div
               class="tw-w-full tw-h-[250px] tw-p-4 tw-rounded-xl tw-backdrop-blur-2xl tw-overflow-hidden tw-flex tw-place-content-center"
             >
               <img
-                src="/assets/images/home/history.png"
+                src="/public/assets/images/home/history.png"
                 alt="History"
                 class="tw-w-auto tw-h-full tw-object-contain"
               />
             </div>
-            <h3 class="tw-text-2xl">Event Updates</h3>
+            <h3 class="tw-text-2xl">History</h3>
             <p
               class="tw-text-gray-700 dark:tw-text-gray-300 tw-px-4 tw-text-center tw-text-sm"
             >
-              Stay informed about important GSSOC events, deadlines, workshops,
-              and announcements. Never miss a critical date again.
+              All of the models can recall previous topic, so you can continue
+              your conversation at any point of time.
             </p>
           </div>
 
@@ -932,18 +1182,17 @@
               class="tw-w-full tw-h-[250px] tw-p-4 tw-rounded-xl tw-backdrop-blur-2xl tw-overflow-hidden tw-flex tw-place-content-center"
             >
               <img
-                src="/assets/images/home/import.png"
+                src="/public/assets/images/home/import.png"
                 alt="Import content"
                 class="tw-w-auto tw-h-full tw-object-contain"
               />
             </div>
-            <h3 class="tw-text-2xl">Smart Search</h3>
+            <h3 class="tw-text-2xl">Import content</h3>
             <p
               class="tw-text-gray-700 dark:tw-text-gray-300 tw-px-4 tw-text-center tw-text-sm"
             >
-              Find exactly what you need with intelligent search capabilities.
-              Search projects by technology, difficulty, or keywords for perfect
-              matches.
+              Effortlessly import PDFs, images, and documents. Use AI to ask
+              questions, extract information, and summarize documents.
             </p>
           </div>
 
@@ -954,19 +1203,19 @@
               class="tw-w-full tw-h-[250px] tw-p-4 tw-rounded-xl tw-backdrop-blur-2xl tw-overflow-hidden tw-flex tw-place-content-center"
             >
               <img
-                src="/assets/images/home/multilingual.png"
+                src="/public/assets/images/home/multilingual.png"
                 alt="Multilingual"
                 class="tw-w-auto tw-h-full tw-object-contain"
               />
             </div>
-            <h3 class="tw-text-2xl">24/7 Availability</h3>
+            <h3 class="tw-text-2xl">Multilingual support</h3>
             <p
               class="tw-text-gray-700 dark:tw-text-gray-300 tw-px-4 tw-text-center tw-text-sm"
             >
-              The GSSOC FAQ Bot is available round the clock to answer your
-              questions and provide assistance whenever you need it.
+              ChatGPT, and Gemini can understand and respond in over 100
+              languages.
             </p>
-          </div>
+          </div> -->
         </div>
       </div>
     </section>
@@ -977,8 +1226,611 @@
       <div
         class="tw-w-full max-lg:tw-max-w-full tw-place-content-center tw-place-items-center tw-flex tw-flex-col tw-max-w-[80%] tw-gap-4 tw-p-4"
       >
-       
-      <h3 class="tw-text-4xl tw-font-medium max-md:tw-text-2xl">Faq</h3>
+        <h3
+          id="promo-image"
+          class="reveal-up tw-text-5xl tw-font-medium max-md:tw-text-3xl tw-text-center tw-leading-normal tw-uppercase"
+        >
+          One Command for it all
+        </h3>
+        <p class="reveal-up tw-mt-3 tw-max-w-[600px] tw-text-center">
+          Imagine having everything at your fingertips—one command for all. No
+          more managers to frustrate, no waiting. With 24/7 service, instantly
+          access what you need and save hours of your productive day, enhancing
+          efficiency and eliminating unnecessary delays.
+        </p>
+
+        <div class="tw-mt-8 tw-relative tw-flex max-lg:tw-flex-col tw-gap-5">
+          <!-- <div
+            class="reveal-up tw-flex tw-w-full tw-max-w-[650px] max-md:tw-max-w-full tw-flex-col tw-place-items-center tw-gap-2 tw-rounded-lg tw-border-[1px] tw-border-outlineColor tw-bg-white dark:tw-bg-[#080808] dark:tw-border-[#1f2123] tw-p-2 tw-shadow-xl max-lg:tw-w-[320px]"
+          >
+            <img
+              src="/assets/images/home/gssocfaqbot.png"
+              alt="Multi sub"
+              class="tw-rounded-lg"
+            />
+          </div> -->
+  <a
+          href="https://discord.com/oauth2/authorize?client_id=1396740851056640091&permissions=8&integration_type=0&scope=bot+applications.commands"
+        >
+          <div
+            class="reveal-up tw-flex tw-w-full tw-max-w-[650px] tw-flex-col tw-place-items-center tw-gap-2 tw-rounded-lg tw-border-[1px] tw-border-outlineColor tw-bg-white dark:tw-bg-[#080808] dark:tw-border-[#1f2123] tw-p-2 tw-shadow-xl max-lg:tw-w-[320px]"
+          >
+            <img
+              src="/assets/images/home/promopost.jpg"
+              alt="promo post"
+              class="tw-rounded-lg"
+              style="width: 400px; height: auto"
+            />
+          </div>
+        </div>
+        </a>
+
+        <a
+          href="https://discord.com/oauth2/authorize?client_id=1396740851056640091&permissions=8&integration_type=0&scope=bot+applications.commands"
+          class="reveal-up tw-group tw-shadow-xl btn tw-flex tw-gap-2 tw-mt-10"
+        >
+          <i class="bi bi-discord"></i>
+          <span>Add To Discord</span>
+          <i
+            class="bi bi-arrow-right tw-duration-300 group-hover:tw-translate-x-1"
+          ></i>
+        </a>
+      </div>
+    </section>
+
+    <section
+      class="tw-flex tw-min-h-[100vh] tw-w-full tw-flex-col tw-place-content-center tw-place-items-center tw-p-[2%]"
+    >
+      <h3
+        class="reveal-up tw-text-4xl tw-font-medium tw-text-center max-md:tw-text-2xl tw-uppercase"
+      >
+        testimonials for gssoc faq bot
+      </h3>
+      <p
+        class="reveal-up"
+        style="
+          color: rgba(83, 83, 255, 0.776);
+          font-family: 'Courier New', Courier, monospace;
+        "
+      >
+        What our users are saying
+      </p>
+      <!-- Testimonials -->
+      <div
+        class="tw-mt-20 tw-gap-10 tw-space-y-8 max-md:tw-columns-1 lg:tw-columns-2 xl:tw-columns-3"
+      >
+        <div
+          class="reveal-up tw-flex tw-h-fit tw-w-[350px] tw-break-inside-avoid tw-flex-col tw-gap-4 tw-rounded-lg tw-border-[1px] tw-bg-[#f6f7fb] dark:tw-bg-[#080808] dark:tw-border-[#1f2123] tw-p-4 max-lg:tw-w-[320px]"
+        >
+          <div class="tw-flex tw-place-items-center tw-gap-3">
+            <div
+              class="tw-h-[50px] tw-w-[50px] tw-overflow-hidden tw-rounded-full"
+            >
+              <img
+                src="/assets/images/people/piyush.png"
+                class="tw-h-full tw-w-full tw-object-cover"
+                alt="man"
+              />
+            </div>
+            <div class="tw-flex tw-flex-col tw-gap-1">
+              <div class="tw-font-semibold">
+                Piyush Patel
+                <a
+                  href="https://github.com/piyushpatelcodes"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="social-icon github"
+                >
+                  <i class="bi bi-github"></i>
+                </a>
+                <a
+                  href="https://linkedin.com/in/piyushpatelcodes"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="social-icon linkedin"
+                >
+                  <i class="bi bi-linkedin"></i>
+                </a>
+              </div>
+              <div class="tw-text-gray-700 dark:tw-text-gray-300">
+                @piyushpatelcodes
+              </div>
+            </div>
+          </div>
+
+          <!-- <p class="tw-mt-4 tw-text-gray-800 dark:tw-text-gray-200">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae,
+            vero. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Magnam dolore deleniti iusto Numquam!
+          </p> -->
+          <a target="_blank" href="https://discord.com/oauth2/authorize?client_id=1396740851056640091&permissions=8&integration_type=0&scope=bot+applications.commands">
+            <div class="image-container">
+              <img class="tw-rounded-xl" src="/assets/logo/1.png" />
+              <!-- Invite text and icon -->
+              <div
+                class="invite-text tw-rounded-md"
+                style="
+                  top: 66%;
+                  border: 1px solid white;
+                  padding: 2%;
+                  font-size: small;
+                  cursor: pointer;
+                  color: black;
+                "
+              >
+                <i class="bi bi-discord"></i> Invite Now
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div
+          class="reveal-up tw-flex tw-h-fit tw-w-[350px] tw-break-inside-avoid tw-flex-col tw-gap-4 tw-rounded-lg tw-border-[1px] tw-bg-[#f6f7fb] dark:tw-bg-[#080808] dark:tw-border-[#1f2123] tw-p-4 max-lg:tw-w-[320px]"
+        >
+          <div class="tw-flex tw-place-items-center tw-gap-3">
+            <div
+              class="tw-h-[50px] tw-w-[50px] tw-overflow-hidden tw-rounded-full"
+            >
+              <img
+                src="/assets/logo/1.png"
+                class="tw-h-full tw-w-full tw-object-cover"
+                alt="discord user"
+              />
+            </div>
+            <div class="tw-flex tw-flex-col tw-gap-1">
+              <div class="tw-font-semibold">lyrast</div>
+              <div class="tw-text-gray-700 dark:tw-text-gray-300">
+                Discord User, GSSOC
+              </div>
+            </div>
+          </div>
+
+          <img
+            src="/assets/images/people/testimonial1.png"
+            style="border: 1px solid rgba(255, 255, 255, 0.184)"
+            class="tw-rounded-lg"
+          />
+        </div>
+
+        <div
+          class="reveal-up tw-flex tw-h-fit tw-w-[350px] tw-break-inside-avoid tw-flex-col tw-gap-4 tw-rounded-lg tw-border-[1px] tw-bg-[#f6f7fb] dark:tw-bg-[#080808] dark:tw-border-[#1f2123] tw-p-4 max-lg:tw-w-[320px]"
+        >
+          <div class="tw-flex tw-place-items-center tw-gap-3">
+            <div
+              class="tw-h-[50px] tw-w-[50px] tw-overflow-hidden tw-rounded-full"
+            >
+              <img
+                src="/assets/logo/1.png"
+                class="tw-h-full tw-w-full tw-object-cover"
+                alt="discord user"
+              />
+            </div>
+            <div class="tw-flex tw-flex-col tw-gap-1">
+              <div class="tw-font-semibold">
+                M.A. Affan
+                <a
+                  href="https://www.linkedin.com/in/m-a-affan/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="social-icon linkedin"
+                >
+                  <i class="bi bi-linkedin"></i>
+                </a>
+              </div>
+              <div
+                class="tw-text-gray-700 dark:tw-text-gray-300"
+                style="font-size: x-small"
+              >
+                Vice President at HackxVU, GSSOC'25 Contributor
+              </div>
+            </div>
+          </div>
+
+          <p class="tw-mt-4 tw-text-gray-800 dark:tw-text-gray-200">
+            Whoever made this gssocfaq bot is genius. Bot is actually good.
+          </p>
+          <img
+            src="/assets/images/people/testimonial2.png"
+            alt="testimonial2"
+            class="tw-rounded-lg"
+            style="border: 1px solid rgba(255, 255, 255, 0.184)"
+          />
+        </div>
+
+        <div
+          class="reveal-up tw-flex tw-h-fit tw-w-[350px] tw-break-inside-avoid tw-flex-col tw-gap-4 tw-rounded-lg tw-border-[1px] tw-bg-[#f6f7fb] dark:tw-bg-[#080808] dark:tw-border-[#1f2123] tw-p-4 max-lg:tw-w-[320px]"
+        >
+          <div class="tw-flex tw-place-items-center tw-gap-3">
+            <div
+              class="tw-h-[50px] tw-w-[50px] tw-overflow-hidden tw-rounded-full"
+            >
+              <img
+                src="/assets/logo/1.png"
+                class="tw-h-full tw-w-full tw-object-cover tw-rounded-lg"
+                alt="man"
+              />
+            </div>
+            <div class="tw-flex tw-flex-col tw-gap-1">
+              <div class="tw-font-semibold">Discord User</div>
+              <div class="tw-text-gray-700 dark:tw-text-gray-300">
+                Used in other servers too
+              </div>
+            </div>
+          </div>
+
+          <!-- <p class="tw-mt-4 tw-text-gray-800 dark:tw-text-gray-200">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae,
+            vero.
+          </p> -->
+          <img
+            src="/assets/images/people/testimonial4.png"
+            alt="testimonial4"
+            class="tw-rounded-lg"
+            style="border: 1px solid rgba(255, 255, 255, 0.184)"
+          />
+        </div>
+
+        <div
+          class="reveal-up tw-flex tw-h-fit tw-w-[350px] tw-break-inside-avoid tw-flex-col tw-gap-4 tw-rounded-lg tw-border-[1px] tw-bg-[#f6f7fb] dark:tw-bg-[#080808] dark:tw-border-[#1f2123] tw-p-4 max-lg:tw-w-[320px]"
+        >
+          <div class="tw-flex tw-place-items-center tw-gap-3">
+            <div
+              class="tw-h-[50px] tw-w-[50px] tw-overflow-hidden tw-rounded-full"
+            >
+              <img
+                src="/assets/logo/1.png"
+                class="tw-h-full tw-w-full tw-object-cover"
+                alt="user3"
+              />
+            </div>
+            <div class="tw-flex tw-flex-col tw-gap-1">
+              <div class="tw-font-semibold">Discord User</div>
+              <div class="tw-text-gray-700 dark:tw-text-gray-300">
+                in gssoc servers
+              </div>
+            </div>
+          </div>
+
+          <!-- <p class="tw-mt-4 tw-text-gray-800 dark:tw-text-gray-200">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae,
+            vero. Lorem, ipsum dolor.
+          </p> -->
+          <img
+            src="/assets/images/people/testimonial3.png"
+            alt="testimonial3"
+            class="tw-rounded-lg"
+            style="border: 1px solid rgba(255, 255, 255, 0.184)"
+          />
+        </div>
+
+        <div
+          class="reveal-up tw-flex tw-h-fit tw-w-[350px] tw-break-inside-avoid tw-flex-col tw-gap-4 tw-rounded-lg tw-border-[1px] tw-bg-[#f6f7fb] dark:tw-bg-[#080808] dark:tw-border-[#1f2123] tw-p-4 max-lg:tw-w-[320px]"
+        >
+          <div class="tw-flex tw-place-items-center tw-gap-3">
+            <div
+              class="tw-h-[50px] tw-w-[50px] tw-overflow-hidden tw-rounded-full"
+            >
+              <img
+                src="/assets/logo/1.png"
+                class="tw-h-full tw-w-full tw-object-cover"
+                alt="man"
+              />
+            </div>
+            <div class="tw-flex tw-flex-col tw-gap-1">
+              <div class="tw-font-semibold">Another Discord User</div>
+              <div class="tw-text-gray-700 dark:tw-text-gray-300">
+                Gssoc Contributor
+              </div>
+            </div>
+          </div>
+
+          <!-- <p class="tw-mt-4 tw-text-gray-800 dark:tw-text-gray-200">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est, nihil
+            vitae fuga ab reiciendis optio et corporis dolorem alias deserunt,
+            molestias in iusto! Ratione, quisquam incidunt. Reprehenderit ipsam
+            officiis enim.
+          </p> -->
+          <img
+            src="/assets/images/people/testimonial5.png"
+            alt="testimonial5"
+            class="tw-rounded-lg"
+            style="border: 1px solid rgba(255, 255, 255, 0.184)"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- pricing -->
+    <!-- <section
+      class="tw-mt-5 tw-flex tw-w-full tw-flex-col tw-gap-6 tw-place-items-center tw-p-[2%]"
+      id="pricing"
+    >
+      <h3 class="reveal-up tw-text-5xl tw-font-medium max-md:tw-text-2xl">
+        Choose the right plan for you
+      </h3>
+      <div
+        class="tw-mt-10 tw-flex tw-flex-wrap tw-place-content-center tw-gap-8 max-lg:tw-flex-col"
+      >
+        <div
+          class="reveal-up tw-flex tw-w-[350px] tw-flex-col tw-place-items-center tw-gap-2 tw-rounded-lg tw-border-[1px] tw-border-outlineColor tw-bg-white dark:tw-bg-[#080808] dark:tw-border-[#1f2123] tw-p-8 tw-shadow-xl max-lg:tw-w-[320px]"
+        >
+          <h3 class="">
+            <span class="tw-text-5xl max-md:tw-text-3xl tw-font-semibold"
+              >$9</span
+            >
+            <span class="tw-text-2xl tw-text-gray-600 dark:tw-text-gray-300"
+              >/mo</span
+            >
+          </h3>
+          <p
+            class="tw-mt-3 tw-text-center tw-text-gray-800 dark:tw-text-gray-100"
+          >
+            Essential AI tools for everyday use
+          </p>
+          <hr />
+          <ul
+            class="tw-mt-4 tw-flex tw-flex-col tw-gap-4 tw-text-base tw-text-gray-800 dark:tw-text-gray-200"
+          >
+            <li class="tw-flex tw-gap-2">
+              <i class="bi bi-check-circle-fill"></i>
+              <span>1,000 AI powered chat messages</span>
+            </li>
+            <li class="tw-flex tw-gap-2">
+              <i class="bi bi-check-circle-fill"></i>
+              <span>30 premium image generations</span>
+            </li>
+            <li class="tw-flex tw-gap-2">
+              <i class="bi bi-check-circle-fill"></i>
+              <span>10 premium music generation</span>
+            </li>
+
+            <li class="tw-flex tw-gap-2">
+              <i
+                class="bi bi-check-circle-fill tw-text-gray-400 dark:tw-text-gray-500"
+              ></i>
+              <span>Access to all premium AI models</span>
+            </li>
+
+            <li class="tw-flex tw-gap-2">
+              <i
+                class="bi bi-check-circle-fill tw-text-gray-400 dark:tw-text-gray-500"
+              ></i>
+              <span>Early access to new features</span>
+            </li>
+          </ul>
+          <a
+            href="#"
+            class="btn tw-mt-auto !tw-w-full tw-transition-transform tw-duration-[0.3s] hover:tw-scale-x-[1.02] !tw-text-black !tw-bg-transparent !tw-border-[1px] tw-border-black dark:tw-border-white dark:!tw-text-white"
+          >
+            Choose plan
+          </a>
+        </div>
+
+        <div
+          class="reveal-up tw-flex tw-w-[350px] tw-flex-col tw-place-items-center tw-gap-2 tw-rounded-lg tw-border-2 tw-border-outlineColor tw-bg-white dark:tw-bg-[#080808] dark:tw-border-[#595858] tw-p-8 tw-shadow-xl max-lg:tw-w-[320px]"
+        >
+          <h3 class="">
+            <span class="tw-text-5xl max-md:tw-text-3xl tw-font-semibold"
+              >$17</span
+            >
+            <span
+              class="tw-text-2xl max-md:tw-text-xl tw-text-gray-600 dark:tw-text-gray-300"
+              >/mo</span
+            >
+          </h3>
+          <p
+            class="tw-mt-3 tw-text-center tw-text-gray-800 dark:tw-text-gray-200"
+          >
+            Advanced features for serious AI enthusiasts.
+          </p>
+          <hr />
+          <ul
+            class="tw-mt-4 tw-flex tw-flex-col tw-gap-4 tw-text-base tw-text-gray-800 dark:tw-text-gray-100"
+          >
+            <li class="tw-flex tw-gap-2">
+              <i class="bi bi-check-circle-fill"></i>
+              <span>5,000 AI powered chat messages</span>
+            </li>
+            <li class="tw-flex tw-gap-2">
+              <i class="bi bi-check-circle-fill"></i>
+              <span>100 premium image generations</span>
+            </li>
+            <li class="tw-flex tw-gap-2">
+              <i class="bi bi-check-circle-fill"></i>
+              <span>40 premium music generation</span>
+            </li>
+
+            <li class="tw-flex tw-gap-2">
+              <i class="bi bi-check-circle-fill"></i>
+              <span>Access to all premium AI models</span>
+            </li>
+
+            <li class="tw-flex tw-gap-2">
+              <i
+                class="bi bi-check-circle-fill tw-text-gray-400 dark:tw-text-gray-500"
+              ></i>
+              <span>Early access to new features</span>
+            </li>
+          </ul>
+          <a
+            href="#"
+            class="btn tw-mt-auto !tw-w-full tw-transition-transform tw-duration-[0.3s] hover:tw-scale-x-[1.02]"
+          >
+            Choose plan
+          </a>
+        </div>
+
+        <div
+          class="reveal-up tw-flex tw-w-[350px] tw-flex-col tw-place-items-center tw-gap-2 tw-rounded-lg tw-border-[1px] tw-border-outlineColor dark:tw-bg-[#080808] dark:tw-border-[#1f2123] tw-bg-white tw-p-8 tw-shadow-xl max-lg:tw-w-[320px]"
+        >
+          <h3 class="">
+            <span class="tw-text-5xl max-md:tw-text-3xl tw-font-semibold"
+              >$29</span
+            >
+            <span class="tw-text-2xl tw-text-gray-600 dark:tw-text-gray-300"
+              >/mo</span
+            >
+          </h3>
+          <p
+            class="tw-mt-3 tw-text-center tw-text-gray-800 dark:tw-text-gray-100"
+          >
+            Unlimited potential for power users
+          </p>
+          <hr />
+          <ul
+            class="tw-mt-4 tw-flex tw-flex-col tw-gap-4 tw-text-base tw-text-gray-800 dark:tw-text-gray-200"
+          >
+            <li class="tw-flex tw-gap-2">
+              <i class="bi bi-check-circle-fill"></i>
+              <span>10,000 AI powered chat messages</span>
+            </li>
+            <li class="tw-flex tw-gap-2">
+              <i class="bi bi-check-circle-fill"></i>
+              <span>300 premium image generations</span>
+            </li>
+            <li class="tw-flex tw-gap-2">
+              <i class="bi bi-check-circle-fill"></i>
+              <span>100 premium music generations</span>
+            </li>
+
+            <li class="tw-flex tw-gap-2">
+              <i class="bi bi-check-circle-fill"></i>
+              <span>Access to all premium AI models</span>
+            </li>
+
+            <li class="tw-flex tw-gap-2">
+              <i class="bi bi-check-circle-fill"></i>
+              <span>Early access to new features</span>
+            </li>
+          </ul>
+          <a
+            href="#"
+            class="btn tw-mt-8 !tw-w-full tw-transition-transform tw-duration-[0.3s] hover:tw-scale-x-[1.02] !tw-text-black !tw-bg-transparent !tw-border-[1px] tw-border-black dark:tw-border-white dark:!tw-text-white"
+          >
+            Choose plan
+          </a>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- articles -->
+    <!-- <section
+      class="tw-mt-5 tw-flex tw-min-h-[80vh] tw-w-full tw-flex-col tw-place-content-center tw-place-items-center tw-p-[2%] max-lg:tw-p-3"
+    >
+      <h3 class="reveal-up tw-text-4xl tw-font-medium max-md:tw-text-2xl">
+        Read resources by experts ✨
+      </h3>
+
+      <div
+        class="reveal-up tw-mt-10 tw-flex tw-flex-wrap tw-place-content-center tw-gap-10 max-lg:tw-flex-col"
+      >
+        <a
+          href="#"
+          class="tw-flex tw-h-[500px] tw-w-[400px] tw-flex-col tw-gap-2 tw-overflow-clip tw-rounded-lg tw-p-4 max-lg:tw-w-[350px]"
+        >
+          <div
+            class="tw-h-[350px] tw-min-h-[350px] tw-w-full tw-overflow-hidden tw-rounded-2xl"
+          >
+            <img
+              src="/assets/images/home/article1.png"
+              alt="article image"
+              class="tw-h-full tw-w-full tw-object-cover tw-transition-transform tw-duration-700 hover:tw-scale-[1.3]"
+              srcset=""
+            />
+          </div>
+
+          <div
+            class="tw-text-gray-600 dark:tw-text-gray-300 tw-justify-between tw-flex tw-gap-2"
+          >
+            <div class="tw-text-gray-800 dark:tw-text-gray-200">
+              Machine learning
+            </div>
+            <div class="tw-text-gray-600 dark:tw-text-gray-400">
+              Jul, 17, 2024
+            </div>
+          </div>
+          <h3 class="tw-mt-1 tw-font-medium tw-text-xl max-md:tw-text-xl">
+            Latest AI tools
+          </h3>
+        </a>
+
+        <a
+          href="#"
+          class="tw-flex tw-h-[500px] tw-w-[400px] tw-flex-col tw-gap-2 tw-overflow-clip tw-rounded-lg tw-p-4 max-lg:tw-w-[350px]"
+        >
+          <div
+            class="tw-h-[350px] tw-min-h-[350px] tw-w-full tw-overflow-hidden tw-rounded-2xl"
+          >
+            <img
+              src="/public/assets/images/home/article2.jpg"
+              alt="article image"
+              class="tw-h-full tw-w-full tw-object-cover tw-transition-transform tw-duration-700 hover:tw-scale-[1.3]"
+              srcset=""
+            />
+          </div>
+
+          <div
+            class="tw-text-gray-600 dark:tw-text-gray-300 tw-justify-between tw-flex tw-gap-2"
+          >
+            <div class="tw-text-gray-800 dark:tw-text-gray-200">
+              Announcement
+            </div>
+            <div class="tw-text-gray-600 dark:tw-text-gray-400">
+              June, 22, 2024
+            </div>
+          </div>
+          <h3 class="tw-mt-1 tw-font-medium tw-text-xl max-md:tw-text-xl">
+            Pixa Unveils new technology
+          </h3>
+        </a>
+
+        <a
+          href="#"
+          class="tw-flex tw-h-[500px] tw-w-[400px] tw-flex-col tw-gap-2 tw-overflow-clip tw-rounded-lg tw-p-4 max-lg:tw-w-[350px]"
+        >
+          <div
+            class="tw-h-[350px] tw-min-h-[350px] tw-w-full tw-overflow-hidden tw-rounded-2xl"
+          >
+            <img
+              src="/public/assets/images/home/article3.png"
+              alt="article image"
+              class="tw-h-full tw-w-full tw-object-cover tw-transition-transform tw-duration-700 hover:tw-scale-[1.3]"
+              srcset=""
+            />
+          </div>
+
+          <div
+            class="tw-text-gray-600 dark:tw-text-gray-300 tw-justify-between tw-flex tw-gap-2"
+          >
+            <div class="tw-text-gray-800 dark:tw-text-gray-200">
+              Announcement
+            </div>
+            <div class="tw-text-gray-600 dark:tw-text-gray-400">
+              Apr, 27, 2024
+            </div>
+          </div>
+          <h3 class="tw-mt-1 tw-font-medium tw-text-xl max-md:tw-text-xl">
+            Launching Pixa playground
+          </h3>
+        </a>
+      </div>
+    </section> -->
+
+    <section
+    id="faq-footer"
+      class="tw-relative tw-flex tw-w-full tw-flex-col tw-place-content-center tw-place-items-center tw-gap-[10%] tw-p-[5%] tw-px-[10%]"
+    >
+      <h3 class="tw-text-4xl tw-font-medium max-md:tw-text-2xl tw-uppercase">
+        Faq
+      </h3>
+      <p
+        style="
+          font-family: 'Courier New', Courier, monospace;
+          color: rgb(157, 0, 255);
+        "
+      >
+        Regarding GSSOC FAQ BOT
+      </p>
       <div
         class="tw-mt-5 tw-flex tw-min-h-[300px] tw-w-full tw-max-w-[850px] tw-flex-col tw-gap-4"
       >
@@ -986,14 +1838,60 @@
           <h4
             class="faq-accordion tw-flex tw-w-full tw-select-none tw-text-xl max-md:tw-text-lg"
           >
-            <span>What's Pixa playground?</span>
+            <span>What's GSSOC FAQ BOT?</span>
             <i
               class="bi bi-plus tw-text-xl tw-origin-center tw-duration-300 tw-transition-transform tw-ml-auto tw-font-semibold"
             ></i>
           </h4>
-          <div class="content max-lg:tw-text-sm">
-            Pixa's playground is an integrated webapp to seamlessly test
-            different LLM models such as GPT4, Claude, Gemini, etc.
+          <div
+            class="content"
+            style="
+              font-family: 'Poppins', sans-serif;
+              font-size: 16px;
+              max-width: 800px;
+              padding: 20px;
+              background-color: #1e1e1e;
+              border-radius: 8px;
+              box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+              color: #ddd;
+            "
+          >
+            <p>
+              The
+              <span style="font-weight: 600; color: #4b9cd3"
+                >GSSOC FAQ BOT</span
+              >
+              is a
+              <span style="color: #4b9cd3; font-weight: 600">Discord bot</span>
+              designed to streamline the process of answering frequently asked
+              questions (FAQs) for
+              <span style="font-weight: 600; color: #4b9cd3"
+                >managers and mentors</span
+              >
+              within the
+              <span style="color: #4b9cd3; font-weight: 600"
+                >GSSOC community</span
+              >.
+            </p>
+
+            <p>
+              The bot addresses a common issue faced by the community: every
+              time a new user joins, they often ask the same set of questions,
+              which can lead to
+              <span style="color: #ff8c00; font-weight: 600">frustration</span>
+              and a waste of time for managers and mentors who repeatedly
+              provide the same answers. Additionally, many users don't check
+              announcements, and important information often gets buried or
+              cluttered.
+            </p>
+
+            <p>
+              To solve this, the FAQ bot automates responses to common
+              questions, providing instant answers to new members, reducing the
+              workload for managers, and enhancing the overall user experience.
+              It ensures that no one misses important information, making the
+              community more efficient and less stressful for everyone involved.
+            </p>
           </div>
         </div>
         <hr />
@@ -1001,18 +1899,59 @@
           <h4
             class="faq-accordion tw-flex tw-w-full tw-select-none tw-text-xl max-md:tw-text-lg"
           >
-            <span>What are LLM?</span>
+            <span>What all other features does the GSSOC FAQ Bot provide</span>
             <i
               class="bi bi-plus tw-text-xl tw-origin-center tw-duration-300 tw-transition-transform tw-ml-auto tw-font-semibold"
             ></i>
           </h4>
-          <div class="content max-lg:tw-text-sm">
-            LLM stands for "Large Language Model." It's a type of artificial
-            intelligence model trained on vast amounts of text data to
-            understand and generate human-like text. These models, like GPT-4,
-            can perform various tasks, such as answering questions, generating
-            content, translating languages, and more, by leveraging patterns
-            learned from the data they were trained on.
+          <div
+            class="content tw-rounded-lg"
+            style="
+              font-family: 'Poppins', sans-serif;
+              font-size: 16px;
+              color: #ddd;
+              background-color: #1e1e1e;
+            "
+          >
+            <p>
+              Despite its name, the <strong>GSSOC FAQ Bot</strong> offers more
+              than just frequently asked questions. It provides comprehensive
+              details about all available projects, with specific information on
+              each individual project.
+            </p>
+
+            <p><strong>Key features include:</strong></p>
+
+            <ul
+              style="
+                list-style-position: inside;
+                list-style-type: disc;
+                padding-left: 20px;
+              "
+            >
+              <li>
+                <strong style="color: #4b9cd3"
+                  >Complete Project Details:</strong
+                >
+                Access to an overview of all projects at once.
+              </li>
+              <li>
+                <strong style="color: #4b9cd3"
+                  >Project-Specific Information:</strong
+                >
+                Detailed information for each project is also available.
+              </li>
+              <li>
+                <strong style="color: #4b9cd3">Search Functionality:</strong>
+                Easily search for projects by name or phase.
+              </li>
+              <li>
+                <strong style="color: #4b9cd3">Autocomplete Support:</strong>
+                Both the FAQ and project name search support autocomplete,
+                making it quicker and more efficient to find the information you
+                need.
+              </li>
+            </ul>
           </div>
         </div>
         <hr />
@@ -1020,14 +1959,101 @@
           <h4
             class="faq-accordion tw-flex tw-w-full tw-select-none tw-text-xl max-md:tw-text-lg"
           >
-            <span>Where can I test different AI models?</span>
+            <span>How to Contribute in GSSOC?</span>
             <i
               class="bi bi-plus tw-text-xl tw-origin-center tw-duration-300 tw-transition-transform tw-ml-auto tw-font-semibold"
             ></i>
           </h4>
-          <div class="content max-lg:tw-text-sm">
-            You can use Pixa's AI Playground to test different models, including
-            GPT4, Claude, Perplexity and more.
+          <div
+            class="content tw-rounded-lg"
+            style="
+              font-family: 'Poppins', sans-serif;
+              font-size: 16px;
+              color: #ddd;
+              background-color: #1e1e1e;
+            "
+          >
+            <p>
+              <strong>Contributing is Easy!!! </strong> Follow these simple
+              steps to get started:
+            </p>
+
+            <ul
+              style="
+                list-style-position: inside;
+                list-style-type: disc;
+                padding-left: 20px;
+              "
+            >
+              <li>
+                <strong>Visit the Project List for GSSOC2025:</strong>
+                Go to the
+                <a
+                  href="https://docs.google.com/spreadsheets/d/12TYRJSwCimT8DIBT4UKKUGR7lrpG2lzTNK82Zc1LwO0/edit?gid=0#gid=0"
+                  target="_blank"
+                  style="color: #4b9cd3; text-decoration: none"
+                  >master.xlsx file</a
+                >
+                to see the list of available projects.
+              </li>
+              <li>
+                <strong>Select Your Project:</strong>
+                Choose your preferred project and navigate to its corresponding
+                GitHub repository.
+              </li>
+              <li>
+                <strong>Check for Issues:</strong>
+                Look for issues marked with the label
+                <code>'gssoc2025'</code> and <code>'level 1/2/3'</code>. If you
+                don't see them, reach out to the project admin and ask them to
+                label the issues accordingly.
+              </li>
+              <li>
+                <strong
+                  >You can also follow this helpful guide to contribute to any
+                  GitHub project:</strong
+                >
+                <a
+                  href="https://www.dataschool.io/how-to-contribute-on-github/"
+                  target="_blank"
+                  style="color: #4b9cd3; text-decoration: none"
+                  >How to Contribute Guide</a
+                >.
+              </li>
+            </ul>
+            <p style="font-size: 18px">
+              <strong>Star the repo</strong> and you can also contribute to the
+              <a
+                href="https://github.com/piyushpatelcodes/gssocFAQ-Bot"
+                target="_blank"
+                style="color: #4b9cd3; text-decoration: none; font-weight: 600"
+                >GSSOC FAQ Bot Repository</a
+              >.
+            </p>
+
+            <a
+              href="https://github.com/piyushpatelcodes/gssocFAQ-Bot"
+              target="_blank"
+              style="
+                border: 1px solid rgba(255, 255, 255, 0.49);
+                font-size: 10px;
+                display: inline-flex;
+                align-items: center;
+                text-decoration: none;
+                background-color: #00000098;
+                padding: 5px 10px;
+                border-radius: 5px;
+                color: white;
+                font-weight: 600;
+              "
+            >
+              <i
+                class="bi bi-star-fill"
+                style="color: #ffd700; margin-right: 8px"
+              ></i>
+              <strong style="margin-right: 8px"> Star Repository on </strong>
+              <i class="bi bi-github"></i>
+            </a>
           </div>
         </div>
         <hr />
@@ -1036,14 +2062,41 @@
           <h4
             class="faq-accordion tw-flex tw-w-full tw-select-none tw-text-xl max-md:tw-text-lg"
           >
-            <span>Is Pixa Free to use?</span>
+            <span>Is GSSOC FAQ Bot Free to use?</span>
             <i
               class="bi bi-plus tw-text-xl tw-origin-center tw-duration-300 tw-transition-transform tw-ml-auto tw-font-semibold"
             ></i>
           </h4>
           <div class="content max-lg:tw-text-sm">
-            You can start using Pixa for free, and later upgrade your plan to
-            access all its features.
+            Yes, the GSSOC FAQ Bot is currently in use by 16 private servers,
+            with an expected traffic of over 300+ requests every day. You can
+            see proof of this in the Testimonial Section above, where real users
+            share their experiences along with images showing the bot in action.
+            And the best part? It's absolutely free!
+            <br />
+            <a
+              href="https://discord.com/oauth2/authorize?client_id=1396740851056640091&permissions=8&integration_type=0&scope=bot+applications.commands"
+              target="_blank"
+              style="
+                margin-top: 1%;
+                border: 1px solid rgba(255, 255, 255, 0.49);
+                font-size: 10px;
+                display: inline-flex;
+                align-items: center;
+                text-decoration: none;
+                background-color: #00000098;
+                padding: 5px 10px;
+                border-radius: 5px;
+                color: white;
+                font-weight: 600;
+              "
+            >
+              <i
+                class="bi bi-discord"
+                style="color: #00aaff; margin-right: 8px"
+              ></i>
+              <strong style="margin-right: 8px"> Add To Server </strong>
+            </a>
           </div>
         </div>
         <hr />
@@ -1053,46 +2106,182 @@
       ></div>
     </section>
 
- 
+    <section
+      class="tw-relative tw-flex tw-p-2 tw-w-full tw-min-h-[60vh] tw-flex-col tw-place-content-center tw-place-items-center tw-overflow-hidden"
+    >
+      <div
+        style="
+          background-image: url('/assets/logo/logo.jpg');
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: cover;
+        "
+        class="tw-rounded-xl reveal-up tw-w-full tw-h-full tw-min-h-[450px] max-lg:tw-max-w-full lg:tw-py-[5%] tw-place-content-center tw-items-center tw-flex tw-flex-col tw-max-w-[80%] tw-gap-4 tw-p-4"
+      >
+        <!-- <h3
+          class="reveal-up tw-text-5xl tw-font-medium max-md:tw-text-3xl tw-text-center tw-leading-normal"
+        >
+          Access and compare multiple AI models
+        </h3> -->
+
+        <div
+          style="
+            position: fixed;
+            bottom: 10%;
+            left: 50%;
+            transform: translateX(-50%);
+            backdrop-filter: blur(10px);
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 20px 30px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+          "
+        >
+          <a
+            onmouseover=" this.style.color='#dbf5ac'; this.style.transform='translateY(-5px)'"
+            onmouseout=" this.style.color='#fff'; this.style.transform='translateY(0)'"
+            href="https://discord.com/oauth2/authorize?client_id=1396740851056640091&permissions=8&integration_type=0&scope=bot+applications.commands"
+            style="
+              display: inline-block;
+              padding: 5px 10px;
+              font-size: 16px;
+              font-weight: 600;
+              text-transform: uppercase;
+              color: #fff;
+              text-decoration: none;
+              transition: all 0.3s ease;
+            "
+          >
+            <i class="bi bi-discord"></i> Launch GSSOC FAQ BOT
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- newsletter section -->
+    <!-- <section
+      class="tw-flex tw-w-full tw-flex-col tw-place-content-center tw-place-items-center tw-gap-[10%] tw-p-[5%] tw-px-[10%] max-md:tw-px-2"
+    >
+      <div
+        class="tw-flex tw-w-full tw-max-w-[80%] tw-place-content-center tw-place-items-center tw-justify-between tw-gap-3 tw-rounded-lg tw-bg-[#F6F7FB] dark:tw-bg-[#171717] tw-p-6 max-md:tw-max-w-full max-md:tw-flex-col"
+      >
+        <div class="tw-flex tw-flex-col max-lg:tw-text-center tw-gap-1">
+          <h2
+            class="tw-text-2xl tw-text-gray-800 dark:tw-text-gray-200 max-md:tw-text-xl"
+          >
+            Join our newsletter
+          </h2>
+          <div class="tw-text-gray-700 dark:tw-text-gray-300">
+            Get product insights and updates.
+          </div>
+        </div>
+
+        <div
+          class="tw-flex tw-h-[60px] tw-place-items-center tw-gap-2 tw-overflow-hidden tw-p-2"
+        >
+          <input
+            type="email"
+            class="input tw-h-full tw-w-full !tw-border-gray-600 tw-p-2 tw-outline-none"
+            placeholder="email"
+          />
+          <a
+            class="btn !tw-rounded-full !tw-border-[1px] !tw-text-black !tw-border-solid !tw-border-black dark:!tw-text-white dark:!tw-border-gray-300 !tw-bg-transparent tw-transition-colors tw-duration-[0.3s]"
+            href=""
+          >
+            Signup
+          </a>
+        </div>
+      </div>
+    </section> -->
 
     <footer
-  class="tw-mt-auto tw-flex tw-flex-col tw-w-full tw-gap-4 tw-text-sm tw-pt-[5%] tw-pb-10 tw-px-[10%] tw-text-black dark:tw-text-white max-md:tw-flex-col"
->
-  <!-- Logo + About -->
-  <div class="tw-flex tw-flex-col tw-items-center tw-gap-2">
-    <img src="/assets/logo/footerlogo.png" alt="Logo" class="tw-w-16 tw-h-16" />
-    <div class="tw-text-center tw-text-lg">An open-source bot built during GSSoC'2025</div>
-  </div>
-<div class="tw-flex tw-flex-col tw-items-center tw-gap-2">
-  <div class="tw-flex tw-gap-6 tw-flex-wrap tw-justify-center">
-    <a
-      href="https://github.com/piyushpatelcodes/gssocFAQ-Bot"
-      target="_blank"
-      class="tw-text-blue-400 tw-transition-colors hover:tw-text-blue-600 hover:tw-underline"
+      class="tw-mt-auto tw-flex tw-flex-col tw-w-full tw-gap-4 tw-text-sm tw-pt-[5%] tw-pb-10 tw-px-[10%] tw-text-black dark:tw-text-white max-md:tw-flex-col"
     >
-      GitHub Repo
-    </a>
-    <a
-      href="https://discord.gg/your-invite"
-      target="_blank"
-      class="tw-text-blue-400 tw-transition-colors hover:tw-text-indigo-400 hover:tw-underline"
-    >
-      Join Discord
-    </a>
-  </div>
-</div>
-  <div class="tw-text-center">Made with ❤️ by Contributors</div>
+      <div
+        class="tw-flex max-md:tw-flex-col max-md:tw-gap-6 tw-gap-3 tw-w-full tw-place-content-around"
+      >
+        <div
+          class="tw-flex tw-h-full tw-w-[250px] tw-flex-col tw-place-items-center tw-gap-6 max-md:tw-w-full"
+        >
+          <a
+            href="#"
+            class="tw-w-full tw-place-items-center tw-flex tw-flex-col tw-gap-6"
+          >
+            <img
+              src="/assets/logo/2.png"
+              alt="logo"
+              srcset=""
+              class="tw-max-w-[120px] "
+            />
+   
+          </a>
+          <!-- <div class="tw-mt-3 tw-text-lg tw-font-semibold">Follow us</div> -->
+          <div class="tw-flex tw-gap-4 tw-text-lg ">
+            <a href="https://discord.com/PaulleDemon/" class="social-icon discord"  aria-label="discord">
+              <i class="bi bi-discord"></i>
+            </a>
+            <a target="_blank" href="https://github.com/piyushpatelcodes/gssocFAQ-Bot/" class="social-icon github" aria-label="Github">
+              <i class="bi bi-github"></i>
+            </a>
+          
 
-  <hr class="tw-mt-8" />
-  <div
-    class="tw-mt-2 tw-flex tw-gap-2 tw-flex-col tw-text-gray-700 dark:tw-text-gray-300 tw-place-items-center tw-text-[12px] tw-w-full tw-text-center tw-place-content-around"
-  >
-    <span>Copyright &#169; 2025</span>
-    <span>All trademarks and copyrights belong to their respective owners.</span>
-  </div>
-</footer>
+            <a target="_blank" href="https://www.linkedin.com/in/piyushpatelcodes/" class="social-icon linkedin" aria-label="Linkedin">
+              <i class="bi bi-linkedin"></i>
+            </a>
+          </div>
+        </div>
 
+        <div
+          class="tw-flex max-md:tw-flex-col tw-flex-wrap tw-gap-6 tw-h-full tw-w-full tw-justify-around"
+        >
+          <div class="tw-flex tw-h-full tw-w-[200px] tw-flex-col tw-gap-4">
+            <h2 class="tw-text-xl">Resources</h2>
+            <div class="tw-flex tw-flex-col tw-gap-3">
+              <a href="#" class="footer-link">Getting started</a>
+              <a href="#faq-footer" class="footer-link">Pricing</a>
+              <a href="#command" class="footer-link">Commands</a>
+              <a href="#" class="footer-link">GGSOC FAQ Bot Docs</a>
+              <a href="https://www.dataschool.io/how-to-contribute-on-github/" target="_blank" class="footer-link">How To Contribute Guide</a>
+            </div>
+          </div>
 
+          <div class="tw-flex tw-h-full tw-w-[200px] tw-flex-col tw-gap-4">
+            <h2 class="tw-text-xl">Company</h2>
+            <div class="tw-flex tw-flex-col tw-gap-3">
+              <a href="#" class="footer-link">Support channels</a>
+              <a href="https://gssoc.girlscript.tech/" class="footer-link">About GSSOC</a>
+              <a href="#" class="footer-link">Blog</a>
+              <a href="https://www.linkedin.com/in/piyushpatelcodes/" class="footer-link"
+                >Linkedin</a
+              >
+              <a href="https://github.com/piyushpatelcodes/gssocFAQ-Bot/" class="footer-link"
+                >Github</a
+              >
+            </div>
+          </div>
+
+          <div class="tw-flex tw-h-full tw-w-[200px] tw-flex-col tw-gap-4">
+            <h2 class="tw-text-xl">Legal</h2>
+            <div class="tw-flex tw-flex-col tw-gap-3">
+              <a href="#" class="footer-link">Terms of service</a>
+              <a href="#" class="footer-link">Privacy Policy</a>
+              <a href="#" class="footer-link">DCMA - Content Takedown</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr class="tw-mt-8" />
+      <div
+        class="tw-mt-2 tw-flex tw-gap-2 tw-flex-col tw-text-gray-700 dark:tw-text-gray-300 tw-place-items-center tw-text-[12px] tw-w-full tw-text-center tw-place-content-around"
+      >
+        <span>Copyright &#169; 2025</span>
+        <span
+          >All trademarks and copyrights belong to their respective
+          owners. Developed By @piyushpatelcodes</span
+        >
+      </div>
+    </footer>
   </body>
 
   <script
@@ -1117,6 +2306,6 @@
 
   <script src="./scripts/components.js"></script>
   <script src="./index.js"></script>
+
+  <!-- By piyushpatelcodes: https://github.com/piyushpatelcodes -->
 </html>
-
-

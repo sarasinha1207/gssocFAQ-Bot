@@ -207,10 +207,10 @@ function closeVideo(){
  */
 
 const typed = new Typed('#prompts-sample', {
-    strings: ["How to solve a rubik's cube? Step by step guide", 
-                "What's Pixa playground?", 
-                "How to build an AI SaaS App?", 
-                "How to integrate Pixa API?"],
+    strings: ["How to contribute to GSSOC? Step by step guide", 
+                "Who Developed GSSOC FAQ Bot?", 
+                "ID card recieved but no mail confirmation?", 
+                "Can I contribute in multiple projects?"],
     typeSpeed: 80,
     smartBackspace: true, 
     loop: true,
@@ -254,13 +254,13 @@ faqAccordion.forEach(function (btn) {
         let icon = this.querySelector(".bi-plus")
 
         // content.classList.toggle('!tw-hidden')
-        if (content.style.maxHeight === '240px') {
+        if (content.style.maxHeight === '340px') {
             content.style.maxHeight = '0px'
             content.style.padding = '0px 18px'
             icon.style.transform = "rotate(0deg)"
             
         } else {
-            content.style.maxHeight = '240px'
+            content.style.maxHeight = '340px'
             content.style.padding = '20px 18px'
             icon.style.transform = "rotate(45deg)"
         }
@@ -293,3 +293,78 @@ sections.forEach((sec) => {
 
 
 })
+
+
+gsap.from("#promo-image", {
+  y: "30%",  // Start from slightly below the viewport
+  opacity: 0, // Start as invisible
+  duration: 2.5, // Duration of the animation
+  ease: "power2.out", // Easing for smooth movement
+ 
+  scrollTrigger: {
+    trigger: "#promo-image", // Trigger the animation when the image comes into the viewport
+    start: "top bottom",  // Start when the top of the image hits the middle of the viewport
+    end: "top 30%",    // End when the top of the image reaches 30% of the viewport height
+    scrub: 1,          // Makes the animation synchronized with scrolling
+    once: true         // Only trigger the animation once
+  }
+});
+
+
+
+const imageContainer = document.querySelector('.image-container');
+
+  imageContainer.addEventListener('animationiteration', () => {
+    imageContainer.classList.add('shine-active');
+    
+    // Remove the class after the animation completes to hide the text
+    setTimeout(() => {
+      imageContainer.classList.remove('shine-active');
+    }, 10000); // Change duration to match the shine effect
+  });
+
+
+
+// img change on scroll -- kept for future use in `bot command and feature section`
+
+// // Select the #command-preview-img and all the command cards
+// const previewImg = document.querySelector("#command-preview-img");
+// const commandCards = document.querySelectorAll(".groupcard"); // Escape the / character
+
+// // Make sure the preview image and command cards exist
+// if (previewImg && commandCards.length) {
+
+//     // Loop through each card and create a ScrollTrigger for each one
+//     commandCards.forEach((card, index) => {
+        
+//         const newImg = card.getAttribute("data-img"); // Get the image URL from the card's data-img attribute
+//         if (!newImg) return; // If no image URL is found, skip this card
+
+//         // Set up ScrollTrigger for each command card
+//         gsap.to(card, {
+//             scrollTrigger: {
+//                 trigger: card,
+//                 start: "top 70%", // When the top of the card reaches 70% from the top of the viewport
+//                 end: "bottom 30%", // When the bottom of the card reaches 30% from the top of the viewport
+//                 scrub: true, // Scrub to synchronize the scroll position with the animation
+//                 onEnter: () => {
+//                     // When the card enters the viewport, change the image
+//                     gsap.to(previewImg, {
+//                         opacity: 0, // Fade out the current image
+//                         duration: 0.2,
+//                         onComplete: () => {
+//                             // Change the image once it's faded out
+//                             previewImg.src = newImg;
+
+//                             // Fade the new image in
+//                             gsap.to(previewImg, {
+//                                 opacity: 1,
+//                                 duration: 0.5
+//                             });
+//                         }
+//                     });
+//                 }
+//             }
+//         });
+//     });
+// }

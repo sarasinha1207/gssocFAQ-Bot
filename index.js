@@ -433,5 +433,5 @@ app.use("/docs", express.static(path.join(__dirname, "views")));
 app.use("/docs", documentationRoute);
 
 app.listen(3000, () => {
-  console.log("🚀 Running at http://localhost:${PORT}/docs");
+  console.log(`🚀 Running at http://localhost:3000/docs`);
 });

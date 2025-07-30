@@ -58,11 +58,11 @@ jobs:
               { id: '1MlUM2RIqd8Q0ek67pMnTNqliqmKND2Rk', rarity: 'common' },
               { id: '1TI4XSRFUfANR5vnuyYhqFf8eWvHloeX2', rarity: 'common' },
               { id: '1x2eYK4oqihEXZoQ_eWnAgM0jXchYZpY4', rarity: 'common' },
-              { id: '1otRyHexIqXtKLbCi6Fc8cPRBhzlQYXUd', rarity: 'epic' },
-              { id: '17qZ9ZQ3P_jV29J7-qariHkRXgl74u6SZ', rarity: 'rare' },
-              { id: '1Cmlm3odKq1VwOrFb1OpWjyTJVeVH8rxG', rarity: 'epic' },
-              { id: '1rQrn7RMZOUoJ1Lo6J_Bq0taMI3Q8bziq', rarity: 'epic' },
-              { id: '1BsBdIlUDxxweK1M6Pjmhtyd78aXOiBD5', rarity: 'rare' }
+              { id: '1otRyHexIqXtKLbCi6Fc8cPRBhzlQYXUd', rarity: 'common' },
+              { id: '17qZ9ZQ3P_jV29J7-qariHkRXgl74u6SZ', rarity: 'common' },
+              { id: '1Cmlm3odKq1VwOrFb1OpWjyTJVeVH8rxG', rarity: 'common' },
+              { id: '1rQrn7RMZOUoJ1Lo6J_Bq0taMI3Q8bziq', rarity: 'common' },
+              { id: '1BsBdIlUDxxweK1M6Pjmhtyd78aXOiBD5', rarity: 'common' }
             ];
 
             const weights = {

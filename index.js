@@ -7,6 +7,7 @@ const {
   ActionRowBuilder,
   ButtonBuilder,
   ButtonStyle,
+  StringSelectMenuBuilder,
 } = require("discord.js");
 const stringSimilarity = require("string-similarity");
 const fs = require("fs");
@@ -68,6 +69,26 @@ function getFaqPageContent(page, faqs) {
   return content;
 }
 
+// Helper to create a select menu for a page of FAQs
+function getFaqSelectMenu(page, faqs) {
+  const start = page * FAQ_PAGE_SIZE;
+  const end = start + FAQ_PAGE_SIZE;
+  const slice = faqs.slice(start, end);
+
+  const options = slice.map((f, i) => ({
+    label: f.question.length > 100 ? f.question.slice(0, 97) + "..." : f.question,
+    description: `Question #${start + i + 1}`,
+    value: `${start + i + 1}`, // question number as string (1-based)
+  }));
+
+  return new ActionRowBuilder().addComponents(
+    new StringSelectMenuBuilder()
+      .setCustomId("faq_select_question")
+      .setPlaceholder("Select a question to get its answer")
+      .addOptions(options)
+  );
+}
+
 const serverId = "1378813132788727970";
 const TARGET_GUILD_ID = "1378813132788727970";
 
@@ -116,21 +137,55 @@ client.once("ready", async () => {
 
 client.on(Events.InteractionCreate, async (interaction) => {
   try {
+    if (interaction.isStringSelectMenu()) {
+      if (interaction.customId === "faq_select_question") {
+        const selectedValue = interaction.values[0];
+        const qNum = parseInt(selectedValue, 10);
+        if (isNaN(qNum) || qNum < 1 || qNum > faqs.length) {
+          await interaction.reply({ content: "❌ Invalid question selection.", ephemeral: true });
+          return;
+        }
+        const faq = faqs[qNum - 1];
+        await interaction.reply({
+          content: `**Q${qNum}. ${faq.question}**\n\n${faq.answer}`,
+          ephemeral: true,
+        });
+        return;
+      }
+    }
+    
     if (interaction.isChatInputCommand()) {
       const userQuestion = interaction.options.getString("question");
-      console.log("userque: ", userQuestion);
 
       if (interaction.commandName === "faq") {
         if (!userQuestion) {
           throw new Error("No question provided");
         }
 
-        // Handle paginated all commands
+        // Check if input is a number representing FAQ index
+        const trimmed = userQuestion.trim();
+        const numberMatch = trimmed.match(/^(\d{1,2})$/);
+
+      if (numberMatch) {
+        const qNum = parseInt(numberMatch[1], 10);
+        if (qNum >= 1 && qNum <= faqs.length) {
+          const match = faqs[qNum - 1];
+          await interaction.reply(`**Q${qNum}. ${match.question}**\n\n${match.answer}`);
+          return;
+        } else {
+          await interaction.reply(
+            `❌ Invalid question number. Please enter a number between 1 and ${faqs.length}.`
+          );
+          return;
+        }
+      }
+
+          // --- "all commands" => paginated list with select menu
         if (userQuestion.toLowerCase().includes("all commands")) {
           const totalPages = Math.ceil(faqs.length / FAQ_PAGE_SIZE);
           const page = 0;
 
-          const row = new ActionRowBuilder().addComponents(
+          const rowPagination = new ActionRowBuilder().addComponents(
             new ButtonBuilder()
               .setCustomId(`faq_prev_${page}`)
               .setLabel("Previous")
@@ -143,19 +198,18 @@ client.on(Events.InteractionCreate, async (interaction) => {
               .setStyle(ButtonStyle.Primary)
               .setDisabled(totalPages <= 1)
           );
+          const rowSelectMenu = getFaqSelectMenu(page, faqs);
 
           await interaction.reply({
             content: `**📋 FAQ List (Page ${
               page + 1
-            }/${totalPages}):**\n\n${getFaqPageContent(
-              page,
-              faqs
-            )}\n\n*Use \`/faq\` and start typing your question to get an instant answer!*`,
-            components: [row],
+            }/${totalPages}):**\n\n${getFaqPageContent(page, faqs)}\n\n*Select a question below, or type \`/faq question:<number>\` to get an answer!*`,
+            components: [rowPagination, rowSelectMenu],
           });
           return;
         }
 
+        // --- Fuzzy match/autocomplete fallback ---
         const questions = faqs.map((faq) => faq.question);
 
         const { bestMatch, bestMatchIndex } = stringSimilarity.findBestMatch(
@@ -399,7 +453,7 @@ client.on(Events.InteractionCreate, async (interaction) => {
   if (page < 0) page = 0;
   if (page >= totalPages) page = totalPages - 1;
 
-  const row = new ActionRowBuilder().addComponents(
+  const rowPagination = new ActionRowBuilder().addComponents(
     new ButtonBuilder()
       .setCustomId(`faq_prev_${page}`)
       .setLabel("Previous")
@@ -413,14 +467,16 @@ client.on(Events.InteractionCreate, async (interaction) => {
       .setDisabled(page === totalPages - 1)
   );
 
+  const rowSelectMenu = getFaqSelectMenu(page, faqs);
+
   await interaction.update({
     content: `**📋 FAQ List (Page ${
       page + 1
     }/${totalPages}):**\n\n${getFaqPageContent(
       page,
       faqs
-    )}\n\n*Use \`/faq\` and start typing your question to get an instant answer!*`,
-    components: [row],
+    )}\n\n*Select a question below, or type \`/faq question:<number>\` to get an answer!*`,
+    components: [rowPagination, rowSelectMenu],
   });
 });
 
@@ -432,6 +488,6 @@ client.login(process.env.BOT_TOKEN).catch((error) => {
 app.use("/docs", express.static(path.join(__dirname, "views")));
 app.use("/docs", documentationRoute);
 
-app.listen(3000, () => {
-  console.log("🚀 Running at http://localhost:${PORT}/docs");
+app.listen(PORT, () => {
+  console.log(`🚀 Running at http://localhost:${PORT}/docs`);
 });

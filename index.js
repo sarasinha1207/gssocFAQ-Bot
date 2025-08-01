@@ -210,39 +210,6 @@ client.on(Events.InteractionCreate, async (interaction) => {
           });
           return;
         }
-
-        // --- Fuzzy match/autocomplete fallback ---
-        // const questions = faqs.map((faq) => faq.question);
-
-        // const { bestMatch, bestMatchIndex } = stringSimilarity.findBestMatch(
-        //   userQuestion,
-        //   questions
-        // );
-
-        // let match = faqs.find(
-        //   (f) => f.question.toLowerCase() === userQuestion.toLowerCase()
-        // );
-
-        // if (
-        //   (!match || match === undefined || match === null) &&
-        //   bestMatch.rating >= 0.3
-        // ) {
-        //   match = faqs[bestMatchIndex];
-        // }
-        // console.log("bestMatch: ", bestMatch);
-
-        // if (match) {
-        //   await interaction.reply(match.answer);
-        //   const lowerQ = userQuestion.toLowerCase();
-        //   if (idKeywords.some((keyword) => lowerQ.includes(keyword))) {
-        //     const file = new AttachmentBuilder("./public/assets/idcard.png");
-        //     await interaction.followUp({
-        //       content:
-        //         "You will get an ID card like this directly in your **Insight App** Only available for Android an iOS. You can download the app here: https://gssoc.girlscript.tech/#apply \n **Mail or ID CARD on Insights App**, Anything is a confirmation form GSSOC \n **Contribute in this GSSOC FAQ unofficial BOT** https://github.com/piyushpatelcodes/gssocFAQ-Bot",
-        //       files: [file],
-        //     });
-        //   }
-        // }
         try {
           const res = await axios.post('http://127.0.0.1:5000/ask', {
             question: userQuestion,

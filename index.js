@@ -16,6 +16,8 @@ const path = require("path");
 const app = express();
 app.use(express.static("public"));
 const PORT = process.env.PORT || 3000;
+const axios = require('axios');
+const formatMatchReply = require("./formatMatchReply");
 const documentationRoute = require("./routes/documentation");
 
 require("dotenv").config();
@@ -210,40 +212,74 @@ client.on(Events.InteractionCreate, async (interaction) => {
         }
 
         // --- Fuzzy match/autocomplete fallback ---
-        const questions = faqs.map((faq) => faq.question);
+        // const questions = faqs.map((faq) => faq.question);
 
-        const { bestMatch, bestMatchIndex } = stringSimilarity.findBestMatch(
-          userQuestion,
-          questions
-        );
+        // const { bestMatch, bestMatchIndex } = stringSimilarity.findBestMatch(
+        //   userQuestion,
+        //   questions
+        // );
 
-        let match = faqs.find(
-          (f) => f.question.toLowerCase() === userQuestion.toLowerCase()
-        );
+        // let match = faqs.find(
+        //   (f) => f.question.toLowerCase() === userQuestion.toLowerCase()
+        // );
 
-        if (
-          (!match || match === undefined || match === null) &&
-          bestMatch.rating >= 0.3
-        ) {
-          match = faqs[bestMatchIndex];
-        }
-        console.log("bestMatch: ", bestMatch);
+        // if (
+        //   (!match || match === undefined || match === null) &&
+        //   bestMatch.rating >= 0.3
+        // ) {
+        //   match = faqs[bestMatchIndex];
+        // }
+        // console.log("bestMatch: ", bestMatch);
 
-        if (match) {
-          await interaction.reply(match.answer);
+        // if (match) {
+        //   await interaction.reply(match.answer);
+        //   const lowerQ = userQuestion.toLowerCase();
+        //   if (idKeywords.some((keyword) => lowerQ.includes(keyword))) {
+        //     const file = new AttachmentBuilder("./public/assets/idcard.png");
+        //     await interaction.followUp({
+        //       content:
+        //         "You will get an ID card like this directly in your **Insight App** Only available for Android an iOS. You can download the app here: https://gssoc.girlscript.tech/#apply \n **Mail or ID CARD on Insights App**, Anything is a confirmation form GSSOC \n **Contribute in this GSSOC FAQ unofficial BOT** https://github.com/piyushpatelcodes/gssocFAQ-Bot",
+        //       files: [file],
+        //     });
+        //   }
+        // }
+        try {
+          const res = await axios.post('http://127.0.0.1:5000/ask', {
+            question: userQuestion,
+          });
+
+          const { matches, message } = res.data;
+
+          if (!matches || matches.length === 0) {
+            await interaction.reply({
+              content: "🤖 Sorry, I couldn’t find a good match. Try rephrasing or use `/faq question: all commands`.",
+              ephemeral: false,
+            });
+            return;
+          }
+
+          const replyMessage = formatMatchReply(matches);
+
+          await interaction.reply({
+            content: replyMessage,
+            ephemeral: false,
+          });
+
           const lowerQ = userQuestion.toLowerCase();
           if (idKeywords.some((keyword) => lowerQ.includes(keyword))) {
             const file = new AttachmentBuilder("./public/assets/idcard.png");
             await interaction.followUp({
               content:
-                "You will get an ID card like this directly in your **Insight App** Only available for Android an iOS. You can download the app here: https://gssoc.girlscript.tech/#apply \n **Mail or ID CARD on Insights App**, Anything is a confirmation form GSSOC \n **Contribute in this GSSOC FAQ unofficial BOT** https://github.com/piyushpatelcodes/gssocFAQ-Bot",
+                "You will get an ID card like this directly in your **Insight App**. Download here: https://gssoc.girlscript.tech/#apply",
               files: [file],
             });
           }
-        } else {
-          await interaction.reply(
-            "❌ Sorry, I couldn’t find an answer to that. Please try rephrasing your question or check the FAQ list with `/faq question: all commands`."
-          );
+        } catch (err) {
+          console.error("Flask API error:", err);
+          await interaction.reply({
+            content: "❌ Internal error. Please try again later.",
+            ephemeral: true,
+          });
         }
       } else if (interaction.commandName === "project") {
         const selectedProjectName =

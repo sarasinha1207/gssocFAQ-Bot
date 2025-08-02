@@ -210,10 +210,17 @@ client.on(Events.InteractionCreate, async (interaction) => {
           });
           return;
         }
+
+        console.time("mlreq"); // ✅ Start timer for ML request
+
         try {
-          const res = await axios.post('http://127.0.0.1:5000/ask', {
-            question: userQuestion,
-          });
+          console.time("mlreq"); 
+          const res = await axios.post(
+            `${process.env.BACKEND_URL || 'http://127.0.0.1:5000'}/ask`,
+            { question: userQuestion }
+          );
+
+          console.timeEnd("mlreq"); // ✅ End timer (success case)
 
           const { matches, message } = res.data;
 
@@ -241,13 +248,16 @@ client.on(Events.InteractionCreate, async (interaction) => {
               files: [file],
             });
           }
+
         } catch (err) {
+          console.timeEnd("mlreq"); // ✅ End timer (failure case)
           console.error("Flask API error:", err);
           await interaction.reply({
             content: "❌ Internal error. Please try again later.",
             ephemeral: true,
           });
         }
+
       } else if (interaction.commandName === "project") {
         const selectedProjectName =
           interaction.options.getString("project-name");

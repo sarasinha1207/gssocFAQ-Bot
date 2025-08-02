@@ -147,3 +147,10 @@ leaderboard copy.json
 leaderboard copy.js
 ~$leaderboard.xlsx
 webhook.js
+__pycache__
+/__pycache__
+__pycache__/
+*.pyc
+venv
+/venv
+venv/

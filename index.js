@@ -17,6 +17,9 @@ const app = express();
 app.use(express.static("public"));
 const PORT = process.env.PORT || 3000;
 const documentationRoute = require("./routes/documentation");
+const funQuotes = require("./funQuotes"); 
+// Adjust the path if needed
+let lastFunQuoteIndex = -1;
 
 require("dotenv").config();
 
@@ -25,6 +28,7 @@ const { sendPaginatedProjects } = require("./chunkMessgae");
 
 const phase1Projects = JSON.parse(fs.readFileSync("./projects-phase1.json"));
 const phase2Projects = JSON.parse(fs.readFileSync("./projects-phase2.json"));
+let usedIndexes = []; // To track shown quotes
 
 const client = new Client({
   intents: [
@@ -135,6 +139,23 @@ client.once("ready", async () => {
   console.log(`🤖 Logged in as ${client.user.tag}`);
 });
 
+function getNonRepeatingQuote() {
+  // Reset when all quotes have been shown
+  if (usedIndexes.length === funQuotes.length) {
+    usedIndexes = [];
+  }
+
+  let randomIndex;
+
+  do {
+    randomIndex = Math.floor(Math.random() * funQuotes.length);
+  } while (usedIndexes.includes(randomIndex) && funQuotes.length > 1);
+
+  usedIndexes.push(randomIndex);
+  return funQuotes[randomIndex];
+}
+
+
 client.on(Events.InteractionCreate, async (interaction) => {
   try {
     if (interaction.isStringSelectMenu()) {
@@ -156,7 +177,18 @@ client.on(Events.InteractionCreate, async (interaction) => {
     
     if (interaction.isChatInputCommand()) {
       const userQuestion = interaction.options.getString("question");
+      if (interaction.commandName === "fun") {
+      let randomIndex;
+      do {
+      randomIndex = Math.floor(Math.random() * funQuotes.length);
+      } while (randomIndex === lastFunQuoteIndex && funQuotes.length > 1);
 
+      lastFunQuoteIndex = randomIndex;
+      await interaction.reply(funQuotes[randomIndex]);
+      return;
+    }
+
+      
       if (interaction.commandName === "faq") {
         if (!userQuestion) {
           throw new Error("No question provided");
@@ -492,4 +524,5 @@ app.use("/docs", documentationRoute);
 app.listen(3000, () => {
   console.log(`🚀 Running at http://localhost:3000/docs`);
 });
+
 

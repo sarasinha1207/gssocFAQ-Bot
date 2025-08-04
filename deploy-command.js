@@ -44,7 +44,11 @@ const commands = [
         required: false
       }
     ]
-  }
+  },
+{
+    name: 'fun',
+    description: 'Get a fun nerdy joke or fact'
+  },
 ];
 
 const rest = new REST({ version: '10' }).setToken(process.env.BOT_TOKEN);
@@ -66,4 +70,3 @@ const rest = new REST({ version: '10' }).setToken(process.env.BOT_TOKEN);
 
 // const data = await rest.get(Routes.applicationCommands(process.env.CLIENT_ID));
 // console.log("Registered commands:", data.map(cmd => cmd.name));
-

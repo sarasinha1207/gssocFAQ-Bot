@@ -493,9 +493,9 @@ client.on(Events.InteractionCreate, async (interaction) => {
   });
 });
 
-client.login(process.env.BOT_TOKEN).catch((error) => {
-  console.error("Failed to login bot:", error);
-});
+// client.login(process.env.BOT_TOKEN).catch((error) => {
+//   console.error("Failed to login bot:", error);
+// });
 
 // for documentation purpose
 app.use("/docs", express.static(path.join(__dirname, "views")));

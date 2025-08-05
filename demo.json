@@ -1,0 +1,52 @@
+[
+  {
+    "Project name": "Weather Forecast Web App",
+    "Project description": "A responsive web app that allows users to check real-time weather updates by city name.",
+    "Project link": "https://github.com/Vaishnavi-1104/Weatherapp",
+    "Project admin": "Vaishnavi V",
+    "Admin linkedin": "https://www.linkedin.com/in/vaishnavi-vadlakonda/",
+    "Admin github": "https://github.com/Vaishnavi-1104",
+    "Tech stack": "HTML, CSS, JavaScript, OpenWeatherMap API",
+    "keyword": "phase2"
+  },
+    {
+    "Project name": "Toolva App",
+    "Project description": "Toolva Mobile\n A comprehensive mobile application that serves as a one-stop directory for AI tools and services. Built with React Native and Expo.",
+    "Project link": "https://github.com/SUGAM-ARORA/Toolva",
+    "Project admin": "Sugam Arora",
+    "Admin linkedin": "https://www.linkedin.com/in/sugamarora23/",
+    "Admin github": "https://github.com/SUGAM-ARORA",
+    "Tech stack": "React Native , Expo , Go , Supabase , Sonarqube , Veracode",
+    "keyword": "phase2"
+  },
+    {
+    "Project name": "Divinora",
+    "Project description": "Digital Sanctuary for exploring Divine Wisdom and spiritual Knowledge",
+    "Project link": "https://github.com/SUGAM-ARORA/Divinora",
+    "Project admin": "Sugam Arora",
+    "Admin linkedin": "https://www.linkedin.com/in/sugamarora23/",
+    "Admin github": "https://github.com/SUGAM-ARORA",
+    "Tech stack": "javascript nextjs tailwindcss supabase shadcn",
+    "keyword": "phase2"
+  },
+    {
+    "Project name": "Adoptive AI based traffic management system",
+    "Project description": "This Adopative AI Based Traffic Management System The basic idea of a traffic signal where vehicles are lined up in four lanes: Lane 1, Lane 2, Lane 3, and Lane 4. A camera or sensor system will simultaneously capture images of all four lanes. These captured images will be stored within a single frame. The stored frame will then be processed using the YOLO API, an artificial intelligence-based object detection model. By analyzing the detected vehicles in the image, the vehicle density of each lane will be determined. Based on the calculated vehicle density, the signal timing will be set accordingly. If the vehicle density exceeds a predefined range, a fixed setup timer will be applied to regulate the traffic flow.",
+    "Project link": "https://github.com/sachingiri58/techkruti",
+    "Project admin": "Sachin Gajanan Giri",
+    "Admin linkedin": "https://www.linkedin.com/in/sachin-giri -657698221",
+    "Admin github": "https://github.com/sachingiri58",
+    "Tech stack": "HTML, CSS, JavaScript, React.js, Node.js, Express.js, PostgreSQL, MongoDB, Python, OpenCV, YOLOv5",
+    "keyword": "phase2"
+  },
+    {
+    "Project name": "webBuilder",
+    "Project description": "Webinex is a an Ai-Powered no code website builder where user can create complete website by simply entering prompt. Leveraging Genai and Ml models, it builds UIs, page layout, and basic logic - instantly",
+    "Project link": "https://github.com/Rahulchaudharyji2/WebSiteBuilder",
+    "Project admin": "Rahul Chaudhary",
+    "Admin linkedin": "https://www.linkedin.com/in/rahul-chaudhary-b31b2a297/",
+    "Admin github": "https://github.com/Rahulchaudharyji2",
+    "Tech stack": "React, Tailwind, Nodejs, Google gemini / custom Model / Mongodb or postgress/ jwt",
+    "keyword": "phase2"
+  },
+]

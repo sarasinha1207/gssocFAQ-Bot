@@ -1,25 +1,5 @@
 [
   {
-    "Project name": "AlchEmaiLyst",
-    "Project description": "A 3 agent system powered by AI to automate emails. Summarise, Compose, Send and stay away from spam at automated in a beautiful UI",
-    "Project link": "https://github.com/Coden-inja/alchEmaiLyst",
-    "Project admin": "Yogesh Kumar",
-    "Admin linkedin": "https://www.linkedin.com/in/yogesh-kumar-299298260/",
-    "Admin github": "https://github.com/Coden-inja",
-    "Tech stack": "React, Vite, Tailwind , ShadCN, Express.js, Axios, Google OAuth2.0, Gemini API, Alchemyst APi",
-    "keyword": "phase2"
-  },
-  {
-    "Project name": "CampusTrack",
-    "Project description": "CampusTrack is a full-stack web application designed to help students and staff of a college report, find, and manage lost and found items on campus. The system enables seamless tracking of lost belongings, efficient moderation, and easy communication between finders and owners.",
-    "Project link": "https://github.com/Swastik007sharma/CampusTrack",
-    "Project admin": "Swastik Sharma",
-    "Admin linkedin": "https://www.linkedin.com/in/swastik-sharma-756b04238/",
-    "Admin github": "https://github.com/Swastik007sharma",
-    "Tech stack": "MERN :- Frontend: React (with Vite) + tailwindcss",
-    "keyword": "phase2"
-  },
-  {
     "Project name": "med-genie",
     "Project description": "AI Med Genie is a Python-based chatbot designed to assist users with basic medical queries, appointment information, and general health tips. It was built using Flask and deployed to a public platform. The chatbot aims to reduce the load on healthcare professionals by providing quick, automated responses to common patient questions.",
     "Project link": "https://github.com/aayushraj1010/med-genie",
@@ -30,6 +10,15 @@
     "mentor 1": "Shivangi Suyash",
     "mentor 1 github": "https://github.com/Shivangi10-10",
     "mentor 1 linkedin": "https://www.linkedin.com/in/shivangi-suyash-05a484259",
+    "mentor 2": "Vishwajeet Kumar",
+    "mentor 2 github": "https://github.com/wivk-tech",
+    "Mentor 2 linkedin": "https://www.linkedin.com/in/wivk-tech/",
+    "mentor 3": "Nikhil Saxena",
+    "mentor 3 github": "https://github.com/Nikhil2253/",
+    "mentor 3 linkedin": "https://www.linkedin.com/in/nikhil-saxena-76901a2a5",
+    "mentor 4": "Nitin Saxena",
+    "mentor 4 github": "https://github.com/Nitin10cd",
+    "mentor 4 linkedin": "https://www.linkedin.com/in/nitin-saxena-78a976294?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     "keyword": "phase2"
   },
   {
@@ -44,8 +33,11 @@
     "mentor 1 github": "https://github.com/hudazaan",
     "mentor 1 linkedin": "http://www.linkedin.com/in/hudanaaz17",
     "mentor 2": "Shivangi Suyash",
-    "Mentor 2 linkedin": "https://github.com/Shivangi10-10",
     "mentor 2 github": "https://www.linkedin.com/in/shivangi-suyash-05a484259",
+    "Mentor 2 linkedin": "https://github.com/Shivangi10-10",
+    "mentor 3": "Nitin Saxena",
+    "mentor 3 github": "https://github.com/Nitin10cd",
+    "mentor 3 linkedin": "https://www.linkedin.com/in/nitin-saxena-78a976294?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     "keyword": "phase2"
   },
   {
@@ -59,6 +51,12 @@
     "mentor 1": "Huda Naaz",
     "mentor 1 github": "https://github.com/hudazaan",
     "mentor 1 linkedin": "http://www.linkedin.com/in/hudanaaz17",
+    "mentor 2": "Ritwik Kapoor",
+    "mentor 2 github": "https://www.linkedin.com/in/ritwik22k/",
+    "Mentor 2 linkedin": "https://github.com/RedK22/%20NEW%20[00:22]",
+    "mentor 3": "Pushkar jain",
+    "mentor 3 github": "https://github.com/pushh-k",
+    "mentor 3 linkedin": "https://www.linkedin.com/in/pushkar-jain-06a461231/",
     "keyword": "phase2"
   },
   {
@@ -69,6 +67,9 @@
     "Admin linkedin": "https://www.linkedin.com/in/abhisar-choubey/",
     "Admin github": "https://github.com/Ambit-ion",
     "Tech stack": "HTML, Firebase, JS",
+    "mentor 1": "Sneha Singh",
+    "mentor 1 github": "https://github.com/myselfsneha",
+    "mentor 1 linkedin": "http://www.linkedin.com/in/singh--sneha",
     "keyword": "phase2"
   },
   {
@@ -79,6 +80,9 @@
     "Admin linkedin": "https://www.linkedin.com/in/abhisar-choubey",
     "Admin github": "https://github.com/Forkzen",
     "Tech stack": "HTML, FIREBASE,FIRESTORE,TAILWIND,JS,GEMINI",
+    "mentor 1": "Prakruti Srichandan",
+    "mentor 1 github": "https://github.com/interstellar2567",
+    "mentor 1 linkedin": "http://www.linkedin.com/in/prakruti-srichandan-156254298",
     "keyword": "phase2"
   },
   {
@@ -89,6 +93,15 @@
     "Admin linkedin": "https://www.linkedin.com/in/abikhn/",
     "Admin github": "https://github.com/LarytheLord",
     "Tech stack": "Next.js, React Native, Typescript, Supabase",
+    "mentor 1": "Himanshu Kabra",
+    "mentor 1 github": "https://github.com/HimanshuKabra01",
+    "mentor 1 linkedin": "https://www.linkedin.com/in/himanshu-kabra28/",
+    "mentor 2": "Ayush Nirajkumar Rai",
+    "mentor 2 github": "https://github.com/ayushrai1235",
+    "Mentor 2 linkedin": "https://www.linkedin.com/in/ayush-rai-35bb64328?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    "mentor 3": "Pavan Sarvesh",
+    "mentor 3 github": "https://github.com/pavansarvesh",
+    "mentor 3 linkedin": "https://www.linkedin.com/in/pavansarvesh/",
     "keyword": "phase2"
   },
   {
@@ -99,6 +112,12 @@
     "Admin linkedin": "https://www.linkedin.com/in/adarsh-maurya-dev/",
     "Admin github": "https://github.com/4arsh-dev",
     "Tech stack": "Python 3.10+, FastAPI, LangGraph, Groq, Gemini, Playwright, BeautifulSoup, NLTK, Docker,",
+    "mentor 1": "Manan",
+    "mentor 1 github": "https://github.com/Manan-Wadhwa",
+    "mentor 1 linkedin": "https://www.linkedin.com/in/manan-wadhwa/",
+    "mentor 2": "Om Sherikar",
+    "mentor 2 github": "https://github.com/omsherikar",
+    "Mentor 2 linkedin": "https://www.linkedin.com/in/omsherikar0229",
     "keyword": "phase2"
   },
   {
@@ -109,6 +128,15 @@
     "Admin linkedin": "https://www.linkedin.com/in/aditi-anand-745458318/",
     "Admin github": "https://github.com/AditixAnand",
     "Tech stack": "Python, TensorFlow, EfficientNet, Streamlit, OpenCV, NumPy, Pandas",
+    "mentor 1": "Nikhil",
+    "mentor 1 github": "https://github.com/Nikhil210206",
+    "mentor 1 linkedin": "https://www.linkedin.com/in/nikhilb21",
+    "mentor 2": "Umesh Chandran Yenugula",
+    "mentor 2 github": "https://github.com/umeshyenugula",
+    "Mentor 2 linkedin": "https://www.linkedin.com/in/umesh-chandran-yenugula-0a2576317",
+    "mentor 3": "Vishwajeet Kumar",
+    "mentor 3 github": "https://github.com/wivk-tech",
+    "mentor 3 linkedin": "https://www.linkedin.com/in/wivk-tech/",
     "keyword": "phase2"
   },
   {
@@ -119,6 +147,9 @@
     "Admin linkedin": "https://www.linkedin.com/in/aditi-gupta-464024324/",
     "Admin github": "https://github.com/AditiGupta-tech",
     "Tech stack": "Frontend: Nextjs (javascript), tailwindCss; Backend: mongodb and Nextjs (via routes and API); Auth: bcryptjs, jwt; AI integration: Gemini API; Deployment: Vercel; Version Control: Github",
+    "mentor 1": "Gopichand Dandimeni",
+    "mentor 1 github": "https://github.com/Gooichand",
+    "mentor 1 linkedin": "https://www.linkedin.com/in/gopichand-dandimeni-269709287/",
     "keyword": "phase2"
   },
   {
@@ -129,6 +160,9 @@
     "Admin linkedin": "https://www.linkedin.com/in/itisaddy/",
     "Admin github": "https://github.com/Xenonesis",
     "Tech stack": "react, python,shadcn,framer motion",
+    "mentor 1": "Hemanshu",
+    "mentor 1 github": "https://github.com/HemanshuMandhana",
+    "mentor 1 linkedin": "https://www.linkedin.com/in/hemanshu-mandhana-039601264/",
     "keyword": "phase2"
   },
   {
@@ -139,6 +173,12 @@
     "Admin linkedin": "www.linkedin.com/in/adityakalburgi",
     "Admin github": "www.github.com/adityakalburgi",
     "Tech stack": "MERN (MongoDB, expressJS, ReactJS, NodeJS)",
+    "mentor 1": "Shivangi Suyash",
+    "mentor 1 github": "https://github.com/Shivangi10-10",
+    "mentor 1 linkedin": "https://www.linkedin.com/in/shivangi-suyash-05a484259",
+    "mentor 2": "Tejash rajput",
+    "mentor 2 github": "https://github.com/tejash111",
+    "Mentor 2 linkedin": "https://www.linkedin.com/in/tejashrajput/",
     "keyword": "phase2"
   },
   {
@@ -149,6 +189,9 @@
     "Admin linkedin": "https://in.linkedin.com/in/affanshaikhsurab",
     "Admin github": "https://github.com/AffanShaikhsurab",
     "Tech stack": "Python , JavaScript, React",
+    "mentor 1": "Sarthak Upadhyay",
+    "mentor 1 github": "https://github.com/externref",
+    "mentor 1 linkedin": "https://linkedin.com/in/defsarthak",
     "keyword": "phase2"
   },
   {
@@ -159,6 +202,9 @@
     "Admin linkedin": "https://www.linkedin.com/in/ajaynegi45",
     "Admin github": "https://github.com/ajaynegi45",
     "Tech stack": "Next.js, Typescript, Javascript, Socket.io, HTML, CSS",
+    "mentor 1": "Gopichand Dandimeni",
+    "mentor 1 github": "https://github.com/Gooichand",
+    "mentor 1 linkedin": "https://www.linkedin.com/in/gopichand-dandimeni-269709287/",
     "keyword": "phase2"
   },
   {
@@ -169,6 +215,9 @@
     "Admin linkedin": "https://www.linkedin.com/in/ajay-patidarit/",
     "Admin github": "https://github.com/Ajay-patidar0",
     "Tech stack": "Kotlin and Jetpack Compose",
+    "mentor 1": "Navdeep Kaur",
+    "mentor 1 github": "https://github.com/Navdeep-lab",
+    "mentor 1 linkedin": "https://www.linkedin.com/in/navdeep-kaur-057258312",
     "keyword": "phase2"
   },
   {
@@ -179,6 +228,9 @@
     "Admin linkedin": "https://linkedin.com/in/akashjana",
     "Admin github": "https://github.com/AkashJana18",
     "Tech stack": "Next.js Node.js tailwind Clerk NeonDB Prisma Orm",
+    "mentor 1": "Siddhartha Kunwar",
+    "mentor 1 github": "https://github.com/x0lg0n",
+    "mentor 1 linkedin": "https://www.linkedin.com/in/siddhartha-kunwar",
     "keyword": "phase2"
   },
   {
@@ -189,6 +241,9 @@
     "Admin linkedin": "https://www.linkedin.com/in/akhileshx/",
     "Admin github": "https://github.com/akhileshverma92",
     "Tech stack": "Reactjs and Appwrite",
+    "mentor 1": "Yash Vikram",
+    "mentor 1 github": "https://github.com/yashvikram30",
+    "mentor 1 linkedin": "https://www.linkedin.com/in/yashvikram30?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     "keyword": "phase2"
   },
   {
@@ -199,6 +254,12 @@
     "Admin linkedin": "https://www.linkedin.com/in/akshat-kotpalliwar/",
     "Admin github": "https://github.com/IntegerAlex/",
     "Tech stack": "Typescript and JavaScript",
+    "mentor 1": "Harshendra M",
+    "mentor 1 github": "https://github.com/harshendram",
+    "mentor 1 linkedin": "https://www.linkedin.com/in/harshendra-m-2b8bb5299/",
+    "mentor 2 github": "Shashwat Ranjan",
+    "Mentor 2 linkedin": "https://share.google/lgDqyjZxEdS0nXcJg",
+    "mentor 3": "https://www.linkedin.com/in/shashwat-ranjan-6a157728a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     "keyword": "phase2"
   },
   {
@@ -209,6 +270,9 @@
     "Admin linkedin": "https://www.linkedin.com/in/akshat-sharma11",
     "Admin github": "https://github.com/Akshat111111",
     "Tech stack": "Typescript, Python, Node js",
+    "mentor 1": "Harshit Pandey",
+    "mentor 1 github": "https://github.com/harshit1142",
+    "mentor 1 linkedin": "https://www.linkedin.com/in/harshit-pandey-312b78245/",
     "keyword": "phase2"
   },
   {
@@ -219,6 +283,12 @@
     "Admin linkedin": "https://www.linkedin.com/in/aman-sharma-84156a289?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     "Admin github": "https://github.com/amandollar",
     "Tech stack": "MERN",
+    "mentor 1": "Shivangi Suyash",
+    "mentor 1 github": "https://github.com/Shivangi10-10",
+    "mentor 1 linkedin": "https://www.linkedin.com/in/shivangi-suyash-05a484259",
+    "mentor 2": "gopichand dandimeni",
+    "mentor 2 github": "https://github.com/Gooichand",
+    "Mentor 2 linkedin": "https://www.linkedin.com/in/gopichand-dandimeni-269709287/",
     "keyword": "phase2"
   },
   {
@@ -229,6 +299,12 @@
     "Admin linkedin": "https://www.linkedin.com/in/amarjha01/",
     "Admin github": "https://github.com/Amarjha01/",
     "Tech stack": "React.js , Tailwind css , Framer motion, GitHub action,",
+    "mentor 1": "gopichand dandimeni",
+    "mentor 1 github": "https://github.com/Gooichand",
+    "mentor 1 linkedin": "https://www.linkedin.com/in/gopichand-dandimeni-269709287/",
+    "mentor 2": "Sonam Kumari",
+    "mentor 2 github": "https://github.com/SonamKumari29",
+    "Mentor 2 linkedin": "https://www.linkedin.com/in/sonam-kumari-084641257/",
     "keyword": "phase2"
   },
   {
@@ -239,6 +315,9 @@
     "Admin linkedin": "https://www.linkedin.com/in/amna-hassan-143b76202/",
     "Admin github": "https://github.com/Amna-Hassan04",
     "Tech stack": "Unity Engine(2020.3.20f1), C#, Unity Shader Graph, Unity URP (Universal Render Pipeline), Post-processing stack, Git & GitHub for version control, itch.io for game deployment",
+    "mentor 1": "Ashutosh Kumar",
+    "mentor 1 github": "https://github.com/AshutoshStark",
+    "mentor 1 linkedin": "https://www.linkedin.com/in/ashutosh-kumar-046b04236",
     "keyword": "phase2"
   },
   {
@@ -252,6 +331,9 @@
     "mentor 1": "Kosaraju joshitha",
     "mentor 1 github": "https://www.linkedin.com/in/joshitha-kosaraju?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     "mentor 1 linkedin": "https://github.com/joshitha5g4",
+    "mentor 2": "Vishwajeet Kumar",
+    "mentor 2 github": "https://github.com/wivk-tech",
+    "Mentor 2 linkedin": "https://www.linkedin.com/in/wivk-tech/",
     "keyword": "phase2"
   },
   {
@@ -262,16 +344,24 @@
     "Admin linkedin": "https://www.linkedin.com/in/ananta-chandra-das",
     "Admin github": "https://github.com/Ananta025",
     "Tech stack": "Reactjs, Typescript, WebRTC, socket io, MongoDB,Nodejs",
+    "mentor 1": "Nipun Bansal",
+    "mentor 1 github": "https://www.linkedin.com/in/nipun-bansal-1a8270305/",
+    "mentor 2": "Sonam Kumari",
+    "mentor 2 github": "https://github.com/SonamKumari29",
+    "Mentor 2 linkedin": "https://www.linkedin.com/in/sonam-kumari-084641257/",
     "keyword": "phase2"
   },
   {
     "Project name": "ScheduleX",
     "Project description": "ScheduleX: Your Smart Timetable, Attendance Markings and Task Reminders App\n ScheduleX is a sleek, cross-platform application built with React Native, designed to simplify your academic and personal scheduling. From generating intelligent timetables to tracking attendance, ScheduleX is the only tool you need to stay organized and on top of your commitments. Of course, here is a project description for your ScheduleX app, based on the details you provided.\n \n Key Features\n AI Timetable Generation: Say goodbye to manual scheduling! Instantly generate a perfectly optimized timetable based on your custom inputs or by simply uploading a CSV file.\n \n Effortless Attendance Tracking: Easily monitor and manage your attendance for any class or event. Set custom alerts to notify you when your attendance drops below a certain threshold.\n \n Seamless Schedule Sharing: Share your timetable with friends or colleagues effortlessly. They can import your entire schedule into their app in seconds, no manual entry required.\n \n Integrated Task Management: Keep track of your assignments and to-dos with our built-in task manager. Add, manage, and check off tasks to stay productive and accountable.\n \n Dynamic Timetable Management: Life changes, and so should your schedule. Create, edit, and organize multiple timetables with an intuitive and flexible interface.\n \n Real-Time Cloud Sync: Your schedule, always with you. Keep your data seamlessly synchronized across all your devices.\n \n Task Chat: A Chat like interface to provide you one safe location to save all your shopping list, academic reminders, assignments and more removing the clutter we make on whatsapp",
     "Project link": "https://github.com/Loop-Hive/ScheduleX",
-    "Project admin": "Ani",
+    "Project admin": "Anirudh Sharma",
     "Admin linkedin": "https://www.linkedin.com/in/anisharma002/",
     "Admin github": "https://github.com/anisharma07",
     "Tech stack": "React Native, Typescript, CSS, Firebase, Zustand, Google Genai, Figma",
+    "mentor 1": "Irtesaam Atfi",
+    "mentor 1 github": "https://github.com/Irtesaam",
+    "mentor 1 linkedin": "https://linkedin.com/in/irtesaam",
     "keyword": "phase2"
   },
   {
@@ -282,6 +372,9 @@
     "Admin linkedin": "https://www.linkedin.com/in/aniket-khullar-b3912424b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     "Admin github": "https://github.com/SAMBUDAR",
     "Tech stack": "HTML CSS NODEJS",
+    "mentor 1": "Palak Dwivedi",
+    "mentor 1 github": "https://github.com/Palak2506",
+    "mentor 1 linkedin": "https://www.linkedin.com/in/palak-dwivedi1/",
     "keyword": "phase2"
   },
   {
@@ -292,6 +385,12 @@
     "Admin linkedin": "https://www.linkedin.com/in/lanirudh/",
     "Admin github": "https://github.com/SharonIV0x86/",
     "Tech stack": "C++",
+    "mentor 1": "Tanvi",
+    "mentor 1 github": "https://github.com/Twii108",
+    "mentor 1 linkedin": "https://www.linkedin.com/in/tanvi-viroliya-553217318?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    "mentor 2": "Nipun Bansal",
+    "mentor 2 github": "https://github.com/Nipun-11",
+    "Mentor 2 linkedin": "https://www.linkedin.com/in/nipun-bansal-1a8270305/",
     "keyword": "phase2"
   },
   {
@@ -302,6 +401,9 @@
     "Admin linkedin": "https://www.linkedin.com/in/anjali-jaiswal-442b0b251/",
     "Admin github": "https://github.com/ANJALIJAISWAL4213",
     "Tech stack": "The project backbone is a Python 3.11, FastAPI driven microservice architecture that stores geospatial data in PostgreSQL with PostGIS, while HyperledgerFabric secures supplychain provenance on a private blockchain. Machinelearning services run on PyTorch, using Prophet for timeseries demand forecasting, GoogleORTools for lowcarbon route optimisation, and YOLOv8 computervision models to detect spoilage. Highthroughput data streams move through Kafka, lightweight sensor events travel via MQTT, and Redis accelerates caching and job queues. A modern TypeScript front end built with Next.js14 and styled with TailwindCSS visualises insights through Recharts dashboards. Everything ships in DockerCompose, integrates with GitHubActions for CI/CD, and can be provisioned to AWSEKS using Terraform.",
+    "mentor 1": "Gopichand Dandimeini",
+    "mentor 1 github": "https://github.com/Gooichand",
+    "mentor 1 linkedin": "https://www.linkedin.com/in/gopichand-dandimeni-269709287/",
     "keyword": "phase2"
   },
   {
@@ -325,6 +427,9 @@
     "Admin linkedin": "https://www.linkedin.com/in/anshul-panwarrr",
     "Admin github": "https://github.com/AnshulPanwarr/g1new",
     "Tech stack": "Android SDK,java,kotlin,jetpack compose,spring boot,figma",
+    "mentor 1": "Navdeep Kaur",
+    "mentor 1 github": "https://github.com/Navdeep-lab",
+    "mentor 1 linkedin": "https://www.linkedin.com/in/navdeep-kaur-057258312",
     "keyword": "phase2"
   },
   {
@@ -335,6 +440,9 @@
     "Admin linkedin": "https://linkedin.com/in/anup001",
     "Admin github": "hhtps://github.com/anup2701",
     "Tech stack": "MERN",
+    "mentor 1": "Nisha Yadav",
+    "mentor 1 github": "https://github.com/Nishagithubrit",
+    "mentor 1 linkedin": "https://www.linkedin.com/in/nisha-yadav-08b71325a",
     "keyword": "phase2"
   },
   {
@@ -345,9 +453,15 @@
     "Admin linkedin": "https://linkedin.com/in/anuragvishwakarma",
     "Admin github": "https://github.com/vishanurag",
     "Tech stack": "HTML, CSS, JavaScript",
+    "mentor 1": "Shivangi Suyash",
+    "mentor 1 github": "https://github.com/Shivangi10-10",
+    "mentor 1 linkedin": "https://www.linkedin.com/in/shivangi-suyash-05a484259",
     "mentor 2": "Rahma Khan",
-    "Mentor 2 linkedin": "https://www.linkedin.com/in/rahma-naqui",
     "mentor 2 github": "https://github.com/Rahma5983",
+    "Mentor 2 linkedin": "https://www.linkedin.com/in/rahma-naqui",
+    "mentor 3": "Anshi Agrawal",
+    "mentor 3 github": "https://github.com/anshiagrawal22",
+    "mentor 3 linkedin": "https://www.linkedin.com/in/anshiagrawal22/",
     "keyword": "phase2"
   },
   {
@@ -374,6 +488,9 @@
     "mentor 1": "Rahma Khan",
     "mentor 1 github": "https://www.linkedin.com/in/rahma-naqui",
     "mentor 1 linkedin": "https://github.com/Rahma5983",
+    "mentor 2": "Nipun Bansal",
+    "mentor 2 github": "https://github.com/Nipun-11",
+    "Mentor 2 linkedin": "https://www.linkedin.com/in/nipun-bansal-1a8270305/",
     "keyword": "phase2"
   },
   {
@@ -384,6 +501,9 @@
     "Admin linkedin": "https://www.linkedin.com/in/archita-70a688316",
     "Admin github": "https://github.com/Archita0905",
     "Tech stack": "python",
+    "mentor 1": "Tanvi",
+    "mentor 1 github": "https://github.com/Twii108",
+    "mentor 1 linkedin": "https://www.linkedin.com/in/tanvi-viroliya-553217318?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     "keyword": "phase2"
   },
   {
@@ -394,6 +514,9 @@
     "Admin linkedin": "https://linkedin.com/in/uiuxarghya",
     "Admin github": "https://github.com/uiuxarghya",
     "Tech stack": "Next.JS, Tailwind CSS, MDX, MongoDB, BetterAuth, shadcn/ui, algolia, etc.",
+    "mentor 1": "Gaurav Kesh Roushan",
+    "mentor 1 github": "https://github.com/gauravkesh",
+    "mentor 1 linkedin": "https://linkedin.com/in/gkrcoder",
     "keyword": "phase2"
   },
   {
@@ -404,6 +527,9 @@
     "Admin linkedin": "https://in.linkedin.com/in/arpitgarg5689",
     "Admin github": "http://github.com/Arpitgarg07",
     "Tech stack": "python3 and libraries",
+    "mentor 1": "Prabhat Yadav",
+    "mentor 1 github": "https://github.com/Prabhatyadav60",
+    "mentor 1 linkedin": "https://www.linkedin.com/in/prabhat-yadav-404b7727a/",
     "keyword": "phase2"
   },
   {
@@ -414,6 +540,12 @@
     "Admin linkedin": "https://www.linkedin.com/in/malhotra-arushi/",
     "Admin github": "https://github.com/arushi2610",
     "Tech stack": "HTML, CSS, JS, REACT, NODEJS, FIREBASE",
+    "mentor 1": "Piyush Sharma",
+    "mentor 1 github": "https://github.com/daksh-ugi",
+    "mentor 1 linkedin": "http://www.linkedin.com/in/piyush-ugi/",
+    "mentor 2": "Abhijit Dattatray Ugalmogale",
+    "mentor 2 github": "https://github.com/Abhijitugalmogale",
+    "Mentor 2 linkedin": "https://www.linkedin.com/in/abhijitugalmogale/",
     "keyword": "phase2"
   },
   {
@@ -424,6 +556,9 @@
     "Admin linkedin": "https://www.linkedin.com/in/malhotra-arushi/",
     "Admin github": "https://github.com/arushi2610",
     "Tech stack": "HTML, CSS, JS, REACT, NODEJS, FIREBASE",
+    "mentor 1": "Arbin Mahato",
+    "mentor 1 github": "https://github.com/arbin-mahato",
+    "mentor 1 linkedin": "https://www.linkedin.com/in/arbin-mahato/",
     "keyword": "phase2"
   },
   {
@@ -444,6 +579,12 @@
     "Admin linkedin": "https://www.linkedin.com/in/aseema-s-71257932b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     "Admin github": "https://github.com/Aseema-s",
     "Tech stack": "Python HTML CSS JavaScript",
+    "mentor 1": "Rahma Naqui",
+    "mentor 1 github": "https://github.com/Rahma5983",
+    "mentor 1 linkedin": "https://www.linkedin.com/in/rahma-naqui",
+    "mentor 2": "Anshi Agrawal",
+    "mentor 2 github": "https://github.com/anshiagrawal22",
+    "Mentor 2 linkedin": "https://www.linkedin.com/in/anshiagrawal22/",
     "keyword": "phase2"
   },
   {
@@ -454,6 +595,9 @@
     "Admin linkedin": "https://www.linkedin.com/in/ashish-um",
     "Admin github": "https://www.github.com/ashish-um",
     "Tech stack": "MERN stack",
+    "mentor 1": "Satyajeet Nayak",
+    "mentor 1 github": "https://github.com/isatyajeet9",
+    "mentor 1 linkedin": "https://www.linkedin.com/in/isatyajeet9/",
     "keyword": "phase2"
   },
   {
@@ -464,6 +608,9 @@
     "Admin linkedin": "https://www.linkedin.com/in/ashutoshkumaraashu/",
     "Admin github": "https://github.com/codeaashu",
     "Tech stack": "Full Stack Web Development ( MERN )",
+    "mentor 1": "Om Sherikar",
+    "mentor 1 github": "https://github.com/omsherikar",
+    "mentor 1 linkedin": "https://www.linkedin.com/in/omsherikar0229/",
     "keyword": "phase2"
   },
   {
@@ -474,6 +621,12 @@
     "Admin linkedin": "www.linkedin.com/in/aashut0xh",
     "Admin github": "www.github.com/aashut0xhkr",
     "Tech stack": "Core Java, Java 8 features, Spring Boot, Hibernate JPA, Spring Security, JWT Token, MySQL database, Restful Services, Version control Git",
+    "mentor 1": "Tanvi",
+    "mentor 1 github": "https://github.com/Twii108",
+    "mentor 1 linkedin": "https://www.linkedin.com/in/tanvi-viroliya-553217318?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    "mentor 2": "Sanjeet Raj",
+    "mentor 2 github": "https://github.com/Sanjeet4567",
+    "Mentor 2 linkedin": "https://www.linkedin.com/in/sanjeetraj40/",
     "keyword": "phase2"
   },
   {
@@ -484,6 +637,9 @@
     "Admin linkedin": "https://wwwhttps://www.linkedin.com/in/dsc-nit-rourkela-949832337",
     "Admin github": "https://github.com/dscnitrourkela",
     "Tech stack": "Next.js, React, React DOM, TypeScript, Bun, Tailwind CSS, PostCSS, ESLint, Turbopack, Hono, PostgreSQL, Drizzle ORM, Drizzle Kit, Zod, dotenv, TSX, Git, Node.js types, pg (PostgreSQL driver)",
+    "mentor 1": "Rajdeep Mohanty",
+    "mentor 1 github": "https://github.com/rajdeep5901",
+    "mentor 1 linkedin": "https://www.linkedin.com/in/rajdeepmohanty/",
     "keyword": "phase2"
   },
   {
@@ -494,6 +650,9 @@
     "Admin linkedin": "https://linkedin.com/in/aykansal",
     "Admin github": "https://github.com/aykansal",
     "Tech stack": "Nextjs, Express, Prisma, Thirdweb, Socketio, Tailwind, Shadcn",
+    "mentor 1": "Rudransh Pratap Singh",
+    "mentor 1 github": "https://github.com/CoderFleet",
+    "mentor 1 linkedin": "https://www.linkedin.com/in/rudransh-pratap-singh-5a6b72323",
     "keyword": "phase2"
   },
   {
@@ -504,6 +663,9 @@
     "Admin linkedin": "a06a237/https://www.linkedin.com/in/ayush-gupta-b0a06a237/",
     "Admin github": "https://github.com/Ayushhgupta39",
     "Tech stack": "React Native, Expo, Nextjs, NativeWind, Tailwind, Turborepo",
+    "mentor 1": "Abdullah Jameel",
+    "mentor 1 github": "https://github.com/abdullahxyz85",
+    "mentor 1 linkedin": "https://www.linkedin.com/in/abdullahjameel94/",
     "keyword": "phase2"
   },
   {
@@ -517,6 +679,9 @@
     "mentor 1": "Hussnain Ahmad",
     "mentor 1 github": "https://github.com/itspsychocoder",
     "mentor 1 linkedin": "https://linkedin.com/in/Hussnain-Ahmad/",
+    "mentor 2": "Huda Naaz",
+    "mentor 2 github": "https://github.com/hudazaan",
+    "Mentor 2 linkedin": "https://www.linkedin.com/in/hudanaaz17",
     "keyword": "phase2"
   },
   {
@@ -527,6 +692,9 @@
     "Admin linkedin": "https://www.linkedin.com/in/ayushman-mukherjee-437a49314/",
     "Admin github": "https://github.com/ayush585",
     "Tech stack": "javascript, java, html, objective-C, Css, Ruby, Starlank",
+    "mentor 1": "Sri Hasnika Venigalla",
+    "mentor 1 github": "https://github.com/Sri-Hasnika",
+    "mentor 1 linkedin": "https://www.linkedin.com/in/sri-hasnika/",
     "keyword": "phase2"
   },
   {
@@ -550,6 +718,9 @@
     "Admin linkedin": "https://www.linkedin.com/in/bindupautra-jyotibrat",
     "Admin github": "https://github.com/Jyotibrat",
     "Tech stack": "TypeScript, React, Vite, Supabase, Gemini 2.0 Flash API, Blogger API",
+    "mentor 1": "K N Meghana",
+    "mentor 1 github": "https://github.com/meghanakn473",
+    "mentor 1 linkedin": "https://www.linkedin.com/in/meghanakn473",
     "keyword": "phase2"
   },
   {
@@ -560,6 +731,9 @@
     "Admin linkedin": "https://www.linkedin.com/in/biradar-vanshika-8a153129a",
     "Admin github": "https://github.com/Biradarvanshika",
     "Tech stack": "React, Node.js, Supabase, Twilio, Tailwind CSS.",
+    "mentor 1": "Jiya Rathi",
+    "mentor 1 github": "https://github.com/Jiya-Rathi",
+    "mentor 1 linkedin": "https://www.linkedin.com/in/jiya-rathi/",
     "keyword": "phase2"
   },
   {
@@ -570,6 +744,9 @@
     "Admin linkedin": "https://www.linkedin.com/in/ghosttrozan?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     "Admin github": "github.com/ghosttrozan",
     "Tech stack": "Nextjs",
+    "mentor 1": "Meet Oza",
+    "mentor 1 github": "https://github.com/meetoza30",
+    "mentor 1 linkedin": "https://linkedin.com/in/meetoza30",
     "keyword": "phase2"
   },
   {
@@ -593,6 +770,9 @@
     "Admin linkedin": "https://www.linkedin.com/in/chhaviibhalla",
     "Admin github": "https://github.com/chhavibhalla",
     "Tech stack": "streamlit for ui , API integration , FPDF, prompt engineering",
+    "mentor 1": "Kumud Hasija",
+    "mentor 1 github": "https://github.com/Kumud-hasija",
+    "mentor 1 linkedin": "https://www.linkedin.com/in/kumud-hasija-060b172a2",
     "keyword": "phase2"
   },
   {
@@ -603,6 +783,9 @@
     "Admin linkedin": "https://www.linkedin.com/in/d-charan-teja-56729b2ba?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
     "Admin github": "https://github.com/charantej-18",
     "Tech stack": "powebi,data cleaning,visuvalization",
+    "mentor 1": "Gazal Singla",
+    "mentor 1 github": "https://github.com/Gazal-singla",
+    "mentor 1 linkedin": "https://www.linkedin.com/in/gazal-singla-08403b301",
     "keyword": "phase2"
   },
   {
@@ -613,6 +796,14 @@
     "Admin linkedin": "https://www.linkedin.com/in/deepjyotisaha102ab4647312?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     "Admin github": "https://github.com/Deepjyoti-coder",
     "Tech stack": "Frontend React.js, Tailwind CSS, Next.js\n Backend Node.js, Express.js\n Database MongoDB, Firebase Firestore\n AI/ML TensorFlow.js (browser-based inference), Python (waste classification model), OpenCV for image preprocessing\n Gamification & Rewards Custom Rule Engine, Firebase Cloud Functions\n Authentication Firebase Auth\n Cloud & Hosting Google Cloud Platform, Vercel\n APIs Google Maps API (vendor locator), REST APIs for user management & rewards\n Others GitHub for version control, Figma for UI/UX, Postman for API testing",
+    "mentor 1": "MEHULI BISWAS",
+    "mentor 1 github": "https://github.com/Sanchita76",
+    "mentor 1 linkedin": "https://www.linkedin.com/in/mehuli-biswas-817246334/",
+    "mentor 2": "Sarthak Upadhyay",
+    "mentor 2 github": "https://github.com/externref",
+    "Mentor 2 linkedin": "https://linkedin.com/in/defsarthak",
+    "mentor 3": "Tanyashri M",
+    "mentor 3 github": "https://www.linkedin.com/in/tanya-m-94a74a234?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     "keyword": "phase2"
   },
   {
@@ -623,6 +814,9 @@
     "Admin linkedin": "https://www.linkedin.com/in/deepjyotisaha102ab4647312?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     "Admin github": "https://github.com/Deepjyoti-coder",
     "Tech stack": "hmtl,css,js,type script",
+    "mentor 1": "Muhammad Hassam",
+    "mentor 1 github": "https://github.com/Shinjuro-svg",
+    "mentor 1 linkedin": "https://www.linkedin.com/in/hassam-dev",
     "keyword": "phase2"
   },
   {
@@ -646,6 +840,9 @@
     "Admin linkedin": "https://linkedin.com/in/thedevyashsaini",
     "Admin github": "https://github.com/thedevyashsaini",
     "Tech stack": "Rust",
+    "mentor 1": "Vaibhav",
+    "mentor 1 github": "https://github.com/v8v88v8v88",
+    "mentor 1 linkedin": "https://linkedin.com/in/v8v88v8v88",
     "keyword": "phase2"
   },
   {
@@ -656,6 +853,9 @@
     "Admin linkedin": "https://www.linkedin.com/in/dhanush-bm-b162b4368?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
     "Admin github": "https://github.com/dhanush-tech-ai-ml",
     "Tech stack": "AI TOOLS",
+    "mentor 1": "Anvesha Singh",
+    "mentor 1 github": "https://github.com/ASingh2425",
+    "mentor 1 linkedin": "https://www.linkedin.com/in/anvesha-singh-3427202aa?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     "keyword": "phase2"
   },
   {
@@ -666,6 +866,9 @@
     "Admin linkedin": "https://www.linkedin.com/in/diksha-singh-7405a81a9?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     "Admin github": "https://github.com/revxi",
     "Tech stack": "Jeanne AI Chatbot uses React.js, Vite, Tailwind CSS, Framer Motion, React Speech Recognition, Text-to-Speech API, Axios, Fetch API, Node.js, Express.js, OpenAI API, dotenv, CORS, body-parser, with the frontend deployed on Vercel and the backend on Render using a structured client/ and server/ folder system.",
+    "mentor 1": "Devesh Kumar Patel",
+    "mentor 1 github": "https://github.com/dev3z",
+    "mentor 1 linkedin": "https://www.linkedin.com/in/deveshkumarpatel/",
     "keyword": "phase2"
   },
   {
@@ -676,6 +879,9 @@
     "Admin linkedin": "https://www.linkedin.com/in/dip-jyoti22/",
     "Admin github": "https://github.com/dipexplorer",
     "Tech stack": "Backend: Node.js, Express.js\n \n Database: MongoDB\n \n AI Integration: Chatbase AI\n \n Frontend (Optional/Future Scope): React.js\n \n Security: JWT, RBAC\n \n Version Control: Git & GitHub",
+    "mentor 1": "Sanskar Bhardwaj",
+    "mentor 1 github": "https://github.com/Quantsanskar",
+    "mentor 1 linkedin": "https://www.linkedin.com/in/sanskar-bhardwaj-618b82244?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B3toz2nbTSJOH9qVC%2B1TgHA%3D%3D",
     "keyword": "phase2"
   },
   {
@@ -686,6 +892,9 @@
     "Admin linkedin": "https://www.linkedin.com/in/disha-oza-bba48928a",
     "Admin github": "https://github.com/DishaA06",
     "Tech stack": "Python",
+    "mentor 1": "Nehal Dhawan",
+    "mentor 1 github": "https://github.com/NEHALDHAWAN21",
+    "mentor 1 linkedin": "https://www.linkedin.com/in/nehal-dhawan-51b1a1316?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     "keyword": "phase2"
   },
   {
@@ -696,6 +905,9 @@
     "Admin linkedin": "https://www.linkedin.com/in/farhan-khan-3aa5442b0?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
     "Admin github": "https://github.com/FarhanK20-hub/",
     "Tech stack": "Python(Flask) - backend , Yolo - model traning, React(Frontend)",
+    "mentor 1": "Ayush raj",
+    "mentor 1 github": "https://github.com/Dumb-cat",
+    "mentor 1 linkedin": "http://linkedin.com/in/ayush-raj-057132325",
     "keyword": "phase2"
   },
   {
@@ -706,6 +918,9 @@
     "Admin linkedin": "https://www.linkedin.com/in/gowthamgshivamuthy",
     "Admin github": "https://github.com/gowthamgspatil",
     "Tech stack": "Python, SQL, Power BI, Pandas, Excel",
+    "mentor 1": "Tarun Jyoti",
+    "mentor 1 github": "https://github.com/tarunjyoti12",
+    "mentor 1 linkedin": "https://www.linkedin.com/in/tarun-jyoti",
     "keyword": "phase2"
   },
   {
@@ -716,6 +931,15 @@
     "Admin linkedin": "https://www.linkedin.com/in/gyanshankar1708/",
     "Admin github": "https://github.com/gyanshankar1708",
     "Tech stack": "HTML, CSS, Bootstrap, Javascript",
+    "mentor 1": "Ayush Kashyap",
+    "mentor 1 github": "https://www.github.com/ayushkashyap402",
+    "mentor 1 linkedin": "https://www.linkedin.com/in/ayush-kashyap-541021231",
+    "mentor 2": "Abdullah Jameel",
+    "mentor 2 github": "https://github.com/abdullahxyz85",
+    "Mentor 2 linkedin": "https://www.linkedin.com/in/abdullahjameel94/",
+    "mentor 3": "Khabab Akhtar",
+    "mentor 3 github": "https://github.com/Khababakhtar20",
+    "mentor 3 linkedin": "https://www.linkedin.com/in/khabab-akhtar-5b34562b1/",
     "keyword": "phase2"
   },
   {
@@ -726,6 +950,9 @@
     "Admin linkedin": "https://www.linkedin.com/in/hammad-mustafa2/",
     "Admin github": "https://github.com/hammadii123",
     "Tech stack": "React.js",
+    "mentor 1": "Abhishek katiyar",
+    "mentor 1 github": "https://github.com/abhishekkatiyar07",
+    "mentor 1 linkedin": "https://www.linkedin.com/in/abhishek-katiyar-148aa0250",
     "keyword": "phase2"
   },
   {
@@ -736,6 +963,9 @@
     "Admin linkedin": "www.linkedin.com/in/hardik-iyer-4b7792279",
     "Admin github": "github.com/hardik1712",
     "Tech stack": "Python , LangChain ,",
+    "mentor 1": "Ananya",
+    "mentor 1 github": "http://github.com/ananyatewari",
+    "mentor 1 linkedin": "https://www.linkedin.com/in/ananya-tewari-448b6b229/",
     "keyword": "phase2"
   },
   {
@@ -746,6 +976,9 @@
     "Admin linkedin": "www.linkedin.com/in/hardik-iyer-4b7792279",
     "Admin github": "github.com/hardik1712",
     "Tech stack": "Python , LangChain ,",
+    "mentor 1": "Bala Manikanta Sai",
+    "mentor 1 github": "https://www.github.com/balamanikantsai",
+    "mentor 1 linkedin": "https://www.linkedin.com/in/guduru-bala-manikanta-sai-20707a275",
     "keyword": "phase2"
   },
   {
@@ -756,6 +989,9 @@
     "Admin linkedin": "https://www.linkedin.com/in/harsh3dev",
     "Admin github": "https://www.github.com/harsh3dev",
     "Tech stack": "Nextjs, Tailwind CSS, Typescript, Prisma, Postgresql, Langchain, Docker",
+    "mentor 1": "Rudransh Pratap Singh",
+    "mentor 1 github": "https://github.com/CoderFleet",
+    "mentor 1 linkedin": "https://www.linkedin.com/in/rudransh-pratap-singh-5a6b72323",
     "keyword": "phase2"
   },
   {
@@ -766,6 +1002,9 @@
     "Admin linkedin": "https://www.linkedin.com/in/harsha-jain-b1859b287",
     "Admin github": "https://github.com/harshajain6114",
     "Tech stack": "Python, Federated Learning, TensorFlow Federated, Pandas, NumPy, Scikit-learn, Jupyter Notebook",
+    "mentor 1": "Dhruv Verma",
+    "mentor 1 github": "https://github.com/dhruvv1101",
+    "mentor 1 linkedin": "https://www.linkedin.com/in/dhruv-verma-34a927282/",
     "keyword": "phase2"
   },
   {
@@ -789,6 +1028,14 @@
     "Admin linkedin": "https://www.linkedin.com/in/himanshu-singh-003934258/",
     "Admin github": "https://github.com/Himanshusk1",
     "Tech stack": "Html,css,javascript",
+    "mentor 1": "Abhijit Ugalmogale",
+    "mentor 1 github": "https://www.linkedin.com/in/abhijitugalmogale/",
+    "mentor 2": "Himanshu Kabra",
+    "mentor 2 github": "https://www.github.com/HimanshuKabra01",
+    "Mentor 2 linkedin": "https://www.linkedin.com/in/himanshu-kabra28",
+    "mentor 3": "Ramkrushna Vijaysingh Shinde",
+    "mentor 3 github": "https://github.com/Ramkrushna77",
+    "mentor 3 linkedin": "https://www.linkedin.com/in/ramkrushna-shinde-ak77",
     "keyword": "phase2"
   },
   {
@@ -799,6 +1046,9 @@
     "Admin linkedin": "https://www.linkedin.com/in/hitesh-kumar-aiml/",
     "Admin github": "https://github.com/Hiteshydv001",
     "Tech stack": "Frontend: Next.js, React, TypeScript, Tailwind CSS, Shadcn/ui State & Data: Zustand, SWR, React Query Backend API: FastAPI (Python), Pydantic, SQLAlchemy (async) Auth: JWT (python-jose), passlib[bcrypt] Database: PostgreSQL, Alembic Cache: Redis Real-Time Engine: FastAPI Worker, WebSockets STT: faster-whisper (CTranslate2 Whisper) LLM: Ollama, TinyLlama TTS: Coqui TTS (VITS models) Telephony: Twilio, Plivo, Asterisk PBX Containerization: Docker, Docker Compose CI/CD: GitHub Actions, Docker Hub",
+    "mentor 1": "Devesh Kumar Patel",
+    "mentor 1 github": "https://github.com/dev3z",
+    "mentor 1 linkedin": "https://www.linkedin.com/in/deveshkumarpatel/",
     "keyword": "phase2"
   },
   {
@@ -822,6 +1072,9 @@
     "Admin linkedin": "https://www.linkedin.com/posts/jinkala-vishnu-vardhan-328232325_micro-iit-activity-7311638531167150081-HeMo?utm_source=share&utm_medium=member_android&rcm=ACoAAFIU6lAB95SVuvTwo6dHplfgVZNaEhY6wdQ",
     "Admin github": "no",
     "Tech stack": "python, library , dataset",
+    "mentor 1": "Rushil Sharma",
+    "mentor 1 github": "https://github.com/rushilsharma1",
+    "mentor 1 linkedin": "https://www.linkedin.com/in/rushilsharma347",
     "keyword": "phase2"
   },
   {
@@ -832,6 +1085,9 @@
     "Admin linkedin": "https://www.linkedin.com/in/joanna-sharon-d/",
     "Admin github": "https://github.com/JoannaSharon06",
     "Tech stack": "React,PyTorch",
+    "mentor 1": "SHASHIKUMAR",
+    "mentor 1 github": "https://github.com/Shashikumar-ezhilarasu",
+    "mentor 1 linkedin": "https://www.linkedin.com/in/shashikumar-ezhilarasu/",
     "keyword": "phase2"
   },
   {
@@ -842,6 +1098,9 @@
     "Admin linkedin": "https://www.linkedin.com/in/kanisha-sharma11/",
     "Admin github": "https://github.com/KanishaSharma11",
     "Tech stack": "HTML, CSS, Javascript, API",
+    "mentor 1": "Sumit Kesarwani",
+    "mentor 1 github": "https://github.com/Sumit6307",
+    "mentor 1 linkedin": "https://www.linkedin.com/in/sumit-kesarwani-35b63a286",
     "keyword": "phase2"
   },
   {
@@ -852,6 +1111,15 @@
     "Admin linkedin": "https://in.linkedin.com/in/kanishka-tyagi-a334b128b",
     "Admin github": "https://github.com/sachiikrish",
     "Tech stack": "HTML, CSS , JavaScript, PHP, MySQL",
+    "mentor 1": "Abhijit Ugalmogale",
+    "mentor 1 github": "https://github.com/Abhijitugalmogale",
+    "mentor 1 linkedin": "https://www.linkedin.com/in/abhijitugalmogale/",
+    "mentor 2": "Amit",
+    "mentor 2 github": "https://github.com/Amitsingh-nsut2027",
+    "Mentor 2 linkedin": "https://www.linkedin.com/in/amit-singh-352b80370?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+    "mentor 3": "Ramkrushna Vijaysingh Shinde",
+    "mentor 3 github": "https://github.com/Ramkrushna77",
+    "mentor 3 linkedin": "https://www.linkedin.com/in/ramkrushna-shinde-ak77",
     "keyword": "phase2"
   },
   {
@@ -862,6 +1130,9 @@
     "Admin linkedin": "linkdin.com/in/kashish-singh-70563300",
     "Admin github": "github.com/KashishSingh1213",
     "Tech stack": "reactjs,nodejs,firebase,tailwind css,js,html,css, github,goggle maps,api,postman",
+    "mentor 1": "Aditi Srivastava",
+    "mentor 1 github": "https://github.com/https-aditi",
+    "mentor 1 linkedin": "https://www.linkedin.com/in/aditi-srivastava001/",
     "keyword": "phase2"
   },
   {
@@ -872,6 +1143,9 @@
     "Admin linkedin": "cd7331d1-366d-4383-bc31-d0b983e2ed19",
     "Admin github": "https://github.com/kasmya",
     "Tech stack": "Python, MySQL, Jupyter Notebook",
+    "mentor 1": "DEVYANSHI BHATANE",
+    "mentor 1 github": "https://github.com/DEVYANSHI412",
+    "mentor 1 linkedin": "https://www.linkedin.com/in/devyanshi-bhatane-264959298",
     "keyword": "phase2"
   },
   {
@@ -882,6 +1156,9 @@
     "Admin linkedin": "https://linkedin.com/in/komalkhatod",
     "Admin github": "https://github.com/komalkhatod",
     "Tech stack": "HTML Page structure\n \n CSS Design & layout\n \n JavaScript Interactivity\n \n PHP Backend logic\n \n MySQL Database\n \n PHP MySQLi Database connection\n \n Google Maps link Explore button ke liye",
+    "mentor 1": "Md Faizul Islam",
+    "mentor 1 github": "https://github.com/sinister3301",
+    "mentor 1 linkedin": "http://linked.com/in/mf0",
     "keyword": "phase2"
   },
   {
@@ -892,6 +1169,9 @@
     "Admin linkedin": "https://www.linkedin.com/in/krish-chothani-797598284",
     "Admin github": "https://github.com/KrishChothani",
     "Tech stack": "Frontend: React (JavaScript & TypeScript), Vite, Tailwind CSS\n Backend: Node.js, Express.js, Flask\n Database & Storage: MongoDB, Cloudinary\n Deployment: AWS, Vercel",
+    "mentor 1": "Krish Patel",
+    "mentor 1 github": "https://github.com/KrishPatel1205",
+    "mentor 1 linkedin": "https://www.linkedin.com/in/krishpatel1205/",
     "keyword": "phase2"
   },
   {
@@ -902,6 +1182,9 @@
     "Admin linkedin": "https://www.linkedin.com/in/kumud-hasija-060b172a2",
     "Admin github": "https://github.com/Kumud-hasija",
     "Tech stack": "Python, Streamlit, LangChain, OpenAI API, SQLite, PostgreSQL, MySQL, MongoDB, Pandas, SQLAlchemy, PyMongo, Git, GitHub",
+    "mentor 1": "ANURAG SHARMA",
+    "mentor 1 github": "https://github.com/silverballz",
+    "mentor 1 linkedin": "https://www.linkedin.com/in/anurag-sharma-362664240",
     "keyword": "phase2"
   },
   {
@@ -912,6 +1195,9 @@
     "Admin linkedin": "https://www.linkedin.com/in/kunal-pandey-8aa0a2324?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     "Admin github": "https://github.com/kunal0297",
     "Tech stack": "React, TypeScript, TailwindCSS, Three.js, Zustand, FastAPI, Python, OpenAI, ElevenLabs, Docker, FHIR, WebRTC, Gemini, Blockchain (ZK, Smart Contracts)",
+    "mentor 1": "Amit",
+    "mentor 1 github": "https://github.com/Amitsingh-nsut2027",
+    "mentor 1 linkedin": "https://www.linkedin.com/in/amit-singh-352b80370/",
     "keyword": "phase2"
   },
   {
@@ -922,6 +1208,9 @@
     "Admin linkedin": "https://www.linkedin.com/in/lalit-kumar-singh-590068277?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     "Admin github": "https://github.com/lalitsingh789",
     "Tech stack": "React native,Mongodb,node.js",
+    "mentor 1": "Kanishka",
+    "mentor 1 github": "https://github.com/sachiikrish",
+    "mentor 1 linkedin": "https://in.linkedin.com/in/kanishka-tyagi-a334b128b",
     "keyword": "phase2"
   },
   {
@@ -932,6 +1221,9 @@
     "Admin linkedin": "https://www.linkedin.com/in/lovely-mahour-992316265?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     "Admin github": "https://github.com/lovelymahor",
     "Tech stack": "Frontend React.js, Tailwind CSS, JavaScript, HTML, CSS\n Backend Node.js, Express.js\n Database MongoDB (with Mongoose)\n Authentication JWT\n File Upload Multer\n Storage Cloudinary / Firebase Storage\n Hosting Vercel (frontend), Render or Railway (backend), MongoDB Atlas (database)\n Tools Postman (API testing), Git & GitHub (version control)",
+    "mentor 1": "Poornima",
+    "mentor 1 github": "https://github.com/poornima200631",
+    "mentor 1 linkedin": "https://www.linkedin.com/in/poornima-tewatia-5b8765330/",
     "keyword": "phase2"
   },
   {
@@ -942,6 +1234,9 @@
     "Admin linkedin": "https://www.linkedin.com/in/varshitha-macha",
     "Admin github": "https://github.com/Varshitha713",
     "Tech stack": "HTML, CSS and JavaScript (Furtherly firebase)",
+    "mentor 1": "Sakshi Patidar",
+    "mentor 1 github": "https://github.com/sakshipatidar06",
+    "mentor 1 linkedin": "https://www.linkedin.com/in/sakshi-patidar-668114254",
     "keyword": "phase2"
   },
   {
@@ -952,6 +1247,9 @@
     "Admin linkedin": "https://www.linkedin.com/in/varshitha-macha",
     "Admin github": "https://github.com/Varshitha713",
     "Tech stack": "HTML AND CSS",
+    "mentor 1": "Krishnendu Hazra",
+    "mentor 1 github": "https://github.com/krishnenduwork",
+    "mentor 1 linkedin": "https://www.linkedin.com/in/krishnendu-hazra-053317325?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     "keyword": "phase2"
   },
   {
@@ -962,6 +1260,9 @@
     "Admin linkedin": "https://www.linkedin.com/in/madegowda-n11",
     "Admin github": "https://github.com/madegowda11",
     "Tech stack": "python, flask, html, JavaScript",
+    "mentor 1": "Prashanth A N",
+    "mentor 1 github": "https://share.google/ITorVES8jas1oaIvH",
+    "mentor 1 linkedin": "https://www.linkedin.com/me?trk=p_mwlite_feed-secondary_nav",
     "keyword": "phase2"
   },
   {
@@ -972,6 +1273,9 @@
     "Admin linkedin": "https://www.linkedin.com/in/madhav-arora-32b056254/",
     "Admin github": "https://github.com/MadhavArora1213",
     "Tech stack": "React.js, Node.js, Firebase, Tailwind CSS, JavaScript, HTML, CSS, Express.js, GitHub, Google Maps API, AI/ML (Planned), Postman",
+    "mentor 1": "Sriman.H",
+    "mentor 1 github": "https://github.com/srimanh",
+    "mentor 1 linkedin": "https://www.linkedin.com/in/srimanh/",
     "keyword": "phase2"
   },
   {
@@ -982,6 +1286,9 @@
     "Admin linkedin": "https://www.linkedin.com/in/maham-babar-574098228?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     "Admin github": "https://github.com/Mahambabar12",
     "Tech stack": "next js",
+    "mentor 1": "Gaurav Kesh Roushan",
+    "mentor 1 github": "https://github.com/gauravkesh",
+    "mentor 1 linkedin": "https://gkrcoder.vercel.app",
     "keyword": "phase2"
   },
   {
@@ -992,6 +1299,9 @@
     "Admin linkedin": "https://www.linkedin.com/in/mamillapalli-sindhu-423310319?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     "Admin github": "https://github.com/Sindhuchowdhary23",
     "Tech stack": "python",
+    "mentor 1": "Nehal Dhawan",
+    "mentor 1 github": "https://github.com/NEHALDHAWAN21",
+    "mentor 1 linkedin": "https://www.linkedin.com/in/nehal-dhawan-51b1a1316?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     "keyword": "phase2"
   },
   {
@@ -1015,6 +1325,9 @@
     "Admin linkedin": "httpshttps://www.linkedin.com/in/mantej-singh-arora/",
     "Admin github": "https://github.com/Drago-03",
     "Tech stack": "TypeScript, JavaScript, React, Next.js, Node.js, MongoDB, Solidity, ethers.js, IPFS, Groq API, Unsplash API, Python, Framer Motion, shadcn/ui, Lucide React, Vercel, Foundry.",
+    "mentor 1": "Adil Amin",
+    "mentor 1 github": "https://www.github.com/adil-techcode",
+    "mentor 1 linkedin": "https://www.linkedin.com/in/adil-amin-tech",
     "keyword": "phase2"
   },
   {
@@ -1025,6 +1338,9 @@
     "Admin linkedin": "https://www.linkedin.com/in/mitulsonagara",
     "Admin github": "https://github.com/MitulSonagara",
     "Tech stack": "React, Vite, Redux Toolkit, TailwindCSS, Material Tailwind, Node.js, Express.js, MongoDB, Socket.IO, JWT Authentication, Role-Based Access Control",
+    "mentor 1": "Gaurav Gupta",
+    "mentor 1 github": "https://github.com/Gaurav075",
+    "mentor 1 linkedin": "https://www.linkedin.com/in/gauravgupta7431/",
     "keyword": "phase2"
   },
   {
@@ -1035,6 +1351,9 @@
     "Admin linkedin": "https://linkedin.com/in/anasmalik57",
     "Admin github": "https://github.com/Anasmalik57",
     "Tech stack": "Frontend:- React, Vite, TailwindCSS, Framer Motion (optional), html2pdf.js, Backend:- Node.js, Express.js, OpenAI API",
+    "mentor 1": "Rithvik",
+    "mentor 1 github": "https://github.com/Rithvik1709",
+    "mentor 1 linkedin": "https://www.linkedin.com/in/rithvik1709",
     "keyword": "phase2"
   },
   {
@@ -1045,6 +1364,9 @@
     "Admin linkedin": "https://www.linkedin.com/in/mohd-mashruf/",
     "Admin github": "https://github.com/mashrufmohd",
     "Tech stack": "TypeScript,React,Next.js,Git",
+    "mentor 1": "Sujal Pandey",
+    "mentor 1 github": "https://github.com/Sujal212004",
+    "mentor 1 linkedin": "https://www.linkedin.com/in/sujal-pandey-717b59253",
     "keyword": "phase2"
   },
   {
@@ -1055,6 +1377,9 @@
     "Admin linkedin": "https://www.linkedin.com/in/mukul-sharma-922b34313/",
     "Admin github": "https://github.com/MukulSha-afk",
     "Tech stack": "html ,css ,js python",
+    "mentor 1": "priti merukar",
+    "mentor 1 github": "https://github.com/priti-m129",
+    "mentor 1 linkedin": "https://www.linkedin.com/in/priti-merukar-5b2859272?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     "keyword": "phase2"
   },
   {
@@ -1065,6 +1390,9 @@
     "Admin linkedin": "https://www.linkedin.com/feed/update/urn:li:activity:7346013905854283777",
     "Admin github": "https://github.com/muskan-fatim?tab=repositories",
     "Tech stack": "Next J's, tailwind css, typescript",
+    "mentor 1": "Manan",
+    "mentor 1 github": "http://github.com/Manan-Wadhwa",
+    "mentor 1 linkedin": "http://linkedin.com/in/manan-wadhwa",
     "keyword": "phase2"
   },
   {
@@ -1075,6 +1403,9 @@
     "Admin linkedin": "https://www.linkedin.com/in/nayanika-mukherjee-76a24027b/",
     "Admin github": "https://github.com/Nayanika1402",
     "Tech stack": "React.js, Tailwind CSS, Firebase",
+    "mentor 1": "Reshma G.V.S.",
+    "mentor 1 github": "https://github.com/Reshmagvs",
+    "mentor 1 linkedin": "https://in.linkedin.com/in/reshma-g-v-s-740906295",
     "keyword": "phase2"
   },
   {
@@ -1085,6 +1416,9 @@
     "Admin linkedin": "https://www.linkedin.com/in/charithareddy18",
     "Admin github": "https://github.com/CharithaReddy18",
     "Tech stack": "This AI-powered health assistant is built using Python, machine learning and NLP to \n \n understand and respond to user questions immediately. This system uses a medical \n \n knowledge database and symptom checking algorithms to suggest possible conditions \n \n based on their inputs.",
+    "mentor 1": "Anshi Agarwal",
+    "mentor 1 github": "https://github.com/anshiagrawal22",
+    "mentor 1 linkedin": "https://www.linkedin.com/in/anshiagrawal22/",
     "keyword": "phase2"
   },
   {
@@ -1095,6 +1429,9 @@
     "Admin linkedin": "https://www.linkedin.com/in/neha-singh-4952992a7",
     "Admin github": "https://github.com/Neha-Singh-j",
     "Tech stack": "MongoDB React Node.js Express.js",
+    "mentor 1": "Samrat Natta",
+    "mentor 1 github": "https://github.com/Samrat25",
+    "mentor 1 linkedin": "https://www.linkedin.com/in/samrat-natta-761574321?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     "keyword": "phase2"
   },
   {
@@ -1105,6 +1442,9 @@
     "Admin linkedin": "https://www.linkedin.com/in/nikhil-singh-87a7b6372",
     "Admin github": "https://github.com/nikhilsingh10-r",
     "Tech stack": "HTML, CSS, JavaScript, Typescript,Node.js",
+    "mentor 1": "RAJ DWIVEDI",
+    "mentor 1 github": "https://github.com/Raj-Dwivedi2005",
+    "mentor 1 linkedin": "https://www.linkedin.com/in/raj-dwivedi-9935952a2",
     "keyword": "phase2"
   },
   {
@@ -1115,6 +1455,9 @@
     "Admin linkedin": "https://clipli.sbs/i5Tjnsg",
     "Admin github": "https://github.com/anothercoder-nik",
     "Tech stack": "The project uses React 19, Tailwind CSS, TanStack Router, TanStack Query, Redux Toolkit, Axios, and Vite on the frontend. The backend is built with Node.js, Express.js, MongoDB Atlas, and Mongoose, with additional tools like dotenv, cookie-parser, and jsonwebtoken (JWT) for environment handling, cookie parsing, and authentication respectively. Deployment is managed through Render, with development tools like Postman and MongoDB Compass.",
+    "mentor 1": "Gaurav Gupta",
+    "mentor 1 github": "https://github.com/Gaurav075",
+    "mentor 1 linkedin": "https://www.linkedin.com/in/gauravgupta7431/",
     "keyword": "phase2"
   },
   {
@@ -1125,6 +1468,9 @@
     "Admin linkedin": "https://www.linkedin.com/in/nishmitha-shaik-b908342a2",
     "Admin github": "https://github.com/Nishme-tech",
     "Tech stack": "ML",
+    "mentor 1": "Gursirat kaur",
+    "mentor 1 github": "https://github.com/sirat98",
+    "mentor 1 linkedin": "https://www.linkedin.com/me?trk=p_mwlite_feed-secondary_nav",
     "keyword": "phase2"
   },
   {
@@ -1135,6 +1481,9 @@
     "Admin linkedin": "https://www.linkedin.com/in/nupurmadaan04",
     "Admin github": "https://github.com/nupurmadaan04",
     "Tech stack": "Python (Numpy , pandas , sklearn , matplotlib, seaborn )",
+    "mentor 1": "Kathula Sri Raghavi",
+    "mentor 1 github": "https://github.com/sriraghavi22",
+    "mentor 1 linkedin": "https://www.linkedin.com/in/ksriraghavi/",
     "keyword": "phase2"
   },
   {
@@ -1145,6 +1494,9 @@
     "Admin linkedin": "https://www.linkedin.com/in/oindil-golder/",
     "Admin github": "https://github.com/OINDIL",
     "Tech stack": "Next JS, Tailwind CSS, ShadCN, Typescript, Framer Motion, JSON",
+    "mentor 1": "Hussnain Ahmad",
+    "mentor 1 github": "https://github.com/itspsychocoder",
+    "mentor 1 linkedin": "https://linkedin.com/in/Hussnain-Ahmad/",
     "keyword": "phase2"
   },
   {
@@ -1155,6 +1507,9 @@
     "Admin linkedin": "http://www.linkedin.com/in/ojasarora14",
     "Admin github": "https://github.com/Ojas-Arora",
     "Tech stack": "Typescript , Javascript , Go , Supabase, Excel , Machine Learning",
+    "mentor 1": "Yash Vikram",
+    "mentor 1 github": "https://github.com/yashvikram30",
+    "mentor 1 linkedin": "https://www.linkedin.com/in/yashvikram30?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     "keyword": "phase2"
   },
   {
@@ -1162,12 +1517,12 @@
     "Project description": "Bot helps to automate user message and amswe repeatedly asked questions. it now also tell user about project detauls and more about mentors.",
     "Project link": "https://github.com/piyushpatelcodes/gssocFAQ-Bot",
     "Project admin": "PIYUSH PATEL",
-    "Admin linkedin": "https://linkedin/in/piyushpatelcodes",
-    "Admin github": "https://github.com/piyushpatelcodes",
+    "Admin linkedin": "linkedin/in/piyushpatelcodes",
+    "Admin github": "github.com/piyushpatelcodes",
     "Tech stack": "Node js",
-     "mentor 1": "Vraj Ved",
-    "mentor 1 github": "https://github.com/VrajVed",
-    "mentor 1 linkedin": "https://www.linkedin.com/in/vraj-ved-023ba5318/",
+    "mentor 1": "Sanskar khandelwal",
+    "mentor 1 github": "http://github.com/sanskaryo",
+    "mentor 1 linkedin": "https://www.linkedin.com/in/sanskar-khandelwal-611249210/wal-611249210/",
     "keyword": "phase2"
   },
   {
@@ -1178,6 +1533,9 @@
     "Admin linkedin": "https://www.linkedin.com/in/prabhjot-kaur-7927122ba?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     "Admin github": "https://github.com/prabhjot1309",
     "Tech stack": "Python, numpy, pandas, matplotlib seaborn Scikit learn and seaborn",
+    "mentor 1": "Shivam Gupta",
+    "mentor 1 github": "https://share.google/yjpbY7TkrsZQVBURU",
+    "mentor 1 linkedin": "https://www.linkedin.com/in/shivam-gupta-8a2a781b0?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     "keyword": "phase2"
   },
   {
@@ -1188,6 +1546,9 @@
     "Admin linkedin": "www.linkedin.com/in/\n pramisi-b15736309",
     "Admin github": "https://github.com/pramisi",
     "Tech stack": "html,css",
+    "mentor 1": "Gazal",
+    "mentor 1 github": "https://github.com/Gazal-singla",
+    "mentor 1 linkedin": "https://www.linkedin.com/in/gazal-singla-08403b301",
     "keyword": "phase2"
   },
   {
@@ -1198,7 +1559,7 @@
     "Admin linkedin": "https://www.linkedin.com/in/pranjal-negi555?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     "Admin github": "https://github.com/Pranjal6955",
     "Tech stack": "Frontend: Next.js + Tailwind CSS with shadcn/ui or MaterialUI, state via Redux Toolkit or React Query\n Backend: Node.js + Express (or Django + DRF) exposing REST (or GraphQL via Apollo), secured by Atlassian OAuth2 & JWT\n Job Processing: BullMQ (or Celery) on Redis\n Database & Cache: PostgreSQL for data, Redis for caching\n AI/ML: OpenAI GPT4 via API, orchestrated with LangChain, plus Hugging Face Transformers for embeddings/semantic search\n Automation Engine: n8n for lowcode workflow automation\n Integrations: Jira REST API, GitHub/GitLab/Bitbucket webhooks, Slack & Microsoft Teams bots\n CI/CD: GitHub Actions (or CircleCI/Jenkins) for linting, testing, and Docker builds\n Containerization & Orchestration: Docker containers on Kubernetes (EKS/GKE) or Docker Swarm, routed via Nginx/Traefik\n Monitoring & Logging: Prometheus + Grafana, Sentry for error tracking, ELK Stack for logs\n Testing: Jest (or PyTest) for unit/integration, Cypress (or Playwright) for endtoend\n Design & Docs: Figma for UI, Notion/Confluence for documentation, Swagger/OpenAPI for API specs\n Analytics & Feedback: Mixpanel or Google Analytics, plus an inapp feedback widget",
-    "mentor 1": "Nikhil Deshmukh",
+    "mentor 1": "Soaeb Hasan",
     "mentor 1 github": "https://github.com/nikhildeshmukh170",
     "mentor 1 linkedin": "https://www.linkedin.com/in/nikhil-d-deshmukh/",
     "keyword": "phase2"
@@ -1211,6 +1572,9 @@
     "Admin linkedin": "https://linkedin.com/in/prasoon1204",
     "Admin github": "https://github.com/prasoonk1204",
     "Tech stack": "React, TailwindCSS, Charts.js, Node.js, Express",
+    "mentor 1": "Shashank Gupta",
+    "mentor 1 github": "https://github.com/ShashankScript",
+    "mentor 1 linkedin": "https://www.linkedin.com/in/shashank-gupta-abb76030b",
     "keyword": "phase2"
   },
   {
@@ -1221,6 +1585,9 @@
     "Admin linkedin": "https://www.linkedin.com/in/preeti-fartyal-90414024a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     "Admin github": "https://github.com/PREETIFARTYAL18",
     "Tech stack": "Python 3.x\n Streamlit\n HuggingFace Transformers (BART)\n youtube-transcript-api",
+    "mentor 1": "Chandrika Joshi",
+    "mentor 1 github": "https://github.com/Chandrikajoshi123",
+    "mentor 1 linkedin": "https://www.linkedin.com/in/chandrika-j-0b1a98238?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     "keyword": "phase2"
   },
   {
@@ -1231,6 +1598,9 @@
     "Admin linkedin": "https://www.linkedin.com/in/prem-kolte/",
     "Admin github": "https://github.com/Premkolte",
     "Tech stack": "MongoDb, ExpressJs, ReactJs, NodeJs",
+    "mentor 1": "Divyanshi Kulshrestha",
+    "mentor 1 github": "https://github.com/divyanshii10",
+    "mentor 1 linkedin": "https://www.linkedin.com/in/divyanshi-kulshrestha-5ba319295/",
     "keyword": "phase2"
   },
   {
@@ -1241,6 +1611,9 @@
     "Admin linkedin": "https://www.linkedin.com/in/priyanshupatel7996/",
     "Admin github": "https://github.com/priyanshupatel7996",
     "Tech stack": "React, Node.js, Solidity, Hardhat, IPFS, OpenAI API, MongoDB",
+    "mentor 1": "Rithvik",
+    "mentor 1 github": "https://github.com/Rithvik1709",
+    "mentor 1 linkedin": "https://www.linkedin.com/in/rithvik1709",
     "keyword": "phase2"
   },
   {
@@ -1251,6 +1624,9 @@
     "Admin linkedin": "https://www.linkedin.com/in/pujan-sarkar",
     "Admin github": "https://github.com/Pujan-sarkar",
     "Tech stack": "React Js, CSS, Javascript, Bootstrap, Node js, Express Js",
+    "mentor 1": "Kumud Hasija",
+    "mentor 1 github": "https://github.com/Kumud-hasija",
+    "mentor 1 linkedin": "https://www.linkedin.com/in/kumud-hasija-060b172a2",
     "keyword": "phase2"
   },
   {
@@ -1265,8 +1641,8 @@
     "mentor 1 github": "https://www.github.com/balamanikantsai",
     "mentor 1 linkedin": "https://www.linkedin.com/in/guduru-bala-manikanta-sai-20707a275",
     "mentor 2": "Jonnalagadda Dinesh",
-    "Mentor 2 linkedin": "https://www.linkedin.com/in/-dinesh-7a83b2241",
     "mentor 2 github": "https://www.github.com/dineshjnld",
+    "Mentor 2 linkedin": "https://www.linkedin.com/in/-dinesh-7a83b2241",
     "keyword": "phase2"
   },
   {
@@ -1277,16 +1653,25 @@
     "Admin linkedin": "https://www.linkedin.com/in/rafia-shafique-114263321/",
     "Admin github": "https://github.com/RafiaShafique",
     "Tech stack": "python, pygne",
+    "mentor 1": "Nehal Dhawan",
+    "mentor 1 github": "https://github.com/NEHALDHAWAN21",
+    "mentor 1 linkedin": "https://www.linkedin.com/in/nehal-dhawan-51b1a1316?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     "keyword": "phase2"
   },
   {
     "Project name": "webBuilder",
     "Project description": "Webinex is a an Ai-Powered no code website builder where user can create complete website by simply entering prompt. Leveraging Genai and Ml models, it builds UIs, page layout, and basic logic - instantly",
-    "Project link": "https://github.com/Rahulchaudharyji2/WebSiteBuilder",
+    "Project link": "https://github.com/WebinexOfficial",
     "Project admin": "Rahul Chaudhary",
     "Admin linkedin": "https://www.linkedin.com/in/rahul-chaudhary-b31b2a297/",
     "Admin github": "https://github.com/Rahulchaudharyji2",
     "Tech stack": "React, Tailwind, Nodejs, Google gemini / custom Model / Mongodb or postgress/ jwt",
+    "mentor 1": "YASH SAGAR",
+    "mentor 1 github": "https://github.com/sagarji1",
+    "mentor 1 linkedin": "https://www.linkedin.com/in/yash-sagar/",
+    "mentor 2": "Shivam Kumar",
+    "mentor 2 github": "https://github.com/Shivam-Developer01",
+    "Mentor 2 linkedin": "https://www.linkedin.com/in/shivam-kumar-b83971292?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     "keyword": "phase2"
   },
   {
@@ -1297,6 +1682,12 @@
     "Admin linkedin": "https://www.linkedin.com/in/rajarshi-chakraborty-06a3402b7",
     "Admin github": "https://github.com/ChakrabortyRajarshi2005",
     "Tech stack": "HTML , CSS JavaScript",
+    "mentor 1": "Shivangi Suyash",
+    "mentor 1 github": "https://github.com/Shivangi10-10",
+    "mentor 1 linkedin": "https://www.linkedin.com/in/shivangi-suyash-05a484259",
+    "mentor 2": "Krishnendu Hazra",
+    "mentor 2 github": "https://github.com/krishnenduwork",
+    "Mentor 2 linkedin": "https://www.linkedin.com/in/krishnendu-hazra-053317325/",
     "keyword": "phase2"
   },
   {
@@ -1307,6 +1698,12 @@
     "Admin linkedin": "https://www.linkedin.com/in/rajdeep-paul-013z/",
     "Admin github": "https://github.com/rajdeep13-coder",
     "Tech stack": "HTML, CSS, Javascript",
+    "mentor 1": "Krishnendu Hazra",
+    "mentor 1 github": "https://github.com/krishnenduwork",
+    "mentor 1 linkedin": "https://www.linkedin.com/in/krishnendu-hazra-053317325/",
+    "mentor 2": "Shashank Gupta",
+    "mentor 2 github": "https://github.com/ShashankScript",
+    "Mentor 2 linkedin": "https://www.linkedin.com/in/shashank-gupta-abb76030b",
     "keyword": "phase2"
   },
   {
@@ -1317,6 +1714,9 @@
     "Admin linkedin": "https://www.linkedin.com/in/rajib-salui-068675240/",
     "Admin github": "https://github.com/rajibsalui",
     "Tech stack": "Typescript, Langchain, Gemini AI API, VS Code",
+    "mentor 1": "Manan",
+    "mentor 1 github": "http://github.com/Manan-Wadhwa",
+    "mentor 1 linkedin": "http://linkedin.com/in/manan-wadhwa",
     "keyword": "phase2"
   },
   {
@@ -1327,6 +1727,9 @@
     "Admin linkedin": "https://www.linkedin.com/in/rajiv81205",
     "Admin github": "https://github.com/RAJIV81205",
     "Tech stack": "HTML , CSS , JS",
+    "mentor 1": "Shashank Gupta",
+    "mentor 1 github": "https://github.com/ShashankScript",
+    "mentor 1 linkedin": "https://www.linkedin.com/in/shashank-gupta-abb76030b",
     "keyword": "phase2"
   },
   {
@@ -1340,6 +1743,9 @@
     "mentor 1": "Nikhil Deshmukh",
     "mentor 1 github": "https://github.com/nikhildeshmukh170",
     "mentor 1 linkedin": "https://www.linkedin.com/in/nikhil-d-deshmukh/",
+    "mentor 2": "Huda Naaz",
+    "mentor 2 github": "https://github.com/hudazaan",
+    "Mentor 2 linkedin": "https://www.linkedin.com/in/hudanaaz17",
     "keyword": "phase2"
   },
   {
@@ -1350,6 +1756,9 @@
     "Admin linkedin": "https://www.linkedin.com/in/rajveer-bishnoi-576b62356/",
     "Admin github": "https://github.com/RAJVEER42",
     "Tech stack": "Html, Css, Javascript",
+    "mentor 1": "priti merukar",
+    "mentor 1 github": "https://github.com/priti-m129",
+    "mentor 1 linkedin": "https://www.linkedin.com/in/priti-merukar-5b2859272?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     "keyword": "phase2"
   },
   {
@@ -1360,6 +1769,9 @@
     "Admin linkedin": "https://www.linkedin.com/in/rakesh-roshan-9100/",
     "Admin github": "https://github.com/Rakesh9100",
     "Tech stack": "JavaScript, HTML, CSS, JSON",
+    "mentor 1": "Nikhil Balamurugan",
+    "mentor 1 github": "https://github.com/Nikhil210206",
+    "mentor 1 linkedin": "https://www.linkedin.com/in/nikhilb21/",
     "keyword": "phase2"
   },
   {
@@ -1370,6 +1782,9 @@
     "Admin linkedin": "linkedin.com/in/rakshitg600",
     "Admin github": "github.com/rakshitg600",
     "Tech stack": "NextJS, WebSocket, Firebase, TypeScript, Tailwind Css, Axios, React",
+    "mentor 1": "Payal Kumari",
+    "mentor 1 github": "https://github.com/PayalKumari10",
+    "mentor 1 linkedin": "https://www.linkedin.com/in/payalkumari10/",
     "keyword": "phase2"
   },
   {
@@ -1380,6 +1795,9 @@
     "Admin linkedin": "https://www.linkedin.com/in/yadavravindra536",
     "Admin github": "https://github.com/Ryadav0654",
     "Tech stack": "Nextjs, Reactjs, chartjs, Express, Nodejs, React, Typescript, Tailwindcss, MongoDB, Cloudinary, Clerk Auth,",
+    "mentor 1": "Jaydeepsinh Parmar",
+    "mentor 1 github": "https://github.com/jaydeep099",
+    "mentor 1 linkedin": "https://www.linkedin.com/in/jaydeepsinh-parmar-084609247/",
     "keyword": "phase2"
   },
   {
@@ -1390,6 +1808,9 @@
     "Admin linkedin": "https://www.linkedin.com/in/rishi-verma-sde/",
     "Admin github": "https://github.com/coder-writes",
     "Tech stack": "React.js , Node.js , Express.js , Tailwind CSS , HTML, CSS, JS , Routing , Three.js , Farmer-motion",
+    "mentor 1": "Kathula Sri Raghavi",
+    "mentor 1 github": "https://github.com/sriraghavi22",
+    "mentor 1 linkedin": "https://www.linkedin.com/in/ksriraghavi/",
     "keyword": "phase2"
   },
   {
@@ -1400,6 +1821,9 @@
     "Admin linkedin": "https://www.linkedin.com/in/rishikesh-yadav-a059482b0",
     "Admin github": "https://github.com/mr-rishikesh",
     "Tech stack": "Fronten :React + Tailwind CSS ,\n Backend : ,Node.js + Express OR Firebase Functions\n Database :MongoDB (with Mongoose) or Firestore,\n Auth: GitHub OAuth / Firebase Auth,\n Hosting : Vercel (frontend) + Render or Railway (backend)\n CI/CD GitHub Actions + ESLint/Prettier",
+    "mentor 1": "Lokesh Mehar",
+    "mentor 1 github": "https://github.com/lokeshmehar",
+    "mentor 1 linkedin": "https://www.linkedin.com/in/lokesh-mehar-926a34254",
     "keyword": "phase2"
   },
   {
@@ -1410,6 +1834,9 @@
     "Admin linkedin": "https://www.linkedin.com/in/rishukumarcodes/",
     "Admin github": "https://github.com/RishuKumarCodes",
     "Tech stack": "MERN (React, JavaScript, MongoDB, Node.js)",
+    "mentor 1": "Satyajeet Nayak",
+    "mentor 1 github": "https://github.com/isatyajeet9",
+    "mentor 1 linkedin": "https://www.linkedin.com/in/isatyajeet9/",
     "keyword": "phase2"
   },
   {
@@ -1420,6 +1847,9 @@
     "Admin linkedin": "https://www.linkedin.com/in/ritankar-saha-8041b9289/",
     "Admin github": "https://github.com/ritankarsaha",
     "Tech stack": "Golang",
+    "mentor 1": "Pratik Mahalle",
+    "mentor 1 github": "https://github.com/pratik-mahalle",
+    "mentor 1 linkedin": "https://www.linkedin.com/in/mahalle-pratik/",
     "keyword": "phase2"
   },
   {
@@ -1430,6 +1860,9 @@
     "Admin linkedin": "htpos://linkedin.com/in/rohansx",
     "Admin github": "https://github.com/rohansx",
     "Tech stack": "Typescript",
+    "mentor 1": "Aksh Khurana",
+    "mentor 1 github": "http://github.com/iakshkhurana",
+    "mentor 1 linkedin": "http://linkedin.com/in/akshkhurana",
     "keyword": "phase2"
   },
   {
@@ -1440,6 +1873,9 @@
     "Admin linkedin": "https://www.linkedin.com/in/rohit-debnath?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     "Admin github": "https://github.com/Rohit-Dnath",
     "Tech stack": "React, Tailwind, Shadcn, Supabase",
+    "mentor 1": "Avansh Yadav",
+    "mentor 1 github": "https://github.com/Avansh2006",
+    "mentor 1 linkedin": "https://www.linkedin.com/in/avanshyadav/",
     "keyword": "phase2"
   },
   {
@@ -1450,6 +1886,9 @@
     "Admin linkedin": "https://www.linkedin.com/in/rucha-ambaliya?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     "Admin github": "https://github.com/Rucha-Ambaliya",
     "Tech stack": "PrivGPT Studio frontend is built with Next.js (React) and TailwindCSS for a fast, responsive UI. The backend uses Flask (Python) to handle API requests and business logic. Data is stored in MongoDB, a flexible NoSQL database. For AI processing, it integrates Ollama local models for offline capabilities and Google Gemini API for powerful cloud-based AI services.",
+    "mentor 1": "Nikhil Deshmukh",
+    "mentor 1 github": "https://github.com/nikhildeshmukh170",
+    "mentor 1 linkedin": "https://www.linkedin.com/in/nikhil-d-deshmukh/",
     "keyword": "phase2"
   },
   {
@@ -1460,6 +1899,9 @@
     "Admin linkedin": "https://www.linkedin.com/in/saanvi-verma-71a370275",
     "Admin github": "https://github.com/SAANVIVERMA05/CODSOFT",
     "Tech stack": "Advance java, Servlet, jsp",
+    "mentor 1": "Tanvi Viroliya",
+    "mentor 1 github": "https://github.com/Twii108",
+    "mentor 1 linkedin": "https://www.linkedin.com/in/tanvi-viroliya-553217318?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     "keyword": "phase2"
   },
   {
@@ -1470,16 +1912,22 @@
     "Admin linkedin": "https://www.linkedin.com/in/saathvigab/",
     "Admin github": "https://github.com/Saathviga9605/",
     "Tech stack": "React, Flask, MongoDB, Gemini API, Google Search Fact Check API",
+    "mentor 1": "Avansh Yadav",
+    "mentor 1 github": "https://github.com/Avansh2006",
+    "mentor 1 linkedin": "https://www.linkedin.com/in/avanshyadav/",
     "keyword": "phase2"
   },
   {
     "Project name": "Adoptive AI based traffic management system",
     "Project description": "This Adopative AI Based Traffic Management System The basic idea of a traffic signal where vehicles are lined up in four lanes: Lane 1, Lane 2, Lane 3, and Lane 4. A camera or sensor system will simultaneously capture images of all four lanes. These captured images will be stored within a single frame. The stored frame will then be processed using the YOLO API, an artificial intelligence-based object detection model. By analyzing the detected vehicles in the image, the vehicle density of each lane will be determined. Based on the calculated vehicle density, the signal timing will be set accordingly. If the vehicle density exceeds a predefined range, a fixed setup timer will be applied to regulate the traffic flow.",
-    "Project link": "https://github.com/sachingiri58/techkruti",
+    "Project link": "https://github.com/sachingiri58?tab=repositories",
     "Project admin": "Sachin Gajanan Giri",
     "Admin linkedin": "https://www.linkedin.com/in/sachin-giri -657698221",
     "Admin github": "https://github.com/sachingiri58",
     "Tech stack": "HTML, CSS, JavaScript, React.js, Node.js, Express.js, PostgreSQL, MongoDB, Python, OpenCV, YOLOv5",
+    "mentor 1": "Monish Raman",
+    "mentor 1 github": "https://github.com/MonishRaman",
+    "mentor 1 linkedin": "https://www.linkedin.com/in/monishr608",
     "keyword": "phase2"
   },
   {
@@ -1490,6 +1938,9 @@
     "Admin linkedin": "https://www.linkedin.com/in/saismrutiranjan?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     "Admin github": "https://github.com/saismrutiranjan18",
     "Tech stack": "MERN",
+    "mentor 1": "Mah Noor Fatima",
+    "mentor 1 github": "https://github.com/theefatymah",
+    "mentor 1 linkedin": "https://www.linkedin.com/in/theefatymah",
     "keyword": "phase2"
   },
   {
@@ -1500,6 +1951,9 @@
     "Admin linkedin": "https://www.linkedin.com/in/srijavuppala02/",
     "Admin github": "https://github.com/SrijaVuppala295",
     "Tech stack": "HTML, CSS, JavaScript, Node.js, Express.js, and MongoDB, ReactJS",
+    "mentor 1": "Arbin Mahato",
+    "mentor 1 github": "https://github.com/arbin-mahato",
+    "mentor 1 linkedin": "https://www.linkedin.com/in/arbin-mahato/",
     "keyword": "phase2"
   },
   {
@@ -1510,6 +1964,9 @@
     "Admin linkedin": "https://www.linkedin.com/in/saish-ghatol",
     "Admin github": "https://www.github.com/saishghatol",
     "Tech stack": "MongoDB, Express.js,React.js,Node.js",
+    "mentor 1": "Arbin Mahato",
+    "mentor 1 github": "https://github.com/arbin-mahato",
+    "mentor 1 linkedin": "https://www.linkedin.com/in/arbin-mahato/",
     "keyword": "phase2"
   },
   {
@@ -1520,6 +1977,9 @@
     "Admin linkedin": "https://www.linkedin.com/in/sameer-pce/",
     "Admin github": "https://github.com/ThePlator",
     "Tech stack": "Nextjs, ExpressJS, Nodejs, Mongodb",
+    "mentor 1": "Mahi Jain",
+    "mentor 1 github": "https://github.com/Mahi290",
+    "mentor 1 linkedin": "https://www.linkedin.com/in/mahijain2902",
     "keyword": "phase2"
   },
   {
@@ -1530,6 +1990,9 @@
     "Admin linkedin": "https://www.linkedin.com/in/samrudhipawar21/",
     "Admin github": "https://github.com/Samrudhipawar",
     "Tech stack": "JavaScript, HTML5, CSS3, AmazonCLI",
+    "mentor 1": "Harsh Ahuja",
+    "mentor 1 github": "https://github.com/Harsh-26626",
+    "mentor 1 linkedin": "https://www.linkedin.com/in/harsh-ahuja-722948292/",
     "keyword": "phase2"
   },
   {
@@ -1540,6 +2003,9 @@
     "Admin linkedin": "https://www.linkedin.com/in/msanchari/",
     "Admin github": "https://github.com/msanchariii",
     "Tech stack": "React.js, Next.js, TailwindCSS, Node.js, Express.js, Socket.io",
+    "mentor 1": "Varun Maramreddy",
+    "mentor 1 github": "https://github.com/DrMyth",
+    "mentor 1 linkedin": "https://www.linkedin.com/in/varunmaramreddy/",
     "keyword": "phase2"
   },
   {
@@ -1550,6 +2016,12 @@
     "Admin linkedin": "https://www.linkedin.com/in/sandeepvashishtha",
     "Admin github": "https://github.com/SandeepVashishtha",
     "Tech stack": "Frontend: React.js, Tailwind CSS\n \n Backend: Spring Boot, Spring Security, JWT\n \n Database: PostgreSQL\n \n Tools: Docker, GitHub Actions",
+    "mentor 1": "Satyam seth",
+    "mentor 1 github": "https://github.com/anonymous-lad2",
+    "mentor 1 linkedin": "https://www.linkedin.com/in/satyam-seth44/",
+    "mentor 2": "Sanjeet Raj",
+    "mentor 2 github": "https://github.com/Sanjeet4567",
+    "Mentor 2 linkedin": "https://www.linkedin.com/in/sanjeetraj40/",
     "keyword": "phase2"
   },
   {
@@ -1560,6 +2032,9 @@
     "Admin linkedin": "https://www.linkedin.com/in/sanmathi-sedhupathi08/",
     "Admin github": "https://github.com/SanmathiSedhupathi",
     "Tech stack": "MERN STACK, Devops : Docker, Kubernetes,Jenkins",
+    "mentor 1": "Pratham Gautam",
+    "mentor 1 github": "https://github.com/mehffine",
+    "mentor 1 linkedin": "https://www.linkedin.com/in/pratham-gautam",
     "keyword": "phase2"
   },
   {
@@ -1570,6 +2045,9 @@
     "Admin linkedin": "https://www.linkedin.com/in/saumy1905",
     "Admin github": "https://github.com/Saumy1905",
     "Tech stack": "LaTeX | Data Science | Data Analysis | matplotlib | seaborn | AI [PYQ file (LaTeX) link: https://drive.google.com/file/d/1v9cCBwznt2n2zNgzHk5b1W1H7ARU6C5S/view?usp=drivesdk]",
+    "mentor 1": "Chandrika Joshi",
+    "mentor 1 github": "https://github.com/Chandrikajoshi123",
+    "mentor 1 linkedin": "https://www.linkedin.com/in/chandrika-j-0b1a98238?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     "keyword": "phase2"
   },
   {
@@ -1580,6 +2058,9 @@
     "Admin linkedin": "https://www.linkedin.com/in/tejaswiseelam/",
     "Admin github": "https://github.com/Tejaswiseelam",
     "Tech stack": "HTML, Vanilla CSS, Python, Java",
+    "mentor 1": "Hemanshu",
+    "mentor 1 github": "https://github.com/HemanshuMandhana",
+    "mentor 1 linkedin": "https://www.linkedin.com/in/hemanshu-mandhana-039601264/",
     "keyword": "phase2"
   },
   {
@@ -1590,6 +2071,9 @@
     "Admin linkedin": "https://www.linkedin.com/in/shahid-afridi-793a01297/",
     "Admin github": "https://github.com/code-with-shahid",
     "Tech stack": "Backend: Python, Flask and Gunicorn NLP & Machine Learning: NLTK, spacy, scikit-learn, pdfminer.six. Frontend: HTML5 & CSS3, Jinja2",
+    "mentor 1": "Kathula Sri Raghavi",
+    "mentor 1 github": "https://github.com/sriraghavi22",
+    "mentor 1 linkedin": "https://www.linkedin.com/in/ksriraghavi/",
     "keyword": "phase2"
   },
   {
@@ -1600,6 +2084,9 @@
     "Admin linkedin": "https://in.linkedin.com/in/shantanutiwari24",
     "Admin github": "https://github.com/Shantanu-Tiwari",
     "Tech stack": "react js, Tailwind, Gemini API, pdf.js, supabase",
+    "mentor 1": "Avansh Yadav",
+    "mentor 1 github": "https://github.com/Avansh2006",
+    "mentor 1 linkedin": "https://www.linkedin.com/in/avanshyadav/",
     "keyword": "phase2"
   },
   {
@@ -1610,6 +2097,9 @@
     "Admin linkedin": "https://www.linkedin.com/in/shashi365/",
     "Admin github": "https://github.com/imshashi365",
     "Tech stack": "Frontend: Html,css, javascript,Next.js, React.js, Tailwind CSS, Node.js, MongoDB",
+    "mentor 1": "Vaibhav",
+    "mentor 1 github": "https://www.github.com/v8v88v8v88",
+    "mentor 1 linkedin": "https://linkedin.com/in/v8v88v8v88",
     "keyword": "phase2"
   },
   {
@@ -1620,6 +2110,9 @@
     "Admin linkedin": "https://www.linkedin.com/in/shiri-sakthi-p-n-a2a4b828b",
     "Admin github": "https://github.com/Shirisakthi-1106",
     "Tech stack": "MERN Stack ( MongoDB, React.js , Express , Node)",
+    "mentor 1": "Sahil",
+    "mentor 1 github": "http://github.com/sahil-luthra-000",
+    "mentor 1 linkedin": "http://www.linkedin.com/in/sahil-luthra09",
     "keyword": "phase2"
   },
   {
@@ -1630,6 +2123,12 @@
     "Admin linkedin": "https://www.linkedin.com/in/shivamm-verma/",
     "Admin github": "https://github.com/shivamm-verma",
     "Tech stack": "DSA, Programming Languages, markdown files",
+    "mentor 1": "Shivangi Suyash",
+    "mentor 1 github": "https://github.com/Shivangi10-10",
+    "mentor 1 linkedin": "https://www.linkedin.com/in/shivangi-suyash-05a484259",
+    "mentor 2": "Ramkrushna Vijaysingh Shinde",
+    "mentor 2 github": "https://github.com/Ramkrushna77",
+    "Mentor 2 linkedin": "https://www.linkedin.com/in/ramkrushna-shinde-ak77",
     "keyword": "phase2"
   },
   {
@@ -1640,6 +2139,9 @@
     "Admin linkedin": "https://www.linkedin.com/in/shivansh-kumar-492b3021b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     "Admin github": "https://github.com/ShivanshKumar4265",
     "Tech stack": "Flutter, Dart, Sqlite, Bloc",
+    "mentor 1": "Ayan Roy",
+    "mentor 1 github": "https://github.com/im-AyanRoy",
+    "mentor 1 linkedin": "https://www.linkedin.com/in/im-ayanroy?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     "keyword": "phase2"
   },
   {
@@ -1650,6 +2152,9 @@
     "Admin linkedin": "https://www.linkedin.com/in/shorya-sethia-680b24250/",
     "Admin github": "https://github.com/shoryasethia",
     "Tech stack": "Python",
+    "mentor 1": "Tanvi",
+    "mentor 1 github": "https://github.com/Twii108",
+    "mentor 1 linkedin": "https://www.linkedin.com/in/tanvi-viroliya-553217318?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     "keyword": "phase2"
   },
   {
@@ -1660,6 +2165,9 @@
     "Admin linkedin": "https://www.linkedin.com/in/shreya-jalmi-b15081290",
     "Admin github": "https://github.com/SvJalmi",
     "Tech stack": "Java + MySQL+ VsCode",
+    "mentor 1": "Tanvi",
+    "mentor 1 github": "https://github.com/Twii108",
+    "mentor 1 linkedin": "https://www.linkedin.com/in/tanvi-viroliya-553217318?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     "keyword": "phase2"
   },
   {
@@ -1670,6 +2178,9 @@
     "Admin linkedin": "https://linkedin.com/in/Shubhashish-Chakraborty",
     "Admin github": "https://github.com/Shubhashish-Chakraborty",
     "Tech stack": "Typescript, Next js, Tailwind CSS, Nodejs, Expressjs, Postgresql, Prisma",
+    "mentor 1": "Jaydeepsinh Parmar",
+    "mentor 1 github": "https://github.com/jaydeep099",
+    "mentor 1 linkedin": "https://www.linkedin.com/in/jaydeepsinh-parmar-084609247/",
     "keyword": "phase2"
   },
   {
@@ -1680,6 +2191,9 @@
     "Admin linkedin": "https://www.linkedin.com/in/shubrali-jain",
     "Admin github": "https://github.com/code-well0",
     "Tech stack": "React JS, Javascript, CSS, HTML",
+    "mentor 1": "Pratyaksh Khetrapal",
+    "mentor 1 github": "https://github.com/Pratham00007",
+    "mentor 1 linkedin": "https://www.linkedin.com/in/pratham-khetrapal",
     "keyword": "phase2"
   },
   {
@@ -1690,6 +2204,9 @@
     "Admin linkedin": "https://www.linkedin.com/in/shuvadeep-mondal-b6212b260",
     "Admin github": "https://github.com/shuvadeepmondal",
     "Tech stack": "HTML, CSS, JAVASCRIPT, Firebase",
+    "mentor 1": "Harsh Jain",
+    "mentor 1 github": "https://github.com/HarshHp15s",
+    "mentor 1 linkedin": "https://www.linkedin.com/in/harshjainrs?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     "keyword": "phase2"
   },
   {
@@ -1700,6 +2217,9 @@
     "Admin linkedin": "https://www.linkedin.com/in/siddhantsinghbisht",
     "Admin github": "https://github.com/sidsbgithub",
     "Tech stack": "Next.js, TypeScript, Shadcn/UI, Tailwind CSS for frontend; MongoDB and Next.js API routes for backend; Stripe for payment processing; Google Gemini API for AI-powered features like summarization and chat; Clerk for authentication and Vercel for deployment.",
+    "mentor 1": "Kanishka",
+    "mentor 1 github": "https://github.com/sachiikrish",
+    "mentor 1 linkedin": "https://in.linkedin.com/in/kanishka-tyagi-a334b128b",
     "keyword": "phase2"
   },
   {
@@ -1710,6 +2230,9 @@
     "Admin linkedin": "https://www.linkedin.com/in/siddharth-narayan-mishra/",
     "Admin github": "https://github.com/siddharth-narayan-mishra",
     "Tech stack": "NextJs, TailwindCSS, Prisma, Auth.js",
+    "mentor 1": "Jiya Rathi",
+    "mentor 1 github": "https://github.com/Jiya-Rathi",
+    "mentor 1 linkedin": "https://www.linkedin.com/in/jiya-rathi/",
     "keyword": "phase2"
   },
   {
@@ -1720,6 +2243,9 @@
     "Admin linkedin": "https://www.linkedin.com/in/siddhartha-kunwar",
     "Admin github": "https://github.com/x0lg0n",
     "Tech stack": "Frontend: React + Three.js (WebGL 3D Viewer)\n - Backend: Node/Express + Appwrite (Auth/DB)\n - AI Core: RunwayML + StyleGAN2 + GPT-4\n - Geo-Services: Mapbox (Store Locator)\n - Manufacturing: Printful API Integration\n - Trend Analysis: Google Trends + AWS Forecast",
+    "mentor 1": "Kathula Sri Raghavi",
+    "mentor 1 github": "https://github.com/sriraghavi22",
+    "mentor 1 linkedin": "https://www.linkedin.com/in/ksriraghavi/",
     "keyword": "phase2"
   },
   {
@@ -1730,6 +2256,9 @@
     "Admin linkedin": "https://www.linkedin.com/in/simran-kadak-92611b256",
     "Admin github": "https://github.com/simrkadak",
     "Tech stack": "python, AI technologies",
+    "mentor 1": "Vishav Mehra",
+    "mentor 1 github": "https://github.com/vishavmehra",
+    "mentor 1 linkedin": "https://www.linkedin.com/in/vishav-mehra-755107208?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
     "keyword": "phase2"
   },
   {
@@ -1740,6 +2269,9 @@
     "Admin linkedin": "https://www.linkedin.com/in/siva-durshika-g-86141030a",
     "Admin github": "https://github.com/SivaDurshika-G",
     "Tech stack": "HTML,CSS,JS, Local Storage API",
+    "mentor 1": "Shashank Gupta",
+    "mentor 1 github": "https://github.com/ShashankScript",
+    "mentor 1 linkedin": "https://www.linkedin.com/in/shashank-gupta-abb76030b",
     "keyword": "phase2"
   },
   {
@@ -1750,6 +2282,9 @@
     "Admin linkedin": "https://www.linkedin.com/in/smiti-jana-1102312a7",
     "Admin github": "https://github.com/smiti-jana",
     "Tech stack": "Typescript, React, Tailwind Css, Shadcn UI, Vapi, Firebase",
+    "mentor 1": "Kumud Hasija",
+    "mentor 1 github": "https://github.com/Kumud-hasija",
+    "mentor 1 linkedin": "https://www.linkedin.com/in/kumud-hasija-060b172a2",
     "keyword": "phase2"
   },
   {
@@ -1760,6 +2295,9 @@
     "Admin linkedin": "https://www.linkedin.com/in/sneha-srivastava-00273832b",
     "Admin github": "https://github.com/sneha842",
     "Tech stack": "Frontend, Python, Flask or local storage, Chart.js, Audio API",
+    "mentor 1": "arzoo rai",
+    "mentor 1 github": "https://github.com/arzoo0511",
+    "mentor 1 linkedin": "https://www.linkedin.com/in/arzoo-rai",
     "keyword": "phase2"
   },
   {
@@ -1770,6 +2308,9 @@
     "Admin linkedin": "https://www.linkedin.com/in/stuticoder1/",
     "Admin github": "https://github.com/stuticoder123/",
     "Tech stack": "MERN Stack,AI/ML,Frontend,Backend,All types of other languages and tech stacks are allowed",
+    "mentor 1": "Shirshendu R Tripathi",
+    "mentor 1 github": "https://www.github.com/ShirshenduR",
+    "mentor 1 linkedin": "https://linkedin.com/in/shirshendur",
     "keyword": "phase2"
   },
   {
@@ -1780,26 +2321,35 @@
     "Admin linkedin": "https://www.linkedin.com/in/subhadeep3902/",
     "Admin github": "https://github.com/subhadeeproy3902",
     "Tech stack": "NextJs, Typescript, Shadcn UI, TailwindCSS, Framer Motion, Fumadocs, Vercel AI",
+    "mentor 1": "Anvesha Singh",
+    "mentor 1 github": "https://github.com/ASingh2425",
+    "mentor 1 linkedin": "https://www.linkedin.com/in/anvesha-singh-3427202aa?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     "keyword": "phase2"
   },
   {
     "Project name": "Divinora",
     "Project description": "Digital Sanctuary for exploring Divine Wisdom and spiritual Knowledge",
-    "Project link": "https://github.com/SUGAM-ARORA/Divinora",
+    "Project link": "https://github.com/SUGAM-ARORA/Dovinora",
     "Project admin": "Sugam Arora",
     "Admin linkedin": "https://www.linkedin.com/in/sugamarora23/",
     "Admin github": "https://github.com/SUGAM-ARORA",
     "Tech stack": "javascript nextjs tailwindcss supabase shadcn",
+    "mentor 1": "Nandini Pandey",
+    "mentor 1 github": "https://github.com/nytrixis",
+    "mentor 1 linkedin": "https://www.linkedin.com/in/nytrixis",
     "keyword": "phase2"
   },
   {
     "Project name": "Toolva App",
     "Project description": "Toolva Mobile\n A comprehensive mobile application that serves as a one-stop directory for AI tools and services. Built with React Native and Expo.",
-    "Project link": "https://github.com/SUGAM-ARORA/Toolva",
+    "Project link": ".",
     "Project admin": "Sugam Arora",
     "Admin linkedin": "https://www.linkedin.com/in/sugamarora23/",
     "Admin github": "https://github.com/SUGAM-ARORA",
     "Tech stack": "React Native , Expo , Go , Supabase , Sonarqube , Veracode",
+    "mentor 1": "Anvesha Singh",
+    "mentor 1 github": "https://github.com/ASingh2425",
+    "mentor 1 linkedin": "https://www.linkedin.com/in/anvesha-singh-3427202aa?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     "keyword": "phase2"
   },
   {
@@ -1810,6 +2360,9 @@
     "Admin linkedin": "https://www.linkedin.com/in/sumitgorai01/",
     "Admin github": "https://github.com/SumitGorai01",
     "Tech stack": "HTML, CSS, JavaScript, Tailwind css , React, Appwrite for user authentication, database, and file storage",
+    "mentor 1": "Yash Vikram",
+    "mentor 1 github": "https://github.com/yashvikram30",
+    "mentor 1 linkedin": "https://www.linkedin.com/in/yashvikram30?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     "keyword": "phase2"
   },
   {
@@ -1820,6 +2373,9 @@
     "Admin linkedin": "https://www.linkedin.com/in/sumit-kesarwani-35b63a286",
     "Admin github": "https://github.com/Sumit6307",
     "Tech stack": "Frontend: React.js, Vite, Tailwind CSS\n \n Backend: Node.js, Express.js\n \n Database: MongoDB (with Mongoose)\n \n Authentication: JSON Web Tokens (JWT)\n \n Version Control: Git and GitHub\n \n APIs: REST APIs for data operations",
+    "mentor 1": "Sujal Pandey",
+    "mentor 1 github": "https://github.com/Sujal212004",
+    "mentor 1 linkedin": "https://www.linkedin.com/in/sujal-pandey-717b59253",
     "keyword": "phase2"
   },
   {
@@ -1830,6 +2386,9 @@
     "Admin linkedin": "https://www.linkedin.com/in/sumitkumardas-ai/",
     "Admin github": "https://github.com/skdas20",
     "Tech stack": "Frontend: HTML5, CSS3, JavaScript\n Backend: Python, FastAPI\n Database: MongoDB\n AI Integration: Google Gemini API\n DevOps: Render (deployment), GitHub Actions (CI/CD)\n Other: PyGithub, python-dotenv, requests, httpx",
+    "mentor 1": "Sachin Gurjar",
+    "mentor 1 github": "https://github.com/gurjarsachin",
+    "mentor 1 linkedin": "https://linkedin.com/in/sachin-gurjar-a8912a2a3",
     "keyword": "phase2"
   },
   {
@@ -1840,6 +2399,9 @@
     "Admin linkedin": "https://linkedin.com/in/sumitrathor",
     "Admin github": "https://github.com/sumitrathor1",
     "Tech stack": "HTML, CSS, Javascript, bootstrap",
+    "mentor 1": "Rounak Mishra",
+    "mentor 1 github": "https://github.com/RounakMishra06",
+    "mentor 1 linkedin": "https://www.linkedin.com/in/rounakmishra/",
     "keyword": "phase2"
   },
   {
@@ -1850,6 +2412,9 @@
     "Admin linkedin": "https://linkedin.com/in/sumitrathor",
     "Admin github": "https://github.com/sumitrathor1",
     "Tech stack": "HTML, CSS, Javascript, Bootstrap 5.3",
+    "mentor 1": "Tanziha Sheikh",
+    "mentor 1 github": "https://github.com/Tanziha-Sheikh",
+    "mentor 1 linkedin": "https://www.linkedin.com/in/s-a32b802",
     "keyword": "phase2"
   },
   {
@@ -1859,6 +2424,13 @@
     "Project admin": "Supriya Pandey",
     "Admin linkedin": "https://www.linkedin.com/in/supriyapandey595",
     "Admin github": "https://github.com/supriya46788",
+    "Tech stack": "Frontend: Flutter (Dart) - Cross-platform UI development.\r\nBackend: Django (Python) - API handling and business logic.\r\nDatabase: Firestore - Secure and scalable data storage.\r\nAuthentication: Firebase - User login and authentication.\r\nAI & ML: Google Gemini API - AI-driven recommendations and insights.\r\nReal-Time Tracking: GPS & IoT APIs - Captures real-world driving behavior.\r\nDeployment: Firebase (Frontend), Render (Backend).\r\nDevelopment Platform: Built using Google Cloud IDX for cloud-based collaboration.",
+    "mentor 1": "Soaeb Hasan",
+    "mentor 1 github": "https://github.com/soaebhasan12",
+    "mentor 1 linkedin": "https://www.linkedin.com/in/shoaib-ahmad-789827360/",
+    "mentor 2": "Sheersh Tehri",
+    "mentor 2 github": "https://github.com/sheershtehri7",
+    "Mentor 2 linkedin": "https://in.linkedin.com/in/sheersh-tehri-19b740288",
     "keyword": "phase2"
   },
   {
@@ -1869,9 +2441,27 @@
     "Admin linkedin": "https://www.linkedin.com/in/suraj-s-g-dhanva-995a23298/",
     "Admin github": "https://github.com/SurajSG23",
     "Tech stack": "HTML, CSS & JS",
+    "mentor 1": "Supriya bhattacharjee",
+    "mentor 1 github": "https://github.com/Supriya5784",
+    "mentor 1 linkedin": "https://www.linkedin.com/in/supriya-bhattacharjee-257a25291/",
+    "mentor 2": "Vansh Tripathi",
+    "mentor 2 github": "https://github.com/SyntaxCrafter",
+    "Mentor 2 linkedin": "https://www.linkedin.com/in/vanshtripathi/",
     "keyword": "phase2"
   },
-
+  {
+    "Project name": "CampusTrack",
+    "Project description": "CampusTrack is a full-stack web application designed to help students and staff of a college report, find, and manage lost and found items on campus. The system enables seamless tracking of lost belongings, efficient moderation, and easy communication between finders and owners.",
+    "Project link": "https://github.com/Swastik007sharma/CampusTrack",
+    "Project admin": "Swastik Sharma",
+    "Admin linkedin": "https://www.linkedin.com/in/swastik-sharma-756b04238/",
+    "Admin github": "https://github.com/Swastik007sharma",
+    "Tech stack": "MERN :- Frontend: React (with Vite) + tailwindcss",
+    "mentor 1": "Samrat Natta",
+    "mentor 1 github": "https://github.com/Samrat25",
+    "mentor 1 linkedin": "https://www.linkedin.com/in/samrat-natta-761574321?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    "keyword": "phase2"
+  },
   {
     "Project name": "StockSentry",
     "Project description": "StockSentry is a smart stock predictor that blends past price trends with current news sentiment to capture how events like product launches or controversies impact performance. Soon, it will add an AI agent to automatically analyze news, prioritize key developments, and deliver clear, dynamic market insights.",
@@ -1880,6 +2470,9 @@
     "Admin linkedin": "https://www.linkedin.com/in/swayum-hastwala/",
     "Admin github": "https://github.com/swayum1004",
     "Tech stack": "Python, NewsAPI, TextBlob, Pandas",
+    "mentor 1": "Satyam seth",
+    "mentor 1 github": "https://github.com/anonymous-lad2",
+    "mentor 1 linkedin": "https://www.linkedin.com/in/satyam-seth44/",
     "keyword": "phase2"
   },
   {
@@ -1890,6 +2483,12 @@
     "Admin linkedin": "https://www.linkedin.com/in/tanmay-shingavi",
     "Admin github": "https://github.com/decodingafterlife",
     "Tech stack": "JavaScript HTML CSS",
+    "mentor 1": "Priti Merukar",
+    "mentor 1 github": "https://github.com/priti-m129",
+    "mentor 1 linkedin": "https://www.linkedin.com/in/priti-merukar-5b2859272?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    "mentor 2": "Anshi Agrawal",
+    "mentor 2 github": "https://github.com/anshiagrawal22",
+    "Mentor 2 linkedin": "https://www.linkedin.com/in/anshiagrawal22/",
     "keyword": "phase2"
   },
   {
@@ -1900,6 +2499,9 @@
     "Admin linkedin": "https://www.linkedin.com/in/tanya-gambhir-609ab0239?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
     "Admin github": "https://github.com/Tanyagambhir",
     "Tech stack": "Python, Pandas, NumPy, Matplotlib, Scikit-learn, TensorFlow, PyTorch, Flask, MongoDB.",
+    "mentor 1": "Diksha",
+    "mentor 1 github": "https://github.com/Diksha-007",
+    "mentor 1 linkedin": "https://www.linkedin.com/in/diksha-sharma-ba98312a5?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     "keyword": "phase2"
   },
   {
@@ -1910,6 +2512,9 @@
     "Admin linkedin": "linkedin.com/in/thalla-jayanth-28a04525a/",
     "Admin github": "https://github.com/jayanththalla",
     "Tech stack": "Next Js, Mongodb, Tailwindcss",
+    "mentor 1": "Arbin Mahato",
+    "mentor 1 github": "https://github.com/arbin-mahato",
+    "mentor 1 linkedin": "https://www.linkedin.com/in/arbin-mahato/",
     "keyword": "phase2"
   },
   {
@@ -1920,6 +2525,9 @@
     "Admin linkedin": "https://www.linkedin.com/in/bhavana-spoorthi-vaddadi-3a109325a",
     "Admin github": "https://github.com/Vaddadibhavanaspoorthi/Projects",
     "Tech stack": "HTML, CSS, and JavaScript for the front end, Python (Flask) for the backend, and MySQL",
+    "mentor 1": "Brajesh Kumar",
+    "mentor 1 github": "https://github.com/Brajesh31",
+    "mentor 1 linkedin": "https://www.linkedin.com/in/brajesh-kumar-9b58651a8",
     "keyword": "phase2"
   },
   {
@@ -1930,16 +2538,9 @@
     "Admin linkedin": "https://www.linkedin.com/in/vaibhavrajharsh",
     "Admin github": "https://www.github.com/vaibhavrajharsh",
     "Tech stack": "HTML,Css, JavaScript",
-    "keyword": "phase2"
-  },
-  {
-    "Project name": "SafeHaven",
-    "Project description": "SafeHaven is a Crowdsourced Disaster Management Platform. Assisting and Guiding people in case of Disaster.",
-    "Project link": "github.com/archangel2006/SafeHaven",
-    "Project admin": "Vaibhavi Srivastava",
-    "Admin linkedin": "https://www.linkedin.com/in/vaibhavi-srivastava-99a572348/",
-    "Admin github": "https://github.com/archangel2006",
-    "Tech stack": "HTML, CSS, JavaScript, GoogleMapsAPI",
+    "mentor 1": "Harshita",
+    "mentor 1 github": "https://github.com/nomr",
+    "mentor 1 linkedin": "https://www.linkedin.com/in/harshita-pandey-01b564314?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     "keyword": "phase2"
   },
   {
@@ -1950,6 +2551,9 @@
     "Admin linkedin": "https://www.linkedin.com/in/vaishnavi-khandelwal-777121289",
     "Admin github": "https://github.com/anditisyou/",
     "Tech stack": "html, java, node js , express, react",
+    "mentor 1": "K N Meghana",
+    "mentor 1 github": "https://github.com/meghanakn473",
+    "mentor 1 linkedin": "https://www.linkedin.com/in/meghanakn473",
     "keyword": "phase2"
   },
   {
@@ -1960,16 +2564,22 @@
     "Admin linkedin": "https://www.linkedin.com/in/vaishnavi-melagiri-874209321?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     "Admin github": "https://github.com/VaishnaviMelagiri",
     "Tech stack": "Simple data structures, can be enhanced using ML algorithms.",
+    "mentor 1": "Jeet Hemnani",
+    "mentor 1 github": "https://github.com/JeetHemnani",
+    "mentor 1 linkedin": "https://www.linkedin.com/in/jeethemnani",
     "keyword": "phase2"
   },
   {
     "Project name": "Weather Forecast Web App",
     "Project description": "A responsive web app that allows users to check real-time weather updates by city name.",
-    "Project link": "https://github.com/Vaishnavi-1104/Weatherapp",
+    "Project link": "https://vaishnavi-1104.github.io/Weatherapp/",
     "Project admin": "Vaishnavi V",
     "Admin linkedin": "https://www.linkedin.com/in/vaishnavi-vadlakonda/",
     "Admin github": "https://github.com/Vaishnavi-1104",
     "Tech stack": "HTML, CSS, JavaScript, OpenWeatherMap API",
+    "mentor 1": "Pratyaksh Khetrapal",
+    "mentor 1 github": "https://github.com/Pratham00007",
+    "mentor 1 linkedin": "https://www.linkedin.com/in/pratham-khetrapal",
     "keyword": "phase2"
   },
   {
@@ -1980,6 +2590,9 @@
     "Admin linkedin": "https://www.linkedin.com/in/vatsal-bhakodia",
     "Admin github": "https://github.com/vatsal-bhakodia",
     "Tech stack": "Next.js, Prisma (PostgreSQL), Clerk Auth",
+    "mentor 1": "Jaydeepsinh Parmar",
+    "mentor 1 github": "https://github.com/jaydeep099",
+    "mentor 1 linkedin": "https://www.linkedin.com/in/jaydeepsinh-parmar-084609247/",
     "keyword": "phase2"
   },
   {
@@ -1989,7 +2602,10 @@
     "Project admin": "Vijaya Mishra",
     "Admin linkedin": "https://www.linkedin.com/in/vijaya-mishra21",
     "Admin github": "https://github.com/Vijayaa21",
-    "Tech stack": "Frontend: React, React Router DOM, TailwindCSS, React Query, React Hot Toast\n Backend: Node.js, Express.js, MongoDB\n Auth: JWT with HttpOnly Cookies\n Image Upload: Cloudinary\n State Management: React Query\n Hosting: Render",
+    "Tech stack": "Frontend: React, React Router DOM, TailwindCSS, React Query,  \n Backend: Node.js, Express.js, MongoDB\n Auth: JWT with HttpOnly Cookies\n Image Upload: Cloudinary\n State Management: React Query\n Hosting: Render",
+    "mentor 1": "Nandini Pandey",
+    "mentor 1 github": "https://github.com/nytrixis",
+    "mentor 1 linkedin": "https://www.linkedin.com/in/nytrixis",
     "keyword": "phase2"
   },
   {
@@ -2000,6 +2616,9 @@
     "Admin linkedin": "https://www.linkedin.com/in/maheshwarivinayak",
     "Admin github": "https://github.com/07calc",
     "Tech stack": "typescript, react native, expo",
+    "mentor 1": "Sirivarshini",
+    "mentor 1 github": "https://github.com/Siri123-var",
+    "mentor 1 linkedin": "https://www.linkedin.com/in/varshu-kandapalli-27194130b",
     "keyword": "phase2"
   },
   {
@@ -2010,6 +2629,9 @@
     "Admin linkedin": "https://www.linkedin.com/in/vinit-garach?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     "Admin github": "https://github.com/vinit105",
     "Tech stack": "React, Node, Typescript, Mongo, Redis, vercel and railway for backend deployment",
+    "mentor 1": "Yash Vikram",
+    "mentor 1 github": "https://github.com/yashvikram30",
+    "mentor 1 linkedin": "https://www.linkedin.com/in/yashvikram30?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     "keyword": "phase2"
   },
   {
@@ -2020,6 +2642,9 @@
     "Admin linkedin": "https://www.linkedin.com/in/vishesh-verma-060076345",
     "Admin github": "https://github.com/vishesh4560",
     "Tech stack": "python",
+    "mentor 1": "Yash",
+    "mentor 1 github": "https://github.com/Yashgpt123",
+    "mentor 1 linkedin": "https://www.linkedin.com/in/yash-gupta-a01153348",
     "keyword": "phase2"
   },
   {
@@ -2030,6 +2655,9 @@
     "Admin linkedin": "https://www.linkedin.com/in/vishvboda",
     "Admin github": "https://www.github.com/vishv04",
     "Tech stack": "Frontend: React, Vite, Tailwind CSS, Framer Motion | Backend: Node.js, Express.js | Database: MongoDB | Authentication: Google OAuth 2.0, JWT (JSON Web Tokens) | Payments: Razorpay, UPI Integration",
+    "mentor 1": "Aditi Srivastava",
+    "mentor 1 github": "https://github.com/https-aditi",
+    "mentor 1 linkedin": "https://www.linkedin.com/in/aditi-srivastava001/",
     "keyword": "phase2"
   },
   {
@@ -2040,6 +2668,9 @@
     "Admin linkedin": "https://www.linkedin.com/in/codervivek/",
     "Admin github": "https://github.com/codervivek5/",
     "Tech stack": "React,Python,FastAPI,Pinecone DB, Langchain,LangGraph,CrewAI, Eleven Lab, Firebase, Tailwind, JavaScript",
+    "mentor 1": "Pratyaksh",
+    "mentor 1 github": "https://github.com/PRATYAKSH15",
+    "mentor 1 linkedin": "https://www.linkedin.com/in/pratyaksh-989922256/",
     "keyword": "phase2"
   },
   {
@@ -2050,6 +2681,9 @@
     "Admin linkedin": "https://www.linkedin.com/in/vyom-dubey-b979952b5",
     "Admin github": "https://github.com/devillikevd",
     "Tech stack": "html , css , javascript",
+    "mentor 1": "Amit Singh",
+    "mentor 1 github": "Amit Singh",
+    "mentor 1 linkedin": "https://www.linkedin.com/in/amit-singh-352b80370/",
     "keyword": "phase2"
   },
   {
@@ -2060,6 +2694,22 @@
     "Admin linkedin": "https://www.linkedin.com/in/yash-patel-997ba624b/",
     "Admin github": "https://github.com/yp969803",
     "Tech stack": "Go Docker Reactjs Typescript Html Css",
+    "mentor 1": "Bhoomy Singh",
+    "mentor 1 github": "https://github.com/Bhoomysingh10",
+    "mentor 1 linkedin": "https://www.linkedin.com/in/bhoomy-singh-a56227267/",
+    "keyword": "phase2"
+  },
+  {
+    "Project name": "AlchEmaiLyst",
+    "Project description": "A 3 agent system powered by AI to automate emails. Summarise, Compose, Send and stay away from spam at automated in a beautiful UI",
+    "Project link": "https://github.com/Coden-inja/alchEmaiLyst",
+    "Project admin": "Yogesh Kumar",
+    "Admin linkedin": "https://www.linkedin.com/in/yogesh-kumar-299298260/",
+    "Admin github": "https://github.com/Coden-inja",
+    "Tech stack": "React, Vite, Tailwind , ShadCN, Express.js, Axios, Google OAuth2.0, Gemini API, Alchemyst APi",
+    "mentor 1": "Avansh Yadav",
+    "mentor 1 github": "https://github.com/Avansh2006",
+    "mentor 1 linkedin": "https://www.linkedin.com/in/avanshyadav/",
     "keyword": "phase2"
   },
   {
@@ -2070,6 +2720,15 @@
     "Admin linkedin": "https://www.linkedin.com/in/michaelrobink",
     "Admin github": "https://github.com/Robinbinu",
     "Tech stack": "Flutter, Python, Golang, GCP",
+    "mentor 1": "Shashwat Gupta",
+    "mentor 1 github": "https://github.com/LionStone-1",
+    "mentor 1 linkedin": "https://www.linkedin.com/in/shashwat--gupta",
+    "mentor 2": "Akshith",
+    "mentor 2 github": "https://github.com/Akshithsaai",
+    "Mentor 2 linkedin": "https://www.linkedin.com/in/akshith-manchikanti-b35a9b209",
+    "mentor 3": "Pratyaksh Khetrapal",
+    "mentor 3 github": "https://github.com/Pratham00007",
+    "mentor 3 linkedin": "https://www.linkedin.com/in/pratham-khetrapal",
     "keyword": "phase2"
   }
 ]

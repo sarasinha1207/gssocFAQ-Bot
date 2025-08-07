@@ -235,7 +235,7 @@ We're excited to have you contribute! Here's how to get started:
 
 Need help? We've got you covered!
 
-- **💬 Discord**: Join our community server[https://discord.gg/dnNzknP2]
+- **💬 Discord**: Join our community server[https://discord.gg/gM3RJ3Aydj]
 - **📧 Issues**: Open a GitHub issue for bugs or feature requests
 - **📖 Docs**: Check our detailed documentation
 - **🤝 Mentors**: Reach out to project mentors for guidance

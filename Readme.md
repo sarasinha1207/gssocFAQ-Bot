@@ -6,6 +6,58 @@ The **GSSoC FAQ Bot** is an unofficial Discord bot designed to help participants
 
 Whether you're a first-time contributor wondering how to get started or an experienced developer looking for specific project information, this bot has got you covered! 🚀
 
+<img src="/public/assets/logo/logo.jpg" loading="lazy" alt="GSSoC 25"/>
+
+## 🚀Featured In
+
+<table>
+
+   <tr>
+      <th>Event Logo</th>
+      <th>Event Name</th>
+      <th>Event Description</th>
+   </tr>
+   <tr>
+      <td><img src="https://github.com/sharmavikas4/MERN_BLOG/blob/main/gssoc.jpg" width="200" height="auto" loading="lazy" alt="GSSoC 25"/></td>
+      <td>GirlScript Summer of Code (GSSOC) 2025</td>
+      <td>GirlScript Summer of Code is a three-month-long Open Source Program conducted every summer by GirlScript Foundation. It is an initiative to bring more beginners to Open-Source Software Development.</td>
+   </tr>
+   </table>
+
+<br />
+
+
+## Statistics 📊  
+
+<table align="center">
+  <thead align="center">
+      <tr border: 1px;>
+          <td><b>🌟 Stars</b></td>
+          <td><b>🍴 Forks</b></td>
+          <td><b>🐛 Issues</b></td>
+          <td><b>🔔 Open PRs</b></td>
+          <td><b>🔕 Closed PRs</b></td>
+          <td><b>🛠 Languages</b></td>
+          <td><b>🌐 Contributors </b></td>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><img alt="Stars" src="https://img.shields.io/github/stars/piyushpatelcodes/gssocFAQ-Bot?style=flat&logo=github"/></td>
+          <td><img alt="Forks" src="https://img.shields.io/github/forks/piyushpatelcodes/gssocFAQ-Bot?style=flat&logo=github"/></td>
+          <td><img alt="Issues" src="https://img.shields.io/github/issues/piyushpatelcodes/gssocFAQ-Bot"/></td>
+          <td><img alt="Open Pull Requests" src="https://img.shields.io/github/issues-pr/piyushpatelcodes/gssocFAQ-Bot"/></td>
+          <td><img alt="Closed Pull Requests" src="https://img.shields.io/github/issues-pr-closed/piyushpatelcodes/gssocFAQ-Bot"/></td>
+          <td><img alt="GitHub language count" src="https://img.shields.io/github/languages/count/piyushpatelcodes/gssocFAQ-Bot"/></td>
+          <td><img alt="GitHub contributors" src="https://img.shields.io/github/contributors/piyushpatelcodes/gssocFAQ-Bot?color=2b9348"/></td>
+      </tr>
+  </tbody>
+</table>
+<img src="/public/assets/logo/2.png" loading="lazy" alt="GSSoC 25"/>
+
+> [!NOTE]
+> GSSOC FAQ is not only for General Query (que/ans) but it can also Give you Details about 300+ Projects whicg are all enrolled under GSSOC25.
+> This also have Projects by Phase and Tech stack. It even includes Mentor Socials  and Project owner/admin socials (Github, Linkedin, Email) to connect with them faster.
 ## ✨ Features
 
 ### 🔍 **FAQ Command (`/faq`)**

@@ -150,5 +150,19 @@
   {
     "question": "How to invite the GSSoC FAQ Bot to your own server?",
     "answer": "You can invite the GSSoC FAQ Bot to your server using the links below:\n\n🔹 **Add as App** (for slash commands only): [Click here](https://discord.com/oauth2/authorize?client_id=1396740851056640091&scope=applications.commands)\n\n🔹 **Invite Full Bot** (with admin permissions): [Click here](https://discord.com/oauth2/authorize?client_id=1396740851056640091&permissions=8&integration_type=0&scope=bot+applications.commands)"
+  },
+  {
+    "question": "What are the minimum points required to be eligible for the certificate?",
+    "answer": "You need a minimum of 60 points to be eligible for the certificate."
+  },
+  {
+    "question": "How many points are assigned for different levels, Level 1, Level 2, and Level 3?",
+    "answer": "For Level 1, participants get 3 points. Level 2 gives 7 points, and Level 3 gives 10 points."
+  },
+  {
+    "question": "What badges can you earn based on contribution points?",
+    "answer": "Badges are awarded as follows: Explorer Badge (60 points), Adventurer Badge (140 points), Trailblazer Badge (200 points), Summit Seeker Badge (300 points), Champion Badge (500 points), Innovator Badge (1200 points), Conqueror Badge (2500 points), Legend Badge (5500 points)."
   }
 ]
+
+

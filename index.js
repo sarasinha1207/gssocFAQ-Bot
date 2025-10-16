@@ -16,12 +16,7 @@ const path = require("path");
 const app = express();
 app.use(express.static("public"));
 const PORT = process.env.PORT || 3000;
-const axios = require('axios');
-const formatMatchReply = require("./formatMatchReply");
 const documentationRoute = require("./routes/documentation");
-const funQuotes = require("./funQuotes"); 
-// Adjust the path if needed
-let lastFunQuoteIndex = -1;
 
 require("dotenv").config();
 
@@ -30,7 +25,6 @@ const { sendPaginatedProjects } = require("./chunkMessgae");
 
 const phase1Projects = JSON.parse(fs.readFileSync("./projects-phase1.json"));
 const phase2Projects = JSON.parse(fs.readFileSync("./projects-phase2.json"));
-let usedIndexes = []; // To track shown quotes
 
 const client = new Client({
   intents: [
@@ -141,23 +135,6 @@ client.once("ready", async () => {
   console.log(`🤖 Logged in as ${client.user.tag}`);
 });
 
-function getNonRepeatingQuote() {
-  // Reset when all quotes have been shown
-  if (usedIndexes.length === funQuotes.length) {
-    usedIndexes = [];
-  }
-
-  let randomIndex;
-
-  do {
-    randomIndex = Math.floor(Math.random() * funQuotes.length);
-  } while (usedIndexes.includes(randomIndex) && funQuotes.length > 1);
-
-  usedIndexes.push(randomIndex);
-  return funQuotes[randomIndex];
-}
-
-
 client.on(Events.InteractionCreate, async (interaction) => {
   try {
     if (interaction.isStringSelectMenu()) {
@@ -179,18 +156,8 @@ client.on(Events.InteractionCreate, async (interaction) => {
     
     if (interaction.isChatInputCommand()) {
       const userQuestion = interaction.options.getString("question");
-      if (interaction.commandName === "fun") {
-      let randomIndex;
-      do {
-      randomIndex = Math.floor(Math.random() * funQuotes.length);
-      } while (randomIndex === lastFunQuoteIndex && funQuotes.length > 1);
 
-      lastFunQuoteIndex = randomIndex;
-      await interaction.reply(funQuotes[randomIndex]);
-      return;
-    }
 
-      
       if (interaction.commandName === "faq") {
         if (!userQuestion) {
           throw new Error("No question provided");
@@ -239,57 +206,49 @@ client.on(Events.InteractionCreate, async (interaction) => {
               page + 1
             }/${totalPages}):**\n\n${getFaqPageContent(page, faqs)}\n\n*Select a question below, or type \`/faq question:<number>\` to get an answer!*`,
             components: [rowPagination, rowSelectMenu],
+
+
+
           });
           return;
         }
 
-        console.time("mlreq"); // ✅ Start timer for ML request
+        // --- Fuzzy match/autocomplete fallback ---
+        const questions = faqs.map((faq) => faq.question);
 
-        try {
-          console.time("mlreq"); 
-          const res = await axios.post(
-            `${process.env.BACKEND_URL || 'http://127.0.0.1:5000'}/ask`,
-            { question: userQuestion }
-          );
+        const { bestMatch, bestMatchIndex } = stringSimilarity.findBestMatch(
+          userQuestion,
+          questions
+        );
 
-          console.timeEnd("mlreq"); // ✅ End timer (success case)
+        let match = faqs.find(
+          (f) => f.question.toLowerCase() === userQuestion.toLowerCase()
+        );
 
-          const { matches, message } = res.data;
+        if (
+          (!match || match === undefined || match === null) &&
+          bestMatch.rating >= 0.3
+        ) {
+          match = faqs[bestMatchIndex];
+        }
+        console.log("bestMatch: ", bestMatch);
 
-          if (!matches || matches.length === 0) {
-            await interaction.reply({
-              content: "🤖 Sorry, I couldn’t find a good match. Try rephrasing or use `/faq question: all commands`.",
-              ephemeral: false,
-            });
-            return;
-          }
-
-          const replyMessage = formatMatchReply(matches);
-
-          await interaction.reply({
-            content: replyMessage,
-            ephemeral: false,
-          });
-
+        if (match) {
+          await interaction.reply(match.answer);
           const lowerQ = userQuestion.toLowerCase();
           if (idKeywords.some((keyword) => lowerQ.includes(keyword))) {
             const file = new AttachmentBuilder("./public/assets/idcard.png");
             await interaction.followUp({
               content:
-                "You will get an ID card like this directly in your **Insight App**. Download here: https://gssoc.girlscript.tech/#apply",
+                "You will get an ID card like this directly in your **Insight App** Only available for Android an iOS. You can download the app here: https://gssoc.girlscript.tech/#apply \n **Mail or ID CARD on Insights App**, Anything is a confirmation form GSSOC \n **Contribute in this GSSOC FAQ unofficial BOT** https://github.com/piyushpatelcodes/gssocFAQ-Bot",
               files: [file],
             });
           }
-
-        } catch (err) {
-          console.timeEnd("mlreq"); // ✅ End timer (failure case)
-          console.error("Flask API error:", err);
-          await interaction.reply({
-            content: "❌ Internal error. Please try again later.",
-            ephemeral: true,
-          });
+        } else {
+          await interaction.reply(
+            "❌ Sorry, I couldn’t find an answer to that. Please try rephrasing your question or check the FAQ list with `/faq question: all commands`."
+          );
         }
-
       } else if (interaction.commandName === "project") {
         const selectedProjectName =
           interaction.options.getString("project-name");
@@ -525,9 +484,9 @@ client.on(Events.InteractionCreate, async (interaction) => {
   });
 });
 
-// client.login(process.env.BOT_TOKEN).catch((error) => {
-//   console.error("Failed to login bot:", error);
-// });
+client.login(process.env.BOT_TOKEN).catch((error) => {
+  console.error("Failed to login bot:", error);
+});
 
 // for documentation purpose
 app.use("/docs", express.static(path.join(__dirname, "views")));
@@ -537,5 +496,3 @@ app.use("/docs", documentationRoute);
 app.listen(3000, () => {
   console.log(`🚀 Running at http://localhost:3000/docs`);
 });
-
-
